@@ -176,8 +176,16 @@ component you install still comes directly from its own registry via
 | kokonutui | [kokonutui.com](https://kokonutui.com) | 51 |
 | animate-ui | [animate-ui.com](https://animate-ui.com) | 420 |
 | motion-primitives | [motion-primitives.com](https://motion-primitives.com) | 33 |
+| shadcnblocks | [shadcnblocks.com](https://shadcnblocks.com) | 4,171 |
+| shadcn-dashboard | [shadcndashboard.dev](https://shadcndashboard.dev) | 508 |
+| assistant-ui | [assistant-ui.com](https://www.assistant-ui.com) | 154 |
+| bundui | [bundui.io](https://bundui.io) | 217 |
 
-1,069 components total. Tagging runs through
+6,119 components total. The first six are the original motion/marketing
+family; the last four are a product-UI expansion (forms, tables,
+dashboards, data display) added after checking each registry's
+demo/duplicate conventions individually rather than assuming they match
+the original six. Tagging runs through
 [classifier.dev](https://classifier.dev), a free, keyless classification
 endpoint backed by [TypeSafe](https://docs.typesafe.ai)'s Jev decision
 model.
@@ -193,6 +201,11 @@ Read this before relying on matchcn for something important.
 - **`visual_density` is the weakest tagged dimension.** A confidence-weighted
   matcher discounts weak tags automatically, but a brief that hinges
   heavily on visual density is the most likely to disappoint.
+- **assistant-ui tags the least confidently of any indexed registry.**
+  Its content (agent and chat UI: tool timelines, reasoning panels) sits
+  further from the schema's original motion/marketing anchors than
+  anything else in the catalog, so assistant-ui-heavy briefs are more
+  likely to return a shortlist or no-match than a confident pick.
 - **Non-English briefs are known to be weaker.** Tested directly: an
   English brief and its translated equivalent were compared side by
   side, and English found a real, well-tagged match that the translated
@@ -202,7 +215,7 @@ Read this before relying on matchcn for something important.
   access restriction on that registry's per-item endpoint.
 - **cult-ui.com is not indexed.** Its registry sits behind a bot
   challenge that a standard request cannot pass.
-- **6 of 370+ shadcn-format registries are indexed.** This is not a
+- **10 of 372+ shadcn-format registries are indexed.** This is not a
   comprehensive index of the ecosystem.
 
 None of the above produces a wrong forced answer. When confidence is

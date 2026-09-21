@@ -21,7 +21,7 @@ import { REGISTRIES } from "./runtime/registries.js";
 
 const server = new McpServer({
   name: "matchcn",
-  version: "0.0.1",
+  version: "0.1.0",
 });
 
 server.registerTool(
@@ -29,7 +29,7 @@ server.registerTool(
   {
     title: "Pick a shadcn-format component",
     description:
-      "Given a plain-language description of a UI need, finds the best-matching component across the indexed shadcn-format registries (react-bits, magicui, aceternity, kokonutui, animate-ui, motion-primitives). Returns one of three outcomes: confident (one clear winner), shortlist (several strong candidates with the differentiating dimension named), or no_match (nothing fits, closest candidates shown but marked rejected). Never a forced best guess.",
+      "Given a plain-language description of a UI need, finds the best-matching component across the indexed shadcn-format registries (react-bits, magicui, aceternity, kokonutui, animate-ui, motion-primitives, shadcnblocks, shadcn-dashboard, assistant-ui, bundui). Returns one of three outcomes: confident (one clear winner), shortlist (several strong candidates with the differentiating dimension named), or no_match (nothing fits, closest candidates shown but marked rejected). Never a forced best guess.",
     inputSchema: {
       brief: z.string().describe("Plain-language description of the component needed, any language"),
       registry: z

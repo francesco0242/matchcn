@@ -43,4 +43,29 @@ export const REGISTRIES: RegistryConfig[] = [
   },
   // cult-ui excluded: blocked by a Vercel bot challenge on every index
   // fetch attempted during recon. See docs/DECISIONS.md #6.
+
+  // Product-UI expansion, added after per-registry filter verification in
+  // docs/REGISTRY_EXPANSION_STEP1_2.md. Three other candidates from the
+  // same recon (shadcn-ui-blocks, plate, react-aria) were excluded for a
+  // specific, evidenced defect each; see docs/ROADMAP.md.
+  {
+    name: "shadcnblocks",
+    indexUrl: "https://shadcnblocks.com/r/registry.json",
+    itemUrlTemplate: "https://shadcnblocks.com/r/{name}.json",
+  },
+  {
+    name: "shadcn-dashboard",
+    indexUrl: "https://shadcndashboard.dev/r/registry.json",
+    itemUrlTemplate: "https://shadcndashboard.dev/r/{name}.json",
+  },
+  {
+    name: "assistant-ui",
+    indexUrl: "https://r.assistant-ui.com/registry.json",
+    itemUrlTemplate: "https://r.assistant-ui.com/{name}.json",
+  },
+  {
+    name: "bundui",
+    indexUrl: "https://bundui.io/r/registry.json",
+    itemUrlTemplate: "https://bundui.io/r/{name}.json",
+  },
 ];

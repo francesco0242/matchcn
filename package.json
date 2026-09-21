@@ -1,6 +1,6 @@
 {
   "name": "matchcn",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A semantic index across shadcn-format component registries: find a component by what it does, not what it is called.",
   "homepage": "https://matchcn.dev",
   "repository": {
