@@ -1,0 +1,6480 @@
+[
+  {
+    "registry": "magicui",
+    "name": "magic-card",
+    "title": "Magic Card",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/magic-card.json",
+    "dimensions": {
+      "category": {
+        "label": "cursor",
+        "confidence": 0.44,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0.32,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0.02,
+          "cursor": 0.48,
+          "transition-wrapper": 0.18,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.68,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.03,
+          "animated-on-interaction": 0.76,
+          "continuous-background-motion": 0.2
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.95,
+        "scores": {
+          "minimal": 0.97,
+          "moderate": 0.03,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "hover",
+        "confidence": 0.97,
+        "scores": {
+          "display-only": 0,
+          "hover": 0.97,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0.01,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.87,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 94
+  },
+  {
+    "registry": "magicui",
+    "name": "android",
+    "title": "Android",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/android.json",
+    "dimensions": {
+      "category": {
+        "label": "media",
+        "confidence": 0.7,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0.04,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0.73,
+          "layout-section": 0.03,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.2
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.7,
+        "scores": {
+          "static": 0.18,
+          "subtle-transitions": 0.01,
+          "animated-on-interaction": 0.03,
+          "continuous-background-motion": 0.78
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.69,
+        "scores": {
+          "minimal": 0.8,
+          "moderate": 0.18,
+          "dense": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0.99,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.35,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 2861
+  },
+  {
+    "registry": "magicui",
+    "name": "warp-background",
+    "title": "Warp Background",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/warp-background.json",
+    "dimensions": {
+      "category": {
+        "label": "card",
+        "confidence": 0.47,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0.51,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0.47000000000000003,
+          "cursor": 0,
+          "transition-wrapper": 0.02,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.97,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0.01,
+          "continuous-background-motion": 0.98
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.54,
+        "scores": {
+          "minimal": 0.69,
+          "moderate": 0.21,
+          "dense": 0.1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.94,
+        "scores": {
+          "display-only": 0.95,
+          "hover": 0.01,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.04
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.93,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 62
+  },
+  {
+    "registry": "magicui",
+    "name": "line-shadow-text",
+    "title": "Line Shadow Text",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/line-shadow-text.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 1,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.77,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.01,
+          "animated-on-interaction": 0.15,
+          "continuous-background-motion": 0.83
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 1,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.94,
+        "scores": {
+          "display-only": 0.95,
+          "hover": 0.02,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.12,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 61
+  },
+  {
+    "registry": "magicui",
+    "name": "aurora-text",
+    "title": "Aurora Text",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/aurora-text.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 1,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.76,
+        "scores": {
+          "static": 0.15,
+          "subtle-transitions": 0.02,
+          "animated-on-interaction": 0.01,
+          "continuous-background-motion": 0.82
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.98,
+        "scores": {
+          "display-only": 0.98,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.38,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 43
+  },
+  {
+    "registry": "magicui",
+    "name": "morphing-text",
+    "title": "Morphing Text",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/morphing-text.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 1,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.32,
+        "scores": {
+          "static": 0.02,
+          "subtle-transitions": 0.04,
+          "animated-on-interaction": 0.45,
+          "continuous-background-motion": 0.49
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.85,
+        "scores": {
+          "display-only": 0.88,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.12
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.03,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.17,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 62
+  },
+  {
+    "registry": "magicui",
+    "name": "scroll-progress",
+    "title": "Scroll Progress",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/scroll-progress.json",
+    "dimensions": {
+      "category": {
+        "label": "feedback-notification",
+        "confidence": 0.95,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.01,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.01,
+          "chart": 0.02,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0.96,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.42,
+        "scores": {
+          "static": 0.02,
+          "subtle-transitions": 0.1,
+          "animated-on-interaction": 0.5599999999999999,
+          "continuous-background-motion": 0.32
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.98,
+        "scores": {
+          "minimal": 0.99,
+          "moderate": 0.01,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.49,
+        "scores": {
+          "display-only": 0.58,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0.26,
+          "none of these": 0.16
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.38,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.16,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 56
+  },
+  {
+    "registry": "magicui",
+    "name": "lens",
+    "title": "Lens",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/lens.json",
+    "dimensions": {
+      "category": {
+        "label": "media",
+        "confidence": 0.6,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0.09,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0.63,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0.01,
+          "transition-wrapper": 0.23,
+          "none of these": 0.04
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.85,
+        "scores": {
+          "static": 0.05,
+          "subtle-transitions": 0.06,
+          "animated-on-interaction": 0.89,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.85,
+        "scores": {
+          "minimal": 0.9,
+          "moderate": 0.09,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "drag-or-gesture",
+        "confidence": 0.19,
+        "scores": {
+          "display-only": 0.04,
+          "hover": 0.3,
+          "click-toggle": 0.23,
+          "form-input": 0,
+          "drag-or-gesture": 0.33,
+          "none of these": 0.1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.79,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 90
+  },
+  {
+    "registry": "magicui",
+    "name": "pointer",
+    "title": "Pointer",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/pointer.json",
+    "dimensions": {
+      "category": {
+        "label": "cursor",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 1,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.63,
+        "scores": {
+          "static": 0.19,
+          "subtle-transitions": 0.08,
+          "animated-on-interaction": 0.72,
+          "continuous-background-motion": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 1,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "hover",
+        "confidence": 0.95,
+        "scores": {
+          "display-only": 0.04,
+          "hover": 0.96,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.03,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.87,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 74
+  },
+  {
+    "registry": "magicui",
+    "name": "smooth-cursor",
+    "title": null,
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/smooth-cursor.json",
+    "dimensions": {
+      "category": {
+        "label": "cursor",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 1,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.88,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0.91,
+          "continuous-background-motion": 0.09
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.98,
+        "scores": {
+          "minimal": 0.99,
+          "moderate": 0.01,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "none of these",
+        "confidence": 0.17,
+        "scores": {
+          "display-only": 0.28,
+          "hover": 0.24,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0.16,
+          "none of these": 0.32
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.99,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 107
+  },
+  {
+    "registry": "magicui",
+    "name": "progressive-blur",
+    "title": "Progressive Blur",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/progressive-blur.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 0.48,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0.02,
+          "feedback-notification": 0.04,
+          "typography": 0,
+          "background-effect": 0.52,
+          "cursor": 0,
+          "transition-wrapper": 0.41000000000000003,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.08,
+        "scores": {
+          "static": 0.22,
+          "subtle-transitions": 0.27,
+          "animated-on-interaction": 0.31,
+          "continuous-background-motion": 0.2
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.93,
+        "scores": {
+          "minimal": 0.95,
+          "moderate": 0.03,
+          "dense": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.46,
+        "scores": {
+          "display-only": 0.56,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0.3,
+          "none of these": 0.14
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.05,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.75,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 146
+  },
+  {
+    "registry": "magicui",
+    "name": "neon-gradient-card",
+    "title": "Neon Gradient Card",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/neon-gradient-card.json",
+    "dimensions": {
+      "category": {
+        "label": "card",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 1,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.36,
+        "scores": {
+          "static": 0.52,
+          "subtle-transitions": 0.08,
+          "animated-on-interaction": 0.02,
+          "continuous-background-motion": 0.38
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.77,
+        "scores": {
+          "minimal": 0.85,
+          "moderate": 0.14,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.93,
+        "scores": {
+          "display-only": 0.94,
+          "hover": 0.04,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.64,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 48
+  },
+  {
+    "registry": "magicui",
+    "name": "noise-texture",
+    "title": "Noise Texture",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/noise-texture.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 1,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.94,
+        "scores": {
+          "static": 0.95,
+          "subtle-transitions": 0.01,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0.04
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.74,
+        "scores": {
+          "minimal": 0.83,
+          "moderate": 0.02,
+          "dense": 0.15
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.95,
+        "scores": {
+          "display-only": 0.97,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 1,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 126
+  },
+  {
+    "registry": "magicui",
+    "name": "meteors",
+    "title": "Meteors",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/meteors.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 1,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 1,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.65,
+        "scores": {
+          "minimal": 0.12,
+          "moderate": 0.11,
+          "dense": 0.77
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0.99,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.99,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 1559
+  },
+  {
+    "registry": "magicui",
+    "name": "grid-pattern",
+    "title": "Grid Pattern",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/grid-pattern.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 1,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 1,
+        "scores": {
+          "static": 1,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.39,
+        "scores": {
+          "minimal": 0.31,
+          "moderate": 0.1,
+          "dense": 0.59
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 1,
+        "scores": {
+          "display-only": 1,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 1,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 94
+  },
+  {
+    "registry": "magicui",
+    "name": "hexagon-pattern",
+    "title": "Hexagon Pattern",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/hexagon-pattern.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 1,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.99,
+        "scores": {
+          "static": 0.99,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.68,
+        "scores": {
+          "minimal": 0.17,
+          "moderate": 0.05,
+          "dense": 0.78
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 1,
+        "scores": {
+          "display-only": 1,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 1,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 100
+  },
+  {
+    "registry": "magicui",
+    "name": "striped-pattern",
+    "title": "Striped Pattern",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/striped-pattern.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 1,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 1,
+        "scores": {
+          "static": 1,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.29,
+        "scores": {
+          "minimal": 0.39,
+          "moderate": 0.08,
+          "dense": 0.53
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 1,
+        "scores": {
+          "display-only": 1,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 1,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 100
+  },
+  {
+    "registry": "magicui",
+    "name": "interactive-grid-pattern",
+    "title": "Interactive Grid Pattern",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/interactive-grid-pattern.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 1,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.25,
+        "scores": {
+          "static": 0.44,
+          "subtle-transitions": 0.09,
+          "animated-on-interaction": 0.41,
+          "continuous-background-motion": 0.06
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.69,
+        "scores": {
+          "minimal": 0.15,
+          "moderate": 0.06,
+          "dense": 0.79
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "none of these",
+        "confidence": 0.4,
+        "scores": {
+          "display-only": 0.25,
+          "hover": 0.2,
+          "click-toggle": 0.02,
+          "form-input": 0,
+          "drag-or-gesture": 0.03,
+          "none of these": 0.5
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.98,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 118
+  },
+  {
+    "registry": "magicui",
+    "name": "dot-pattern",
+    "title": "Dot Pattern",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/dot-pattern.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 1,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.99,
+        "scores": {
+          "static": 1,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.54,
+        "scores": {
+          "minimal": 0.24,
+          "moderate": 0.07,
+          "dense": 0.69
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 1,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 1,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 92
+  },
+  {
+    "registry": "magicui",
+    "name": "flickering-grid",
+    "title": "Flickering Grid",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/flickering-grid.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 1,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 1,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.81,
+        "scores": {
+          "minimal": 0.1,
+          "moderate": 0.03,
+          "dense": 0.87
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.98,
+        "scores": {
+          "display-only": 0.98,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 1,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 100
+  },
+  {
+    "registry": "magicui",
+    "name": "hero-video-dialog",
+    "title": "Hero Video Dialog",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/hero-video-dialog.json",
+    "dimensions": {
+      "category": {
+        "label": "hero",
+        "confidence": 0.52,
+        "scores": {
+          "hero": 0.55,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0.39,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0.04,
+          "layout-section": 0.01,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.57,
+        "scores": {
+          "static": 0.29,
+          "subtle-transitions": 0.01,
+          "animated-on-interaction": 0.02,
+          "continuous-background-motion": 0.68
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.33,
+        "scores": {
+          "minimal": 0.37,
+          "moderate": 0.56,
+          "dense": 0.07
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.61,
+        "scores": {
+          "display-only": 0.28,
+          "hover": 0,
+          "click-toggle": 0.68,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.32,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 49
+  },
+  {
+    "registry": "magicui",
+    "name": "code-comparison",
+    "title": "Code Comparison",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/code-comparison.json",
+    "dimensions": {
+      "category": {
+        "label": "data-display",
+        "confidence": 0.62,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0.06,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.66,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0.06,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.22
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.99,
+        "scores": {
+          "static": 0.99,
+          "subtle-transitions": 0.01,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.62,
+        "scores": {
+          "minimal": 0.19,
+          "moderate": 0.74,
+          "dense": 0.07
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.97,
+        "scores": {
+          "display-only": 0.98,
+          "hover": 0,
+          "click-toggle": 0.01,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.48,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 62
+  },
+  {
+    "registry": "magicui",
+    "name": "marquee",
+    "title": "Marquee",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/marquee.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 0.43,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.01,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.17,
+          "chart": 0,
+          "media": 0.11,
+          "layout-section": 0.04,
+          "feedback-notification": 0.01,
+          "typography": 0.48,
+          "background-effect": 0.03,
+          "cursor": 0,
+          "transition-wrapper": 0.08,
+          "none of these": 0.07
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 1,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.28,
+        "scores": {
+          "minimal": 0.51,
+          "moderate": 0.16,
+          "dense": 0.33
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.98,
+        "scores": {
+          "display-only": 0.99,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.23,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 93
+  },
+  {
+    "registry": "magicui",
+    "name": "globe",
+    "title": "Globe",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/globe.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 0.38,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.05,
+          "chart": 0.08,
+          "media": 0.21,
+          "layout-section": 0.01,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0.43,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.22
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.89,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0.09,
+          "continuous-background-motion": 0.91
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.73,
+        "scores": {
+          "minimal": 0.82,
+          "moderate": 0.08,
+          "dense": 0.1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "drag-or-gesture",
+        "confidence": 0.77,
+        "scores": {
+          "display-only": 0.14,
+          "hover": 0.01,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0.81,
+          "none of these": 0.04
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.06,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.62,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 82
+  },
+  {
+    "registry": "magicui",
+    "name": "glyph-matrix",
+    "title": "Glyph Matrix",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/glyph-matrix.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 0.91,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.01,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0.01,
+          "feedback-notification": 0,
+          "typography": 0.06,
+          "background-effect": 0.92,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.99,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.01,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0.99
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.96,
+        "scores": {
+          "minimal": 0.02,
+          "moderate": 0.01,
+          "dense": 0.97
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.97,
+        "scores": {
+          "display-only": 0.98,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.96,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 92
+  },
+  {
+    "registry": "magicui",
+    "name": "glare-hover",
+    "title": "Glare Hover",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/glare-hover.json",
+    "dimensions": {
+      "category": {
+        "label": "transition-wrapper",
+        "confidence": 0.96,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0.01,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0.02,
+          "cursor": 0,
+          "transition-wrapper": 0.97,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.99,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 1,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 0.99,
+          "moderate": 0.01,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "hover",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 1,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.96,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 114
+  },
+  {
+    "registry": "magicui",
+    "name": "shimmer-button",
+    "title": "Shimmer Button",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/shimmer-button.json",
+    "dimensions": {
+      "category": {
+        "label": "button",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0.99,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.01,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.88,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0.09,
+          "continuous-background-motion": 0.91
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.98,
+        "scores": {
+          "minimal": 0.99,
+          "moderate": 0.01,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.59,
+        "scores": {
+          "display-only": 0.67,
+          "hover": 0.2,
+          "click-toggle": 0.01,
+          "form-input": 0.01,
+          "drag-or-gesture": 0,
+          "none of these": 0.11
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.29,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 84
+  },
+  {
+    "registry": "magicui",
+    "name": "tweet-card",
+    "title": "Tweet Card",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/tweet-card.json",
+    "dimensions": {
+      "category": {
+        "label": "card",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 1,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.99,
+        "scores": {
+          "static": 0.99,
+          "subtle-transitions": 0.01,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 1,
+        "scores": {
+          "minimal": 0,
+          "moderate": 1,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 1,
+        "scores": {
+          "display-only": 1,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.51,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 93
+  },
+  {
+    "registry": "magicui",
+    "name": "client-tweet-card",
+    "title": "Client Tweet Card",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/client-tweet-card.json",
+    "dimensions": {
+      "category": {
+        "label": "card",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 1,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.96,
+        "scores": {
+          "static": 0.97,
+          "subtle-transitions": 0.03,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 1,
+        "scores": {
+          "minimal": 0,
+          "moderate": 1,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 1,
+        "scores": {
+          "display-only": 1,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.61,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 133
+  },
+  {
+    "registry": "magicui",
+    "name": "bento-grid",
+    "title": "Bento Grid",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/bento-grid.json",
+    "dimensions": {
+      "category": {
+        "label": "layout-section",
+        "confidence": 0.98,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0.02,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0.98,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.99,
+        "scores": {
+          "static": 1,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 1,
+        "scores": {
+          "minimal": 0,
+          "moderate": 0,
+          "dense": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 1,
+        "scores": {
+          "display-only": 1,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.27,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.02,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 106
+  },
+  {
+    "registry": "magicui",
+    "name": "particles",
+    "title": "Particles",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/particles.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 1,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 1,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.8,
+        "scores": {
+          "minimal": 0.1,
+          "moderate": 0.04,
+          "dense": 0.86
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.85,
+        "scores": {
+          "display-only": 0.87,
+          "hover": 0.01,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0.01,
+          "none of these": 0.11
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.99,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 150
+  },
+  {
+    "registry": "magicui",
+    "name": "number-ticker",
+    "title": "Number Ticker",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/number-ticker.json",
+    "dimensions": {
+      "category": {
+        "label": "data-display",
+        "confidence": 0.53,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.5700000000000001,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0.42,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.59,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.16,
+          "animated-on-interaction": 0.14,
+          "continuous-background-motion": 0.69
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 1,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0.99,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.5,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 69
+  },
+  {
+    "registry": "magicui",
+    "name": "ripple",
+    "title": "Ripple",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/ripple.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 0.9,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0.03,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0.92,
+          "cursor": 0.01,
+          "transition-wrapper": 0.04,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.64,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.01,
+          "animated-on-interaction": 0.73,
+          "continuous-background-motion": 0.26
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.98,
+        "scores": {
+          "minimal": 0.99,
+          "moderate": 0.01,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.77,
+        "scores": {
+          "display-only": 0.81,
+          "hover": 0.15,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.04
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.99,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 83
+  },
+  {
+    "registry": "magicui",
+    "name": "retro-grid",
+    "title": "Retro Grid",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/retro-grid.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 1,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 1,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.82,
+        "scores": {
+          "minimal": 0.09,
+          "moderate": 0.03,
+          "dense": 0.88
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.98,
+        "scores": {
+          "display-only": 0.99,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 1,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 51
+  },
+  {
+    "registry": "magicui",
+    "name": "animated-list",
+    "title": "Animated List",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/animated-list.json",
+    "dimensions": {
+      "category": {
+        "label": "data-display",
+        "confidence": 0.93,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.9400000000000001,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0.03,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.03,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.34,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.5,
+          "animated-on-interaction": 0.19,
+          "continuous-background-motion": 0.3
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.51,
+        "scores": {
+          "minimal": 0.04,
+          "moderate": 0.67,
+          "dense": 0.29
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0.99,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.61,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 134
+  },
+  {
+    "registry": "magicui",
+    "name": "animated-shiny-text",
+    "title": "Animated Shiny Text",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/animated-shiny-text.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 0.88,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0.89,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.11,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.99,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 1,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 1,
+        "scores": {
+          "display-only": 1,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.09,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 105
+  },
+  {
+    "registry": "magicui",
+    "name": "animated-grid-pattern",
+    "title": "Animated Grid Pattern",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/animated-grid-pattern.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 1,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 1,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.7,
+        "scores": {
+          "minimal": 0.14,
+          "moderate": 0.06,
+          "dense": 0.8
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0.99,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 1,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 112
+  },
+  {
+    "registry": "magicui",
+    "name": "border-beam",
+    "title": "Border Beam",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/border-beam.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 0.63,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0.03,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0.03,
+          "feedback-notification": 0,
+          "typography": 0.01,
+          "background-effect": 0.66,
+          "cursor": 0,
+          "transition-wrapper": 0.23,
+          "none of these": 0.04
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 1,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0.99,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.99,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 87
+  },
+  {
+    "registry": "magicui",
+    "name": "animated-beam",
+    "title": "Animated Beam",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/animated-beam.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 0.92,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0.01,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0.93,
+          "cursor": 0.01,
+          "transition-wrapper": 0.01,
+          "none of these": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.99,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.98,
+        "scores": {
+          "minimal": 0.99,
+          "moderate": 0.01,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 1,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.85,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 129
+  },
+  {
+    "registry": "magicui",
+    "name": "text-reveal",
+    "title": "Text Reveal",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/text-reveal.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 0.91,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0.92,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.08,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.37,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.45,
+          "animated-on-interaction": 0.54,
+          "continuous-background-motion": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.47,
+        "scores": {
+          "display-only": 0.5700000000000001,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0.14,
+          "none of these": 0.29
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 54
+  },
+  {
+    "registry": "magicui",
+    "name": "dia-text-reveal",
+    "title": "Dia Text Reveal",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/dia-text-reveal.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0.99,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.01,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.55,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.1,
+          "animated-on-interaction": 0.24,
+          "continuous-background-motion": 0.66
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 1,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.97,
+        "scores": {
+          "display-only": 0.98,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.02,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 122
+  },
+  {
+    "registry": "magicui",
+    "name": "hyper-text",
+    "title": "Hyper Text",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/hyper-text.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 1,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.37,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.1,
+          "animated-on-interaction": 0.37,
+          "continuous-background-motion": 0.52
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 1,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0.99,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 84
+  },
+  {
+    "registry": "magicui",
+    "name": "animated-gradient-text",
+    "title": "Animated Gradient Text",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/animated-gradient-text.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 1,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 1,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 1,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0.99,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.1,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 98
+  },
+  {
+    "registry": "magicui",
+    "name": "orbiting-circles",
+    "title": "Orbiting Circles",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/orbiting-circles.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 0.91,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0.01,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0.92,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.06999999999999999
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 1,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.37,
+        "scores": {
+          "minimal": 0.05,
+          "moderate": 0.58,
+          "dense": 0.37
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0.99,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.95,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 83
+  },
+  {
+    "registry": "magicui",
+    "name": "dock",
+    "title": "Dock",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/dock.json",
+    "dimensions": {
+      "category": {
+        "label": "navigation",
+        "confidence": 0.88,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.9,
+          "card": 0,
+          "form-input": 0,
+          "button": 0.01,
+          "modal-overlay": 0.01,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0.02,
+          "layout-section": 0.01,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.05
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.69,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.06,
+          "animated-on-interaction": 0.77,
+          "continuous-background-motion": 0.16
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.26,
+        "scores": {
+          "minimal": 0.06,
+          "moderate": 0.43,
+          "dense": 0.51
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "hover",
+        "confidence": 0.36,
+        "scores": {
+          "display-only": 0.37,
+          "hover": 0.47,
+          "click-toggle": 0.04,
+          "form-input": 0,
+          "drag-or-gesture": 0.04,
+          "none of these": 0.08
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.37,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.05,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 76
+  },
+  {
+    "registry": "magicui",
+    "name": "word-rotate",
+    "title": "Word Rotate",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/word-rotate.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 1,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.85,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.01,
+          "animated-on-interaction": 0.09,
+          "continuous-background-motion": 0.89
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.84,
+        "scores": {
+          "minimal": 0.89,
+          "moderate": 0.09,
+          "dense": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.98,
+        "scores": {
+          "display-only": 0.98,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.06,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 41
+  },
+  {
+    "registry": "magicui",
+    "name": "avatar-circles",
+    "title": "Avatar Circles",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/avatar-circles.json",
+    "dimensions": {
+      "category": {
+        "label": "media",
+        "confidence": 0.94,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.04,
+          "chart": 0,
+          "media": 0.95,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0.01,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.94,
+        "scores": {
+          "static": 0.96,
+          "subtle-transitions": 0.01,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.31,
+        "scores": {
+          "minimal": 0.03,
+          "moderate": 0.44,
+          "dense": 0.53
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0.99,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.94,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.02,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 47
+  },
+  {
+    "registry": "magicui",
+    "name": "typing-animation",
+    "title": "Typing Animation",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/typing-animation.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 1,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.82,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.1,
+          "animated-on-interaction": 0.02,
+          "continuous-background-motion": 0.87
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 1,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0.99,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.06,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.02,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 57
+  },
+  {
+    "registry": "magicui",
+    "name": "sparkles-text",
+    "title": "Sparkles Text",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/sparkles-text.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 1,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 1,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.89,
+        "scores": {
+          "minimal": 0.93,
+          "moderate": 0.04,
+          "dense": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 1,
+        "scores": {
+          "display-only": 1,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.11,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 140
+  },
+  {
+    "registry": "magicui",
+    "name": "spinning-text",
+    "title": "Spinning Text",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/spinning-text.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 1,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.99,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 1,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0.99,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 170
+  },
+  {
+    "registry": "magicui",
+    "name": "comic-text",
+    "title": "Comic Text",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/comic-text.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 1,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.7,
+        "scores": {
+          "static": 0.06,
+          "subtle-transitions": 0.77,
+          "animated-on-interaction": 0.02,
+          "continuous-background-motion": 0.15
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.91,
+        "scores": {
+          "minimal": 0.94,
+          "moderate": 0.02,
+          "dense": 0.04
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 1,
+        "scores": {
+          "display-only": 1,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.05,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 1512
+  },
+  {
+    "registry": "magicui",
+    "name": "icon-cloud",
+    "title": "Icon Cloud",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/icon-cloud.json",
+    "dimensions": {
+      "category": {
+        "label": "data-display",
+        "confidence": 0.47,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.51,
+          "chart": 0.08,
+          "media": 0.01,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0.04,
+          "background-effect": 0.17,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.19
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.49,
+        "scores": {
+          "static": 0.06,
+          "subtle-transitions": 0.02,
+          "animated-on-interaction": 0.62,
+          "continuous-background-motion": 0.3
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 0,
+          "moderate": 0.01,
+          "dense": 0.99
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "drag-or-gesture",
+        "confidence": 0.71,
+        "scores": {
+          "display-only": 0.13,
+          "hover": 0.04,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0.75,
+          "none of these": 0.08
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.76,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.07,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 49
+  },
+  {
+    "registry": "magicui",
+    "name": "text-animate",
+    "title": "Text Animate",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/text-animate.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 0.95,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0.96,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.04,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.71,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.06,
+          "animated-on-interaction": 0.15,
+          "continuous-background-motion": 0.78
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.98,
+        "scores": {
+          "display-only": 0.99,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.02,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 100
+  },
+  {
+    "registry": "magicui",
+    "name": "scroll-based-velocity",
+    "title": "Scroll Based Velocity",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/scroll-based-velocity.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 0.87,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0.89,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.11,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.76,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0.82,
+          "continuous-background-motion": 0.18
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.98,
+        "scores": {
+          "minimal": 0.99,
+          "moderate": 0.01,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "drag-or-gesture",
+        "confidence": 0.46,
+        "scores": {
+          "display-only": 0.27,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0.55,
+          "none of these": 0.17
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.11,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.07,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 79
+  },
+  {
+    "registry": "magicui",
+    "name": "shiny-button",
+    "title": "Shiny Button",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/shiny-button.json",
+    "dimensions": {
+      "category": {
+        "label": "button",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 1,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.46,
+        "scores": {
+          "static": 0.02,
+          "subtle-transitions": 0.2,
+          "animated-on-interaction": 0.19,
+          "continuous-background-motion": 0.59
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 0.99,
+          "moderate": 0.01,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.31,
+        "scores": {
+          "display-only": 0.43,
+          "hover": 0.42,
+          "click-toggle": 0.01,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.14
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.24,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 90
+  },
+  {
+    "registry": "magicui",
+    "name": "shine-border",
+    "title": "Shine Border",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/shine-border.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 0.65,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0.05,
+          "form-input": 0,
+          "button": 0.04,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0.02,
+          "background-effect": 0.67,
+          "cursor": 0,
+          "transition-wrapper": 0.14,
+          "none of these": 0.07
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.95,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0.04,
+          "continuous-background-motion": 0.96
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.97,
+        "scores": {
+          "minimal": 0.98,
+          "moderate": 0.02,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.9,
+        "scores": {
+          "display-only": 0.91,
+          "hover": 0.06,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.96,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 67
+  },
+  {
+    "registry": "magicui",
+    "name": "animated-circular-progress-bar",
+    "title": "Animated Circular Progress Bar",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/animated-circular-progress-bar.json",
+    "dimensions": {
+      "category": {
+        "label": "chart",
+        "confidence": 0.77,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0.79,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0.21,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.85,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.02,
+          "animated-on-interaction": 0.08,
+          "continuous-background-motion": 0.89
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.86,
+        "scores": {
+          "minimal": 0.91,
+          "moderate": 0.09,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 1,
+        "scores": {
+          "display-only": 1,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.29,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 133
+  },
+  {
+    "registry": "magicui",
+    "name": "confetti",
+    "title": "Confetti",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/confetti.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 0.93,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0.03,
+          "typography": 0,
+          "background-effect": 0.9400000000000001,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.42,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0.43,
+          "continuous-background-motion": 0.57
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.85,
+        "scores": {
+          "minimal": 0.07,
+          "moderate": 0.03,
+          "dense": 0.9
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.98,
+        "scores": {
+          "display-only": 0.99,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.97,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 96
+  },
+  {
+    "registry": "magicui",
+    "name": "cool-mode",
+    "title": "Cool Mode",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/cool-mode.json",
+    "dimensions": {
+      "category": {
+        "label": "button",
+        "confidence": 0.55,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0.58,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0.05,
+          "background-effect": 0.07,
+          "cursor": 0.01,
+          "transition-wrapper": 0.25,
+          "none of these": 0.04
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.51,
+        "scores": {
+          "static": 0.02,
+          "subtle-transitions": 0.11,
+          "animated-on-interaction": 0.63,
+          "continuous-background-motion": 0.24
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.92,
+        "scores": {
+          "minimal": 0.95,
+          "moderate": 0.04,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "hover",
+        "confidence": 0.77,
+        "scores": {
+          "display-only": 0.11,
+          "hover": 0.81,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.07
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.71,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 62
+  },
+  {
+    "registry": "magicui",
+    "name": "pulsating-button",
+    "title": "Pulsating Button",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/pulsating-button.json",
+    "dimensions": {
+      "category": {
+        "label": "button",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 1,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.9,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0.07,
+          "continuous-background-motion": 0.93
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 0.99,
+          "moderate": 0.01,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.57,
+        "scores": {
+          "display-only": 0.65,
+          "hover": 0.17,
+          "click-toggle": 0.03,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.15
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.17,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 87
+  },
+  {
+    "registry": "magicui",
+    "name": "ripple-button",
+    "title": "Ripple Button",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/ripple-button.json",
+    "dimensions": {
+      "category": {
+        "label": "button",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 1,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.99,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0.99,
+          "continuous-background-motion": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.98,
+        "scores": {
+          "minimal": 0.99,
+          "moderate": 0.01,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.18,
+        "scores": {
+          "display-only": 0.21,
+          "hover": 0.2,
+          "click-toggle": 0.32,
+          "form-input": 0.01,
+          "drag-or-gesture": 0.01,
+          "none of these": 0.25
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.12,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 73
+  },
+  {
+    "registry": "magicui",
+    "name": "file-tree",
+    "title": "File Tree",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/file-tree.json",
+    "dimensions": {
+      "category": {
+        "label": "data-display",
+        "confidence": 0.95,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.02,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.96,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.94,
+        "scores": {
+          "static": 0.96,
+          "subtle-transitions": 0.03,
+          "animated-on-interaction": 0.01,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.42,
+        "scores": {
+          "minimal": 0.02,
+          "moderate": 0.36,
+          "dense": 0.62
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.83,
+        "scores": {
+          "display-only": 0.85,
+          "hover": 0.01,
+          "click-toggle": 0.13,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.95,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 85
+  },
+  {
+    "registry": "magicui",
+    "name": "blur-fade",
+    "title": "Blur Fade",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/blur-fade.json",
+    "dimensions": {
+      "category": {
+        "label": "transition-wrapper",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 1,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.9,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.93,
+          "animated-on-interaction": 0.02,
+          "continuous-background-motion": 0.05
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 0.99,
+          "moderate": 0.01,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.95,
+        "scores": {
+          "display-only": 0.96,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.04
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.49,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 84
+  },
+  {
+    "registry": "magicui",
+    "name": "safari",
+    "title": "Safari",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/safari.json",
+    "dimensions": {
+      "category": {
+        "label": "media",
+        "confidence": 0.43,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0.04,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0.48,
+          "layout-section": 0.04,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.01,
+          "none of these": 0.43
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.98,
+        "scores": {
+          "static": 0.99,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.51,
+        "scores": {
+          "minimal": 0.67,
+          "moderate": 0.3,
+          "dense": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0.99,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.56,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.05,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 57
+  },
+  {
+    "registry": "magicui",
+    "name": "iphone",
+    "title": "iPhone",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/iphone.json",
+    "dimensions": {
+      "category": {
+        "label": "media",
+        "confidence": 0.79,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0.04,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0.81,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.01,
+          "none of these": 0.13
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.91,
+        "scores": {
+          "static": 0.07,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0.93
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.6,
+        "scores": {
+          "minimal": 0.74,
+          "moderate": 0.19,
+          "dense": 0.07
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 1,
+        "scores": {
+          "display-only": 1,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.62,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 5868
+  },
+  {
+    "registry": "magicui",
+    "name": "rainbow-button",
+    "title": "Rainbow Button",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/rainbow-button.json",
+    "dimensions": {
+      "category": {
+        "label": "button",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 1,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.65,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.01,
+          "animated-on-interaction": 0.74,
+          "continuous-background-motion": 0.25
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.84,
+        "scores": {
+          "minimal": 0.89,
+          "moderate": 0.1,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "hover",
+        "confidence": 0.84,
+        "scores": {
+          "display-only": 0.02,
+          "hover": 0.86,
+          "click-toggle": 0.05,
+          "form-input": 0.03,
+          "drag-or-gesture": 0,
+          "none of these": 0.04
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.02,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.03,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 57
+  },
+  {
+    "registry": "magicui",
+    "name": "interactive-hover-button",
+    "title": null,
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/interactive-hover-button.json",
+    "dimensions": {
+      "category": {
+        "label": "button",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 1,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.99,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 1,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.7,
+        "scores": {
+          "minimal": 0.8,
+          "moderate": 0.2,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "hover",
+        "confidence": 0.81,
+        "scores": {
+          "display-only": 0,
+          "hover": 0.85,
+          "click-toggle": 0.09,
+          "form-input": 0.03,
+          "drag-or-gesture": 0,
+          "none of these": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.03,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 1016
+  },
+  {
+    "registry": "magicui",
+    "name": "terminal",
+    "title": "Terminal",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/terminal.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 0.7,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0.15,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.05,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0.72,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.03,
+          "none of these": 0.05
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.31,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.2,
+          "animated-on-interaction": 0.49,
+          "continuous-background-motion": 0.3
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.5,
+        "scores": {
+          "minimal": 0.28,
+          "moderate": 0.67,
+          "dense": 0.05
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.96,
+        "scores": {
+          "display-only": 0.98,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.12,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 7696
+  },
+  {
+    "registry": "magicui",
+    "name": "video-text",
+    "title": "Video Text",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/video-text.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 0.51,
+        "scores": {
+          "hero": 0.09,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.01,
+          "chart": 0,
+          "media": 0.15,
+          "layout-section": 0.01,
+          "feedback-notification": 0,
+          "typography": 0.54,
+          "background-effect": 0.18,
+          "cursor": 0,
+          "transition-wrapper": 0.01,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.99,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0.99
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.29,
+        "scores": {
+          "minimal": 0.53,
+          "moderate": 0.31,
+          "dense": 0.16
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 1,
+        "scores": {
+          "display-only": 1,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.83,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 82
+  },
+  {
+    "registry": "magicui",
+    "name": "pixel-image",
+    "title": "Pixel Image",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/pixel-image.json",
+    "dimensions": {
+      "category": {
+        "label": "media",
+        "confidence": 0.68,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0.71,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.28,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.99,
+        "scores": {
+          "static": 1,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.95,
+        "scores": {
+          "minimal": 0.97,
+          "moderate": 0.01,
+          "dense": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 1,
+        "scores": {
+          "display-only": 1,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.79,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 100
+  },
+  {
+    "registry": "magicui",
+    "name": "highlighter",
+    "title": "Highlighter",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/highlighter.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 0.9,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0.91,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.08,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.65,
+        "scores": {
+          "static": 0.74,
+          "subtle-transitions": 0.05,
+          "animated-on-interaction": 0.2,
+          "continuous-background-motion": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.75,
+        "scores": {
+          "display-only": 0.79,
+          "hover": 0.17,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0.01,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.31,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.07,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 86
+  },
+  {
+    "registry": "magicui",
+    "name": "animated-theme-toggler",
+    "title": "Theme Toggler",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/animated-theme-toggler.json",
+    "dimensions": {
+      "category": {
+        "label": "button",
+        "confidence": 0.73,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.01,
+          "card": 0,
+          "form-input": 0.01,
+          "button": 0.75,
+          "modal-overlay": 0.01,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0.02,
+          "cursor": 0,
+          "transition-wrapper": 0.15,
+          "none of these": 0.05
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.92,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.05,
+          "animated-on-interaction": 0.94,
+          "continuous-background-motion": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.8,
+        "scores": {
+          "minimal": 0.87,
+          "moderate": 0.1,
+          "dense": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.98,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0.99,
+          "form-input": 0.01,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.05,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.23,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 139
+  },
+  {
+    "registry": "magicui",
+    "name": "light-rays",
+    "title": "Light Rays",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/light-rays.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 1,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.99,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.19,
+        "scores": {
+          "minimal": 0.46,
+          "moderate": 0.2,
+          "dense": 0.34
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 1,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.99,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 77
+  },
+  {
+    "registry": "magicui",
+    "name": "dotted-map",
+    "title": "Dotted Map",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/dotted-map.json",
+    "dimensions": {
+      "category": {
+        "label": "none of these",
+        "confidence": 0.24,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0.01,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.16,
+          "chart": 0.28,
+          "media": 0.05,
+          "layout-section": 0.01,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0.19,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.3
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.96,
+        "scores": {
+          "static": 0.98,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.33,
+        "scores": {
+          "minimal": 0.19,
+          "moderate": 0.25,
+          "dense": 0.56
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.91,
+        "scores": {
+          "display-only": 0.93,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.07
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.37,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.42,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 42
+  },
+  {
+    "registry": "magicui",
+    "name": "backlight",
+    "title": "Backlight",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/backlight.json",
+    "dimensions": {
+      "category": {
+        "label": "transition-wrapper",
+        "confidence": 0.55,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0.14,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0.26,
+          "cursor": 0,
+          "transition-wrapper": 0.59,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.51,
+        "scores": {
+          "static": 0.63,
+          "subtle-transitions": 0.09,
+          "animated-on-interaction": 0.02,
+          "continuous-background-motion": 0.26
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.97,
+        "scores": {
+          "minimal": 0.98,
+          "moderate": 0.02,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.97,
+        "scores": {
+          "display-only": 0.97,
+          "hover": 0.02,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.68,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.59,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 64
+  },
+  {
+    "registry": "magicui",
+    "name": "kinetic-text",
+    "title": "Kinetic Text",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/kinetic-text.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 1,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.96,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.03,
+          "animated-on-interaction": 0.97,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "hover",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 1,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.03,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 80
+  },
+  {
+    "registry": "magicui",
+    "name": "text-3d-flip",
+    "title": "Text 3D Flip",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/text-3d-flip.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 1,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 1,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 1,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.95,
+        "scores": {
+          "minimal": 0.97,
+          "moderate": 0.02,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "hover",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 1,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.06,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0.03,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 93
+  },
+  {
+    "registry": "magicui",
+    "name": "floating-3d-particles",
+    "title": "Floating 3D Particles",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://magicui.design/r/floating-3d-particles.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 1,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 1,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.94,
+        "scores": {
+          "minimal": 0.03,
+          "moderate": 0.01,
+          "dense": 0.96
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.93,
+        "scores": {
+          "display-only": 0.95,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.05
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 1,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 130
+  },
+  {
+    "registry": "magicui",
+    "name": "utils",
+    "title": null,
+    "compositionLevel": "utility-hook",
+    "sourceUrl": "https://magicui.design/r/utils.json",
+    "dimensions": {
+      "category": {
+        "label": "none of these",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.99,
+        "scores": {
+          "static": 1,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "interaction_model": {
+        "label": "none of these",
+        "confidence": 0.94,
+        "scores": {
+          "display-only": 0.05,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.95
+        },
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "needs_external_data": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 302
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 302
+      }
+    },
+    "taggedAt": "2026-09-20T19:23:58.499Z",
+    "inputCharCount": 78
+  }
+]

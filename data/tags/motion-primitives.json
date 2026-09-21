@@ -1,0 +1,2708 @@
+[
+  {
+    "registry": "motion-primitives",
+    "name": "accordion",
+    "title": "Accordion",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/accordion.json",
+    "dimensions": {
+      "category": {
+        "label": "none of these",
+        "confidence": 0.42,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.05,
+          "card": 0.05,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0.02,
+          "data-display": 0.04,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0.05,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.32,
+          "none of these": 0.47000000000000003
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.93,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.05,
+          "animated-on-interaction": 0.95,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.43,
+        "scores": {
+          "minimal": 0.62,
+          "moderate": 0.37,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 1,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.09,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.522Z",
+    "inputCharCount": 97
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "animated-background",
+    "title": "Animated Background",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/animated-background.json",
+    "dimensions": {
+      "category": {
+        "label": "background-effect",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 1,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 1,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.88,
+        "scores": {
+          "minimal": 0.92,
+          "moderate": 0.02,
+          "dense": 0.06
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.94,
+        "scores": {
+          "display-only": 0.95,
+          "hover": 0.01,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.04
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.99,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.522Z",
+    "inputCharCount": 91
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "animated-group",
+    "title": "Animated Group",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/animated-group.json",
+    "dimensions": {
+      "category": {
+        "label": "transition-wrapper",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0.01,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.99,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.56,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.26,
+          "animated-on-interaction": 0.67,
+          "continuous-background-motion": 0.06
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.55,
+        "scores": {
+          "minimal": 0.12,
+          "moderate": 0.7,
+          "dense": 0.18
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.55,
+        "scores": {
+          "display-only": 0.63,
+          "hover": 0.01,
+          "click-toggle": 0.01,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.35
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.11,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.14,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.522Z",
+    "inputCharCount": 103
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "animated-number",
+    "title": "Animated Number",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/animated-number.json",
+    "dimensions": {
+      "category": {
+        "label": "data-display",
+        "confidence": 0.68,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.7,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0.01,
+          "typography": 0.2,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.02,
+          "none of these": 0.07
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.45,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.59,
+          "animated-on-interaction": 0.39,
+          "continuous-background-motion": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 1,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.84,
+        "scores": {
+          "display-only": 0.87,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.13
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.55,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.522Z",
+    "inputCharCount": 82
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "border-trail",
+    "title": "Border Trail",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/border-trail.json",
+    "dimensions": {
+      "category": {
+        "label": "transition-wrapper",
+        "confidence": 0.6,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0.01,
+          "form-input": 0,
+          "button": 0.01,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0.01,
+          "typography": 0,
+          "background-effect": 0.18,
+          "cursor": 0.08,
+          "transition-wrapper": 0.63,
+          "none of these": 0.08
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 1,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 1,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 0.99,
+          "moderate": 0.01,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "hover",
+        "confidence": 0.88,
+        "scores": {
+          "display-only": 0.02,
+          "hover": 0.9,
+          "click-toggle": 0.01,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.07
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.99,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.522Z",
+    "inputCharCount": 91
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "carousel",
+    "title": "Carousel",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/carousel.json",
+    "dimensions": {
+      "category": {
+        "label": "media",
+        "confidence": 0.95,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.02,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.01,
+          "chart": 0,
+          "media": 0.95,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.01,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.18,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.22,
+          "animated-on-interaction": 0.39,
+          "continuous-background-motion": 0.39
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.57,
+        "scores": {
+          "minimal": 0.18,
+          "moderate": 0.71,
+          "dense": 0.11
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "drag-or-gesture",
+        "confidence": 0.78,
+        "scores": {
+          "display-only": 0.04,
+          "hover": 0,
+          "click-toggle": 0.07,
+          "form-input": 0.01,
+          "drag-or-gesture": 0.81,
+          "none of these": 0.07
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.34,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.522Z",
+    "inputCharCount": 75
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "cursor",
+    "title": "Cursor",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/cursor.json",
+    "dimensions": {
+      "category": {
+        "label": "cursor",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 1,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.95,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0.97,
+          "continuous-background-motion": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.35,
+        "scores": {
+          "display-only": 0.46,
+          "hover": 0.17,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0.03,
+          "none of these": 0.34
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.97,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.522Z",
+    "inputCharCount": 73
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "dialog",
+    "title": "Dialog",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/dialog.json",
+    "dimensions": {
+      "category": {
+        "label": "modal-overlay",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 1,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.85,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.11,
+          "animated-on-interaction": 0.89,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.41,
+        "scores": {
+          "minimal": 0.38,
+          "moderate": 0.61,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 1,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.07,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.522Z",
+    "inputCharCount": 74
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "disclosure",
+    "title": "Disclosure",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/disclosure.json",
+    "dimensions": {
+      "category": {
+        "label": "transition-wrapper",
+        "confidence": 0.42,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.03,
+          "card": 0.02,
+          "form-input": 0,
+          "button": 0.01,
+          "modal-overlay": 0.11,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0.02,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.47000000000000003,
+          "none of these": 0.34
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.8,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.15,
+          "animated-on-interaction": 0.85,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.57,
+        "scores": {
+          "minimal": 0.71,
+          "moderate": 0.28,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 1,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.11,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.522Z",
+    "inputCharCount": 79
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "in-view",
+    "title": "In View",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/in-view.json",
+    "dimensions": {
+      "category": {
+        "label": "transition-wrapper",
+        "confidence": 0.96,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.97,
+          "none of these": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.73,
+        "scores": {
+          "static": 0.05,
+          "subtle-transitions": 0.14,
+          "animated-on-interaction": 0.79,
+          "continuous-background-motion": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.98,
+        "scores": {
+          "minimal": 0.99,
+          "moderate": 0.01,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.57,
+        "scores": {
+          "display-only": 0.65,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0.01,
+          "none of these": 0.34
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.12,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.25,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 79
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "infinite-slider",
+    "title": "Infinite Slider",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/infinite-slider.json",
+    "dimensions": {
+      "category": {
+        "label": "media",
+        "confidence": 0.66,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.08,
+          "card": 0,
+          "form-input": 0.02,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.02,
+          "chart": 0,
+          "media": 0.6900000000000001,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.04,
+          "none of these": 0.15
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.75,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.01,
+          "animated-on-interaction": 0.18,
+          "continuous-background-motion": 0.81
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.22,
+        "scores": {
+          "minimal": 0.45,
+          "moderate": 0.47,
+          "dense": 0.08
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "drag-or-gesture",
+        "confidence": 0.65,
+        "scores": {
+          "display-only": 0.14,
+          "hover": 0,
+          "click-toggle": 0.02,
+          "form-input": 0.02,
+          "drag-or-gesture": 0.71,
+          "none of these": 0.11
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.27,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 78
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "transition-panel",
+    "title": "Transition Panel",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/transition-panel.json",
+    "dimensions": {
+      "category": {
+        "label": "transition-wrapper",
+        "confidence": 0.87,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0.03,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0.01,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0.03,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.88,
+          "none of these": 0.05
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.58,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.69,
+          "animated-on-interaction": 0.31,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.61,
+        "scores": {
+          "minimal": 0.74,
+          "moderate": 0.25,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "none of these",
+        "confidence": 0.51,
+        "scores": {
+          "display-only": 0.03,
+          "hover": 0.01,
+          "click-toggle": 0.36,
+          "form-input": 0,
+          "drag-or-gesture": 0.01,
+          "none of these": 0.59
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.12,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.02,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 85
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "text-effect",
+    "title": "Text Effect",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/text-effect.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0.99,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.01,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.43,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.19,
+          "animated-on-interaction": 0.57,
+          "continuous-background-motion": 0.23
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 1,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.89,
+        "scores": {
+          "display-only": 0.91,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.09
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.06,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 71
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "text-loop",
+    "title": "Text Loop",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/text-loop.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 1,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.96,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.01,
+          "animated-on-interaction": 0.02,
+          "continuous-background-motion": 0.97
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 0.99,
+          "moderate": 0.01,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.88,
+        "scores": {
+          "display-only": 0.9,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.1
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.07,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 82
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "text-morph",
+    "title": "Text Morph",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/text-morph.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 1,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.38,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.53,
+          "animated-on-interaction": 0.39,
+          "continuous-background-motion": 0.08
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 1,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.67,
+        "scores": {
+          "display-only": 0.72,
+          "hover": 0,
+          "click-toggle": 0.01,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.27
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.12,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 91
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "text-roll",
+    "title": "Text Roll",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/text-roll.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 1,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.78,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.04,
+          "animated-on-interaction": 0.12,
+          "continuous-background-motion": 0.84
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 1,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.92,
+        "scores": {
+          "display-only": 0.94,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.06
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.1,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 64
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "text-scramble",
+    "title": "Text Scramble",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/text-scramble.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 0.98,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0.98,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.02,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.57,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.22,
+          "animated-on-interaction": 0.68,
+          "continuous-background-motion": 0.1
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 1,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.83,
+        "scores": {
+          "display-only": 0.86,
+          "hover": 0,
+          "click-toggle": 0.01,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.13
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.04,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 84
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "text-shimmer",
+    "title": "Text Shimmer",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/text-shimmer.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 1,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.97,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.01,
+          "animated-on-interaction": 0.01,
+          "continuous-background-motion": 0.98
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 1,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.98,
+        "scores": {
+          "display-only": 0.99,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.03,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 67
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "text-shimmer-wave",
+    "title": "Text Shimmer Wave",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/text-shimmer-wave.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 1,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.99,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0.01,
+          "continuous-background-motion": 0.99
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 1,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.94,
+        "scores": {
+          "display-only": 0.95,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.05
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.06,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 79
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "magnetic",
+    "title": "Magnetic",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/magnetic.json",
+    "dimensions": {
+      "category": {
+        "label": "cursor",
+        "confidence": 0.67,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0.02,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0.7,
+          "transition-wrapper": 0.27,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 1,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 1,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.97,
+        "scores": {
+          "minimal": 0.98,
+          "moderate": 0.02,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "hover",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 1,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.69,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 73
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "morphing-dialog",
+    "title": "Morphing Dialog",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/morphing-dialog.json",
+    "dimensions": {
+      "category": {
+        "label": "modal-overlay",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 1,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 1,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 1,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.43,
+        "scores": {
+          "minimal": 0.37,
+          "moderate": 0.62,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 1,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.16,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 87
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "morphing-popover",
+    "title": "Morphing Popover",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/morphing-popover.json",
+    "dimensions": {
+      "category": {
+        "label": "modal-overlay",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 1,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 1,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 1,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.36,
+        "scores": {
+          "minimal": 0.41,
+          "moderate": 0.57,
+          "dense": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.93,
+        "scores": {
+          "display-only": 0,
+          "hover": 0.05,
+          "click-toggle": 0.95,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.15,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 89
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "dock",
+    "title": "Dock",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/dock.json",
+    "dimensions": {
+      "category": {
+        "label": "navigation",
+        "confidence": 0.86,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.88,
+          "card": 0,
+          "form-input": 0,
+          "button": 0.01,
+          "modal-overlay": 0.01,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0.05,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.01,
+          "none of these": 0.04
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.97,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0.98,
+          "continuous-background-motion": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.2,
+        "scores": {
+          "minimal": 0.13,
+          "moderate": 0.41,
+          "dense": 0.45999999999999996
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "hover",
+        "confidence": 0.65,
+        "scores": {
+          "display-only": 0.1,
+          "hover": 0.71,
+          "click-toggle": 0.09,
+          "form-input": 0,
+          "drag-or-gesture": 0.06,
+          "none of these": 0.04
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.24,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.1,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 69
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "glow-effect",
+    "title": "Glow Effect",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/glow-effect.json",
+    "dimensions": {
+      "category": {
+        "label": "transition-wrapper",
+        "confidence": 0.39,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0.26,
+          "cursor": 0.29000000000000004,
+          "transition-wrapper": 0.44,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.93,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.01,
+          "animated-on-interaction": 0.94,
+          "continuous-background-motion": 0.05
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.97,
+        "scores": {
+          "minimal": 0.98,
+          "moderate": 0.01,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "hover",
+        "confidence": 0.79,
+        "scores": {
+          "display-only": 0.03,
+          "hover": 0.82,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0.02,
+          "none of these": 0.13
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.91,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 92
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "image-comparison",
+    "title": "Image Comparison",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/image-comparison.json",
+    "dimensions": {
+      "category": {
+        "label": "media",
+        "confidence": 0.97,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0.01,
+          "media": 0.98,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.99,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0.99,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.25,
+        "scores": {
+          "minimal": 0.49,
+          "moderate": 0.5,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "drag-or-gesture",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 1,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.87,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 82
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "toolbar-dynamic",
+    "title": "Toolbar Dynamic",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/toolbar-dynamic.json",
+    "dimensions": {
+      "category": {
+        "label": "navigation",
+        "confidence": 0.92,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.93,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0.03,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.02,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.89,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.08,
+          "animated-on-interaction": 0.92,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.66,
+        "scores": {
+          "minimal": 0.07,
+          "moderate": 0.77,
+          "dense": 0.16
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "none of these",
+        "confidence": 0.46,
+        "scores": {
+          "display-only": 0.01,
+          "hover": 0.18,
+          "click-toggle": 0.25,
+          "form-input": 0,
+          "drag-or-gesture": 0.01,
+          "none of these": 0.55
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.04,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 87
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "toolbar-expandable",
+    "title": "Toolbar Expandable",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/toolbar-expandable.json",
+    "dimensions": {
+      "category": {
+        "label": "navigation",
+        "confidence": 0.92,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.93,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0.01,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0.03,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.01,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 1,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 1,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.46,
+        "scores": {
+          "minimal": 0.32,
+          "moderate": 0.64,
+          "dense": 0.04
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.93,
+        "scores": {
+          "display-only": 0,
+          "hover": 0.05,
+          "click-toggle": 0.95,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.06,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 90
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "progressive-blur",
+    "title": "Progressive Blur",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/progressive-blur.json",
+    "dimensions": {
+      "category": {
+        "label": "transition-wrapper",
+        "confidence": 0.98,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0.01,
+          "cursor": 0,
+          "transition-wrapper": 0.99,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.23,
+        "scores": {
+          "static": 0.11,
+          "subtle-transitions": 0.42,
+          "animated-on-interaction": 0.24,
+          "continuous-background-motion": 0.23
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.96,
+        "scores": {
+          "minimal": 0.97,
+          "moderate": 0.02,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.68,
+        "scores": {
+          "display-only": 0.74,
+          "hover": 0.04,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.22
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.84,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 80
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "scroll-progress",
+    "title": "Scroll Progress",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/scroll-progress.json",
+    "dimensions": {
+      "category": {
+        "label": "feedback-notification",
+        "confidence": 0.92,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.03,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.01,
+          "chart": 0.02,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0.93,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.01,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.43,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.03,
+          "animated-on-interaction": 0.58,
+          "continuous-background-motion": 0.39
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.9,
+        "scores": {
+          "minimal": 0.93,
+          "moderate": 0.07,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.64,
+        "scores": {
+          "display-only": 0.7,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0.21,
+          "none of these": 0.09
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.48,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.13,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 86
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "sliding-number",
+    "title": "Sliding Number",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/sliding-number.json",
+    "dimensions": {
+      "category": {
+        "label": "data-display",
+        "confidence": 0.45,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.49,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0.01,
+          "typography": 0.4,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.07,
+          "none of these": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.9,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.05,
+          "animated-on-interaction": 0.93,
+          "continuous-background-motion": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 1,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.84,
+        "scores": {
+          "display-only": 0.87,
+          "hover": 0,
+          "click-toggle": 0.02,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.11
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.46,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 86
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "spotlight",
+    "title": "Spotlight",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/spotlight.json",
+    "dimensions": {
+      "category": {
+        "label": "cursor",
+        "confidence": 0.81,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0.15000000000000002,
+          "cursor": 0.83,
+          "transition-wrapper": 0.02,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.91,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0.93,
+          "continuous-background-motion": 0.07
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 0.99,
+          "moderate": 0.01,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "hover",
+        "confidence": 0.5,
+        "scores": {
+          "display-only": 0.06,
+          "hover": 0.58,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0.09,
+          "none of these": 0.27
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.96,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 81
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "spinning-text",
+    "title": "Spinning Text",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/spinning-text.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 1,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.87,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.01,
+          "animated-on-interaction": 0.09,
+          "continuous-background-motion": 0.9
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 1,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.95,
+        "scores": {
+          "display-only": 0.96,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.04
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.05,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 78
+  },
+  {
+    "registry": "motion-primitives",
+    "name": "tilt",
+    "title": "Tilt",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://motion-primitives.com/c/tilt.json",
+    "dimensions": {
+      "category": {
+        "label": "transition-wrapper",
+        "confidence": 0.92,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0.01,
+          "cursor": 0.01,
+          "transition-wrapper": 0.93,
+          "none of these": 0.05
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.99,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0.99,
+          "continuous-background-motion": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.97,
+        "scores": {
+          "minimal": 0.98,
+          "moderate": 0.02,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "interaction_model": {
+        "label": "hover",
+        "confidence": 0.91,
+        "scores": {
+          "display-only": 0,
+          "hover": 0.93,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0.06,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "needs_external_data": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 248
+      },
+      "decorative_only": {
+        "probability": 0.6,
+        "model": "jev-1.13.0",
+        "ms": 248
+      }
+    },
+    "taggedAt": "2026-09-20T19:24:06.523Z",
+    "inputCharCount": 84
+  }
+]
