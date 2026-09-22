@@ -176,16 +176,18 @@ component you install still comes directly from its own registry via
 | kokonutui | [kokonutui.com](https://kokonutui.com) | 51 |
 | animate-ui | [animate-ui.com](https://animate-ui.com) | 420 |
 | motion-primitives | [motion-primitives.com](https://motion-primitives.com) | 33 |
-| shadcnblocks | [shadcnblocks.com](https://shadcnblocks.com) | 4,171 |
-| shadcn-dashboard | [shadcndashboard.dev](https://shadcndashboard.dev) | 508 |
+| shadcn-dashboard | [shadcndashboard.dev](https://shadcndashboard.dev) | 343 |
 | assistant-ui | [assistant-ui.com](https://www.assistant-ui.com) | 154 |
 | bundui | [bundui.io](https://bundui.io) | 217 |
 
-6,119 components total. The first six are the original motion/marketing
-family; the last four are a product-UI expansion (forms, tables,
-dashboards, data display) added after checking each registry's
-demo/duplicate conventions individually rather than assuming they match
-the original six. Tagging runs through
+1,783 components total. The first six are the original motion/marketing
+family; the rest are a product-UI expansion (forms, tables, dashboards,
+data display) added after checking each registry's demo/duplicate
+conventions individually rather than assuming they match the original
+six. shadcn-dashboard's count already excludes 165 components a real
+per-item availability check found paywalled at their actual install
+URL; shadcnblocks was tagged but is not currently indexed, see
+Limitations below. Tagging runs through
 [classifier.dev](https://classifier.dev), a free, keyless classification
 endpoint backed by [TypeSafe](https://docs.typesafe.ai)'s Jev decision
 model.
@@ -198,6 +200,18 @@ classifier.dev/TypeSafe.
 
 Read this before relying on matchcn for something important.
 
+- **shadcnblocks is not indexed, despite being tagged.** A real per-item
+  availability check (does `npx shadcn add` actually work
+  unauthenticated, not just what the index claims) found roughly half
+  of its components return 401/403 "License required" at their real
+  install URL, something invisible in the registry's own index data.
+  shadcn-dashboard had the same problem at a smaller scale (32.5%) and
+  was fixed by filtering the paywalled components out before shipping;
+  shadcnblocks' own full-scale check got contaminated by the vendor's
+  rate limiter partway through before a clean filter could be produced,
+  so it was pulled entirely rather than shipped unfiltered or filtered
+  against bad data. Its tagged data is preserved, not lost, and it is
+  expected back once a clean check runs.
 - **`visual_density` is the weakest tagged dimension.** A confidence-weighted
   matcher discounts weak tags automatically, but a brief that hinges
   heavily on visual density is the most likely to disappoint.

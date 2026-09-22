@@ -48,11 +48,17 @@ export const REGISTRIES: RegistryConfig[] = [
   // docs/REGISTRY_EXPANSION_STEP1_2.md. Three other candidates from the
   // same recon (shadcn-ui-blocks, plate, react-aria) were excluded for a
   // specific, evidenced defect each; see docs/ROADMAP.md.
-  {
-    name: "shadcnblocks",
-    indexUrl: "https://shadcnblocks.com/r/registry.json",
-    itemUrlTemplate: "https://shadcnblocks.com/r/{name}.json",
-  },
+
+  // shadcnblocks excluded here, 0.1.1: a real per-item availability check
+  // (many of its blocks are pro/paywalled, 401/403 unauthenticated, see
+  // ROADMAP.md) could not be completed cleanly. The 8-concurrent full-scale
+  // check triggered the vendor's rate limiter into what looks like a broad
+  // defensive block on this IP: the failure rate on later requests jumped
+  // from an honest 48.7% (a clean small sample taken before the full run)
+  // to an implausible 83.4%, evidence the later numbers reflect our own
+  // block, not real per-item paywall status. Tagged data is preserved at
+  // data/tags-raw/shadcnblocks.json, not lost. Re-add once a clean
+  // full-scale check runs from an unblocked network, per ROADMAP.md.
   {
     name: "shadcn-dashboard",
     indexUrl: "https://shadcndashboard.dev/r/registry.json",
