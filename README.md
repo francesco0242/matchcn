@@ -172,7 +172,7 @@ component you install still comes directly from its own registry via
 |---|---|---|
 | react-bits | [reactbits.dev](https://reactbits.dev) | 204 |
 | magicui | [magicui.design](https://magicui.design) | 79 |
-| aceternity | [ui.aceternity.com](https://ui.aceternity.com) | 282 |
+| aceternity | [ui.aceternity.com](https://ui.aceternity.com) | 119 |
 | kokonutui | [kokonutui.com](https://kokonutui.com) | 51 |
 | animate-ui | [animate-ui.com](https://animate-ui.com) | 420 |
 | motion-primitives | [motion-primitives.com](https://motion-primitives.com) | 33 |
@@ -182,16 +182,18 @@ component you install still comes directly from its own registry via
 | cnippet | [ui.cnippet.dev](https://ui.cnippet.dev) | 1128 |
 | uiable | [uiable.com](https://uiable.com) | 969 |
 
-3,880 components total. The first six are the original motion/marketing
+3,717 components total. The first six are the original motion/marketing
 family; the middle three are a product-UI expansion (forms, tables,
 dashboards, data display) added after checking each registry's
 demo/duplicate conventions individually rather than assuming they match
 the original six; cnippet and uiable are a second product-UI expansion,
 added the same way. Two other candidates from that same expansion are
-not indexed, see Limitations below. shadcn-dashboard's count already
-excludes 165 components a real per-item availability check found
-paywalled at their actual install URL; shadcnblocks was tagged but is
-not currently indexed, see Limitations below. Tagging runs through
+not indexed, see Limitations below. aceternity's count already
+excludes 163 page-template components a real per-item availability
+check found paywalled at their actual install URL; shadcn-dashboard's
+count already excludes 165 components for the same reason; shadcnblocks
+was tagged but is not currently indexed, see Limitations below. Tagging
+runs through
 [classifier.dev](https://classifier.dev), a free, keyless classification
 endpoint backed by [TypeSafe](https://docs.typesafe.ai)'s Jev decision
 model.
@@ -204,52 +206,39 @@ classifier.dev/TypeSafe.
 
 Read this before relying on matchcn for something important.
 
-- **shadcnblocks is not indexed, despite being tagged.** A real per-item
-  availability check (does `npx shadcn add` actually work
-  unauthenticated, not just what the index claims) found roughly half
-  of its components return 401/403 "License required" at their real
-  install URL, something invisible in the registry's own index data.
-  shadcn-dashboard had the same problem at a smaller scale (32.5%) and
-  was fixed by filtering the paywalled components out before shipping;
-  shadcnblocks' own full-scale check got contaminated by the vendor's
-  rate limiter partway through before a clean filter could be produced,
-  so it was pulled entirely rather than shipped unfiltered or filtered
-  against bad data. Its tagged data is preserved, not lost, and it is
-  expected back once a clean check runs.
-- **`visual_density` is the weakest tagged dimension.** A confidence-weighted
-  matcher discounts weak tags automatically, but a brief that hinges
-  heavily on visual density is the most likely to disappoint.
-- **assistant-ui tags the least confidently of any indexed registry.**
-  Its content (agent and chat UI: tool timelines, reasoning panels) sits
-  further from the schema's original motion/marketing anchors than
-  anything else in the catalog, so assistant-ui-heavy briefs are more
-  likely to return a shortlist or no-match than a confident pick.
-- **uiable's descriptions are mostly name-echoed templates** ("Button
-  component.") rather than hand-written text, so its tags carry less
-  real signal than the rest of the catalog. Shipped as-is rather than
-  blocked on; treat matches from this registry as less certain.
-- **cnippet and uiable have not yet had their tag confidence measured
-  at full scale.** A 20-item pre-tagging sample across both scored 35%
-  under 0.6 confidence, higher than the rest of the catalog; treat
-  these two as less proven until a full remeasurement runs.
+- **Some registries are partly or fully excluded for paywalled components,
+  found by a real per-item availability check** (does `npx shadcn add`
+  actually work unauthenticated, not just what the index claims):
+  aceternity (163 of 282 tagged components, mostly page-template demo
+  pages) and shadcn-dashboard (165 of 508) had the gated share filtered
+  out before shipping. shadcnblocks was tagged (4,171 components) but is
+  held back entirely: its own filter check got contaminated by the
+  vendor's rate limiter, so it ships once a clean check runs rather than
+  on bad data. shadcnuikit and shadcn-space were evaluated and skipped
+  outright for the same reason (40% and 33.3% paywalled). cult-ui.com
+  isn't indexed at all: its registry sits behind a bot challenge.
+- **Tag confidence varies by registry and dimension, and the matcher
+  already accounts for it.** `visual_density` is the weakest dimension
+  overall. assistant-ui (agent/chat UI content, far from the schema's
+  motion/marketing anchors) and uiable (largely name-echoed, auto-generated
+  descriptions) tag less confidently than the rest of the catalog; cnippet
+  and uiable haven't had a full-scale confidence measurement yet. A
+  confidence-weighted matcher discounts all of this automatically, so a
+  weak tag pulls its own weight down instead of producing a wrong
+  confident answer, but a brief that leans heavily on these registries or
+  on visual density is the one most likely to get a shortlist or
+  no-match instead of a clean pick.
 - **Non-English briefs are known to be weaker.** Tested directly: an
   English brief and its translated equivalent were compared side by
   side, and English found a real, well-tagged match that the translated
   version did not. Do not assume non-English input works as well.
-- **aceternity's demo/block components are tagged from short index
-  descriptions only**, not enriched from full source, due to an
-  access restriction on that registry's per-item endpoint.
-- **cult-ui.com is not indexed.** Its registry sits behind a bot
-  challenge that a standard request cannot pass.
-- **shadcnuikit and shadcn-space are not indexed.** A real per-item
-  availability check found genuine paywalls on 40% and 33.3% of a
-  sample from each, not worth the added complexity.
 - **11 of 372+ shadcn-format registries are indexed.** This is not a
   comprehensive index of the ecosystem.
 
-None of the above produces a wrong forced answer. When confidence is
+None of the above produces a wrong forced answer: when confidence is
 genuinely low, `pick_component` returns a shortlist or an explicit
-no-match, never a single silent guess.
+no-match, never a single silent guess. That is the actual point of the
+tagging and ranking design, not a disclaimer bolted on afterward.
 
 ## Development
 

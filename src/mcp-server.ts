@@ -21,7 +21,7 @@ import { REGISTRIES } from "./runtime/registries.js";
 
 const server = new McpServer({
   name: "matchcn",
-  version: "0.1.1",
+  version: "0.2.1",
 });
 
 server.registerTool(
