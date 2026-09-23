@@ -42,6 +42,23 @@ export function buildDimensionsPayload(dims: DimensionDef[]): Record<string, { l
 
 export class ClassifyBatchUnavailableError extends Error {}
 
+// Distinct from ClassifyBatchUnavailableError (a transient 502) so a
+// caller can tell "quota is gone, stop the whole run" apart from "one
+// chunk is retryable later." Thrown only after MAX_ATTEMPTS 429s.
+export class ClassifyQuotaExhaustedError extends Error {}
+
+// Distinct from both of the above: a 402 (USD spending cap on this
+// unfunded workspace), not a decision-count or per-minute rate limit.
+export class ClassifySpendingLimitError extends Error {}
+
+// A 429's Retry-After is meant for per-minute throttling, not a signal
+// this code has ever seen classifier.dev send at daily-quota exhaustion.
+// Sleeping on an unverified header value could hang the process for
+// hours if a large Retry-After is ever returned at the daily boundary;
+// capping it means the worst case is a bounded wait before
+// ClassifyQuotaExhaustedError, never an indefinite hang.
+const MAX_429_SLEEP_MS = 30_000;
+
 // Sends one chunk (items x dimensions must be <= 1000 decisions, enforced
 // by the caller). Retries on 429 (honouring Retry-After) and on 502 codes
 // that are documented as retryable (typesafe_*, chain_exhausted, timeout,
@@ -68,11 +85,13 @@ export async function classifyChunk(
     const rateLimitRemaining = rateLimitRemainingHeader ? Number(rateLimitRemainingHeader) : null;
 
     if (res.status === 429) {
-      const retryAfter = Number(res.headers.get("retry-after")) || 2 ** attempt;
       if (attempt >= MAX_ATTEMPTS) {
-        throw new Error(`classifier.dev rate limited, exhausted ${MAX_ATTEMPTS} retries`);
+        throw new ClassifyQuotaExhaustedError(
+          `classifier.dev rate limited, exhausted ${MAX_ATTEMPTS} retries (rateLimitRemaining=${rateLimitRemaining})`,
+        );
       }
-      await sleep(retryAfter * 1000);
+      const retryAfterMs = (Number(res.headers.get("retry-after")) || 2 ** attempt) * 1000;
+      await sleep(Math.min(retryAfterMs, MAX_429_SLEEP_MS));
       continue;
     }
 
@@ -81,6 +100,25 @@ export async function classifyChunk(
       if (attempt >= MAX_ATTEMPTS) {
         throw new ClassifyBatchUnavailableError(
           `classifier.dev 502 (${(errBody as { code?: string }).code ?? "unknown"}), exhausted ${MAX_ATTEMPTS} retries`,
+        );
+      }
+      await sleep(1000 * 2 ** attempt);
+      continue;
+    }
+
+    // A per-attempt USD spending cap on this unfunded/keyless workspace,
+    // separate from and much smaller than the RateLimit-Remaining quota
+    // (first seen tagging cnippet/uiable: a 900-decision chunk rejected at
+    // limitUsd 0.01 while smaller chunks succeeded). The API marks this
+    // "retryable": false for the identical request, but the available
+    // room was observed to vary over time, so a bounded wait-and-retry can
+    // still succeed; if it never does, the caller should shrink its chunk
+    // size, not keep retrying the same one forever.
+    if (res.status === 402) {
+      const errBody = await res.json().catch(() => ({}) as { code?: string });
+      if (attempt >= MAX_ATTEMPTS) {
+        throw new ClassifySpendingLimitError(
+          `classifier.dev 402 (${(errBody as { code?: string }).code ?? "unknown"}), exhausted ${MAX_ATTEMPTS} retries; try a smaller chunk size`,
         );
       }
       await sleep(1000 * 2 ** attempt);

@@ -1,6 +1,6 @@
 {
   "name": "matchcn",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A semantic index across shadcn-format component registries: find a component by what it does, not what it is called.",
   "homepage": "https://matchcn.dev",
   "repository": {
@@ -21,6 +21,7 @@
     "ai-agent"
   ],
   "private": false,
+  "mcpName": "io.github.francesco0242/matchcn",
   "type": "module",
   "packageManager": "pnpm@9.0.0",
   "bin": {

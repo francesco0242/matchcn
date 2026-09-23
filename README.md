@@ -179,15 +179,19 @@ component you install still comes directly from its own registry via
 | shadcn-dashboard | [shadcndashboard.dev](https://shadcndashboard.dev) | 343 |
 | assistant-ui | [assistant-ui.com](https://www.assistant-ui.com) | 154 |
 | bundui | [bundui.io](https://bundui.io) | 217 |
+| cnippet | [ui.cnippet.dev](https://ui.cnippet.dev) | 1128 |
+| uiable | [uiable.com](https://uiable.com) | 969 |
 
-1,783 components total. The first six are the original motion/marketing
-family; the rest are a product-UI expansion (forms, tables, dashboards,
-data display) added after checking each registry's demo/duplicate
-conventions individually rather than assuming they match the original
-six. shadcn-dashboard's count already excludes 165 components a real
-per-item availability check found paywalled at their actual install
-URL; shadcnblocks was tagged but is not currently indexed, see
-Limitations below. Tagging runs through
+3,880 components total. The first six are the original motion/marketing
+family; the middle three are a product-UI expansion (forms, tables,
+dashboards, data display) added after checking each registry's
+demo/duplicate conventions individually rather than assuming they match
+the original six; cnippet and uiable are a second product-UI expansion,
+added the same way. Two other candidates from that same expansion are
+not indexed, see Limitations below. shadcn-dashboard's count already
+excludes 165 components a real per-item availability check found
+paywalled at their actual install URL; shadcnblocks was tagged but is
+not currently indexed, see Limitations below. Tagging runs through
 [classifier.dev](https://classifier.dev), a free, keyless classification
 endpoint backed by [TypeSafe](https://docs.typesafe.ai)'s Jev decision
 model.
@@ -220,6 +224,14 @@ Read this before relying on matchcn for something important.
   further from the schema's original motion/marketing anchors than
   anything else in the catalog, so assistant-ui-heavy briefs are more
   likely to return a shortlist or no-match than a confident pick.
+- **uiable's descriptions are mostly name-echoed templates** ("Button
+  component.") rather than hand-written text, so its tags carry less
+  real signal than the rest of the catalog. Shipped as-is rather than
+  blocked on; treat matches from this registry as less certain.
+- **cnippet and uiable have not yet had their tag confidence measured
+  at full scale.** A 20-item pre-tagging sample across both scored 35%
+  under 0.6 confidence, higher than the rest of the catalog; treat
+  these two as less proven until a full remeasurement runs.
 - **Non-English briefs are known to be weaker.** Tested directly: an
   English brief and its translated equivalent were compared side by
   side, and English found a real, well-tagged match that the translated
@@ -229,7 +241,10 @@ Read this before relying on matchcn for something important.
   access restriction on that registry's per-item endpoint.
 - **cult-ui.com is not indexed.** Its registry sits behind a bot
   challenge that a standard request cannot pass.
-- **10 of 372+ shadcn-format registries are indexed.** This is not a
+- **shadcnuikit and shadcn-space are not indexed.** A real per-item
+  availability check found genuine paywalls on 40% and 33.3% of a
+  sample from each, not worth the added complexity.
+- **11 of 372+ shadcn-format registries are indexed.** This is not a
   comprehensive index of the ecosystem.
 
 None of the above produces a wrong forced answer. When confidence is

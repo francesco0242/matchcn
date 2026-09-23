@@ -74,4 +74,20 @@ export const REGISTRIES: RegistryConfig[] = [
     indexUrl: "https://bundui.io/r/registry.json",
     itemUrlTemplate: "https://bundui.io/r/{name}.json",
   },
+
+  // Second product-UI expansion. shadcnuikit and shadcn-space, evaluated
+  // in the same recon pass, were both excluded: real per-item availability
+  // checks (30-sample, low concurrency) found genuine paywalls on 40% and
+  // 33.3% of their samples respectively, same shape as shadcnblocks/
+  // shadcn-dashboard. Not worth the added complexity for this expansion.
+  {
+    name: "cnippet",
+    indexUrl: "https://ui.cnippet.dev/r/registry.json",
+    itemUrlTemplate: "https://ui.cnippet.dev/r/{name}.json",
+  },
+  {
+    name: "uiable",
+    indexUrl: "https://uiable.com/r/registry.json",
+    itemUrlTemplate: "https://uiable.com/r/{name}.json",
+  },
 ];
