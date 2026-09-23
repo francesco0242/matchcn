@@ -992,7 +992,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.99,
+        "confidence": 1,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -1005,14 +1005,12 @@
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.99,
+          "typography": 1,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.01,
+          "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 248
+        }
       },
       "motion": {
         "label": "animated-on-interaction",
@@ -1074,7 +1072,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.99,
+        "confidence": 1,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -1092,9 +1090,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 248
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -1156,7 +1152,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.99,
+        "confidence": 1,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -1174,9 +1170,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 248
+        }
       },
       "motion": {
         "label": "subtle-transitions",
@@ -1256,9 +1250,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 248
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -1320,7 +1312,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.98,
+        "confidence": 1,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -1333,14 +1325,12 @@
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.98,
+          "typography": 1,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.02,
+          "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 248
+        }
       },
       "motion": {
         "label": "animated-on-interaction",
@@ -1420,9 +1410,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 248
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -1502,9 +1490,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 248
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -2568,9 +2554,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 248
+        }
       },
       "motion": {
         "label": "continuous-background-motion",

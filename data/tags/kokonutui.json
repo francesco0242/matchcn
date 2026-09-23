@@ -336,9 +336,9 @@
     "dimensions": {
       "category": {
         "label": "hero",
-        "confidence": 0.93,
+        "confidence": 0.95,
         "scores": {
-          "hero": 0.9400000000000001,
+          "hero": 0.96,
           "navigation": 0,
           "card": 0,
           "form-input": 0,
@@ -350,13 +350,11 @@
           "layout-section": 0,
           "feedback-notification": 0,
           "typography": 0,
-          "background-effect": 0.06,
+          "background-effect": 0.04,
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 326
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -518,9 +516,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 326
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -2568,9 +2564,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 326
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -2645,14 +2639,12 @@
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 1,
+          "typography": 0.99,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0,
+          "transition-wrapper": 0.01,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 326
+        }
       },
       "motion": {
         "label": "animated-on-interaction",
@@ -2714,7 +2706,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.99,
+        "confidence": 1,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -2727,14 +2719,12 @@
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.99,
+          "typography": 1,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.01,
+          "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 326
+        }
       },
       "motion": {
         "label": "animated-on-interaction",
@@ -2814,9 +2804,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 326
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -2896,9 +2884,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 326
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -2960,7 +2946,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.97,
+        "confidence": 0.99,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -2968,19 +2954,17 @@
           "form-input": 0,
           "button": 0,
           "modal-overlay": 0,
-          "data-display": 0.01,
+          "data-display": 0,
           "chart": 0,
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.98,
+          "typography": 1,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.01,
+          "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 326
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -3206,27 +3190,25 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.49,
+        "confidence": 0.56,
         "scores": {
           "hero": 0,
-          "navigation": 0.02,
+          "navigation": 0.04,
           "card": 0,
           "form-input": 0,
           "button": 0,
           "modal-overlay": 0,
-          "data-display": 0.31,
+          "data-display": 0.2,
           "chart": 0,
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.53,
+          "typography": 0.6,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.13,
+          "transition-wrapper": 0.15,
           "none of these": 0.01
-        },
-        "model": "jev-1.13.0",
-        "ms": 326
+        }
       },
       "motion": {
         "label": "animated-on-interaction",

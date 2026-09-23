@@ -90,7 +90,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.65,
+        "confidence": 0.63,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -98,19 +98,17 @@
           "form-input": 0,
           "button": 0,
           "modal-overlay": 0,
-          "data-display": 0.08,
+          "data-display": 0.02,
           "chart": 0,
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.68,
+          "typography": 0.67,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0.01,
-          "none of these": 0.22
-        },
-        "model": "jev-1.13.0",
-        "ms": 537
+          "none of these": 0.3
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -27892,11 +27890,11 @@
         "scores": {
           "hero": 0,
           "navigation": 0,
-          "card": 0.02,
+          "card": 0,
           "form-input": 0,
           "button": 0,
           "modal-overlay": 0,
-          "data-display": 0.05,
+          "data-display": 0.02,
           "chart": 0,
           "media": 0,
           "layout-section": 0,
@@ -27905,10 +27903,8 @@
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0.02,
-          "none of these": 0.23
-        },
-        "model": "jev-1.13.0",
-        "ms": 497
+          "none of these": 0.28
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -33546,7 +33542,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.55,
+        "confidence": 0.6,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -33559,14 +33555,12 @@
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0.01,
-          "typography": 0.59,
+          "typography": 0.63,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.01,
-          "none of these": 0.13
-        },
-        "model": "jev-1.13.0",
-        "ms": 497
+          "transition-wrapper": 0,
+          "none of these": 0.1
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -33646,9 +33640,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 497
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -33710,7 +33702,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.99,
+        "confidence": 1,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -33723,14 +33715,12 @@
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.99,
+          "typography": 1,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.01,
+          "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 497
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -33810,9 +33800,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 497
+        }
       },
       "motion": {
         "label": "subtle-transitions",
@@ -33892,9 +33880,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 497
+        }
       },
       "motion": {
         "label": "animated-on-interaction",
@@ -33974,9 +33960,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 497
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -34038,7 +34022,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.81,
+        "confidence": 0.78,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -34051,14 +34035,12 @@
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.82,
+          "typography": 0.8,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.01,
-          "none of these": 0.05
-        },
-        "model": "jev-1.13.0",
-        "ms": 497
+          "transition-wrapper": 0,
+          "none of these": 0.08
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -34138,9 +34120,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 497
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -34202,7 +34182,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.67,
+        "confidence": 0.68,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -34214,15 +34194,13 @@
           "chart": 0,
           "media": 0,
           "layout-section": 0,
-          "feedback-notification": 0.01,
-          "typography": 0.69,
+          "feedback-notification": 0,
+          "typography": 0.71,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.01,
+          "transition-wrapper": 0,
           "none of these": 0.09
-        },
-        "model": "jev-1.13.0",
-        "ms": 497
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -34284,7 +34262,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.99,
+        "confidence": 1,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -34297,14 +34275,12 @@
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.99,
+          "typography": 1,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.01,
+          "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 497
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -34384,9 +34360,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 497
+        }
       },
       "motion": {
         "label": "continuous-background-motion",

@@ -272,9 +272,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -354,9 +352,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -436,9 +432,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -1647,28 +1641,26 @@
     "sourceUrl": "https://magicui.design/r/hero-video-dialog.json",
     "dimensions": {
       "category": {
-        "label": "hero",
-        "confidence": 0.52,
+        "label": "modal-overlay",
+        "confidence": 0.77,
         "scores": {
-          "hero": 0.55,
+          "hero": 0.13,
           "navigation": 0,
           "card": 0,
           "form-input": 0,
           "button": 0,
-          "modal-overlay": 0.39,
+          "modal-overlay": 0.8,
           "data-display": 0,
           "chart": 0,
-          "media": 0.04,
-          "layout-section": 0.01,
+          "media": 0.06,
+          "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0,
+          "typography": 0.01,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -1812,27 +1804,25 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.43,
+        "confidence": 0.28,
         "scores": {
           "hero": 0,
-          "navigation": 0.01,
+          "navigation": 0,
           "card": 0,
           "form-input": 0,
           "button": 0,
           "modal-overlay": 0,
-          "data-display": 0.17,
+          "data-display": 0.15,
           "chart": 0,
-          "media": 0.11,
-          "layout-section": 0.04,
-          "feedback-notification": 0.01,
-          "typography": 0.48,
-          "background-effect": 0.03,
+          "media": 0.26,
+          "layout-section": 0.02,
+          "feedback-notification": 0,
+          "typography": 0.33,
+          "background-effect": 0.01,
           "cursor": 0,
-          "transition-wrapper": 0.08,
-          "none of these": 0.07
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+          "transition-wrapper": 0.17,
+          "none of these": 0.06
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -2878,7 +2868,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.88,
+        "confidence": 0.97,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -2891,14 +2881,12 @@
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.89,
+          "typography": 0.98,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.11,
+          "transition-wrapper": 0.02,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -3206,7 +3194,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.91,
+        "confidence": 0.97,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -3219,14 +3207,12 @@
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.92,
+          "typography": 0.97,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.08,
+          "transition-wrapper": 0.03,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+        }
       },
       "motion": {
         "label": "animated-on-interaction",
@@ -3288,7 +3274,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.99,
+        "confidence": 1,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -3301,14 +3287,12 @@
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.99,
+          "typography": 1,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.01,
+          "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -3388,9 +3372,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -3470,9 +3452,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -3698,7 +3678,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.99,
+        "confidence": 1,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -3716,9 +3696,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -3862,7 +3840,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.99,
+        "confidence": 1,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -3880,9 +3858,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -3962,9 +3938,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -4044,9 +4018,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -4126,9 +4098,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+        }
       },
       "motion": {
         "label": "subtle-transitions",
@@ -4272,7 +4242,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.95,
+        "confidence": 0.92,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -4285,14 +4255,12 @@
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.96,
+          "typography": 0.93,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.04,
-          "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+          "transition-wrapper": 0.06,
+          "none of these": 0.01
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -4354,7 +4322,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.87,
+        "confidence": 0.94,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -4367,14 +4335,12 @@
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.89,
+          "typography": 0.95,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.11,
+          "transition-wrapper": 0.05,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+        }
       },
       "motion": {
         "label": "animated-on-interaction",
@@ -5502,27 +5468,25 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.7,
+        "confidence": 0.67,
         "scores": {
           "hero": 0,
           "navigation": 0,
-          "card": 0.15,
+          "card": 0.19,
           "form-input": 0,
           "button": 0,
           "modal-overlay": 0,
-          "data-display": 0.05,
+          "data-display": 0.04,
           "chart": 0,
           "media": 0,
-          "layout-section": 0,
+          "layout-section": 0.01,
           "feedback-notification": 0,
-          "typography": 0.72,
+          "typography": 0.7,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.03,
-          "none of these": 0.05
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+          "transition-wrapper": 0.02,
+          "none of these": 0.04
+        }
       },
       "motion": {
         "label": "animated-on-interaction",
@@ -5584,27 +5548,25 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.51,
+        "confidence": 0.93,
         "scores": {
-          "hero": 0.09,
+          "hero": 0,
           "navigation": 0,
           "card": 0,
           "form-input": 0,
           "button": 0,
           "modal-overlay": 0,
-          "data-display": 0.01,
+          "data-display": 0,
           "chart": 0,
-          "media": 0.15,
-          "layout-section": 0.01,
+          "media": 0.04,
+          "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.54,
-          "background-effect": 0.18,
+          "typography": 0.93,
+          "background-effect": 0.02,
           "cursor": 0,
-          "transition-wrapper": 0.01,
-          "none of these": 0.01
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+          "transition-wrapper": 0,
+          "none of these": 0
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -5748,7 +5710,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.9,
+        "confidence": 0.97,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -5761,14 +5723,12 @@
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.91,
+          "typography": 0.98,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.08,
-          "none of these": 0.01
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+          "transition-wrapper": 0.02,
+          "none of these": 0
+        }
       },
       "motion": {
         "label": "static",
@@ -6158,7 +6118,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.99,
+        "confidence": 1,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -6176,9 +6136,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+        }
       },
       "motion": {
         "label": "animated-on-interaction",
@@ -6240,7 +6198,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.99,
+        "confidence": 1,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -6258,9 +6216,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 302
+        }
       },
       "motion": {
         "label": "animated-on-interaction",

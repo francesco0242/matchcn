@@ -7324,9 +7324,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 545
+        }
       },
       "motion": {
         "label": "static",
@@ -7406,9 +7404,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 545
+        }
       },
       "motion": {
         "label": "static",
@@ -7488,9 +7484,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 545
+        }
       },
       "motion": {
         "label": "static",
@@ -7570,9 +7564,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 545
+        }
       },
       "motion": {
         "label": "static",
@@ -7652,9 +7644,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 545
+        }
       },
       "motion": {
         "label": "static",
@@ -7715,28 +7705,26 @@
     "sourceUrl": "https://bundui.io/r/cta-sections-01.json",
     "dimensions": {
       "category": {
-        "label": "hero",
-        "confidence": 0.64,
+        "label": "layout-section",
+        "confidence": 0.45,
         "scores": {
-          "hero": 0.68,
+          "hero": 0.23,
           "navigation": 0,
           "card": 0,
           "form-input": 0,
-          "button": 0.12,
+          "button": 0.24,
           "modal-overlay": 0,
           "data-display": 0,
           "chart": 0,
           "media": 0,
-          "layout-section": 0.18,
+          "layout-section": 0.5,
           "feedback-notification": 0,
           "typography": 0,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0.02
-        },
-        "model": "jev-1.13.0",
-        "ms": 545
+          "none of these": 0.03
+        }
       },
       "motion": {
         "label": "static",
@@ -7797,10 +7785,10 @@
     "sourceUrl": "https://bundui.io/r/cta-sections-02.json",
     "dimensions": {
       "category": {
-        "label": "hero",
-        "confidence": 0.48,
+        "label": "layout-section",
+        "confidence": 0.5,
         "scores": {
-          "hero": 0.52,
+          "hero": 0.18,
           "navigation": 0,
           "card": 0,
           "form-input": 0,
@@ -7809,16 +7797,14 @@
           "data-display": 0,
           "chart": 0,
           "media": 0,
-          "layout-section": 0.22,
+          "layout-section": 0.54,
           "feedback-notification": 0,
           "typography": 0,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0.03
-        },
-        "model": "jev-1.13.0",
-        "ms": 545
+          "none of these": 0.05
+        }
       },
       "motion": {
         "label": "static",
@@ -7879,28 +7865,26 @@
     "sourceUrl": "https://bundui.io/r/cta-sections-03.json",
     "dimensions": {
       "category": {
-        "label": "hero",
-        "confidence": 0.56,
+        "label": "layout-section",
+        "confidence": 0.45,
         "scores": {
-          "hero": 0.6,
+          "hero": 0.16,
           "navigation": 0,
           "card": 0,
           "form-input": 0,
-          "button": 0.23,
+          "button": 0.3,
           "modal-overlay": 0,
           "data-display": 0,
           "chart": 0,
           "media": 0,
-          "layout-section": 0.14,
+          "layout-section": 0.49,
           "feedback-notification": 0,
           "typography": 0,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0.03
-        },
-        "model": "jev-1.13.0",
-        "ms": 545
+          "none of these": 0.05
+        }
       },
       "motion": {
         "label": "static",
@@ -7961,28 +7945,26 @@
     "sourceUrl": "https://bundui.io/r/cta-sections-04.json",
     "dimensions": {
       "category": {
-        "label": "hero",
+        "label": "layout-section",
         "confidence": 0.5,
         "scores": {
-          "hero": 0.54,
+          "hero": 0.14,
           "navigation": 0,
           "card": 0,
           "form-input": 0,
-          "button": 0.31,
+          "button": 0.27,
           "modal-overlay": 0,
           "data-display": 0,
           "chart": 0,
           "media": 0,
-          "layout-section": 0.13,
+          "layout-section": 0.53,
           "feedback-notification": 0,
           "typography": 0,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0.02
-        },
-        "model": "jev-1.13.0",
-        "ms": 545
+          "none of these": 0.05
+        }
       },
       "motion": {
         "label": "static",
@@ -9274,9 +9256,9 @@
     "dimensions": {
       "category": {
         "label": "hero",
-        "confidence": 0.82,
+        "confidence": 0.38,
         "scores": {
-          "hero": 0.84,
+          "hero": 0.43,
           "navigation": 0,
           "card": 0,
           "form-input": 0,
@@ -9285,16 +9267,14 @@
           "data-display": 0,
           "chart": 0,
           "media": 0,
-          "layout-section": 0.08,
-          "feedback-notification": 0,
+          "layout-section": 0.4,
+          "feedback-notification": 0.01,
           "typography": 0,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0.08
-        },
-        "model": "jev-1.13.0",
-        "ms": 545
+          "none of these": 0.16
+        }
       },
       "motion": {
         "label": "static",
@@ -9355,10 +9335,10 @@
     "sourceUrl": "https://bundui.io/r/promotional-02.json",
     "dimensions": {
       "category": {
-        "label": "hero",
-        "confidence": 0.78,
+        "label": "layout-section",
+        "confidence": 0.4,
         "scores": {
-          "hero": 0.8,
+          "hero": 0.28,
           "navigation": 0,
           "card": 0,
           "form-input": 0,
@@ -9367,16 +9347,14 @@
           "data-display": 0,
           "chart": 0,
           "media": 0,
-          "layout-section": 0.09,
-          "feedback-notification": 0,
+          "layout-section": 0.45,
+          "feedback-notification": 0.01,
           "typography": 0,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0.11
-        },
-        "model": "jev-1.13.0",
-        "ms": 545
+          "none of these": 0.26
+        }
       },
       "motion": {
         "label": "static",
@@ -10093,28 +10071,26 @@
     "sourceUrl": "https://bundui.io/r/banners-01.json",
     "dimensions": {
       "category": {
-        "label": "hero",
-        "confidence": 0.63,
+        "label": "layout-section",
+        "confidence": 0.29,
         "scores": {
-          "hero": 0.67,
+          "hero": 0.3,
           "navigation": 0,
           "card": 0,
           "form-input": 0,
           "button": 0,
           "modal-overlay": 0,
-          "data-display": 0,
+          "data-display": 0.01,
           "chart": 0,
           "media": 0,
-          "layout-section": 0.09,
-          "feedback-notification": 0.18000000000000002,
+          "layout-section": 0.34,
+          "feedback-notification": 0.22,
           "typography": 0,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0.06
-        },
-        "model": "jev-1.13.0",
-        "ms": 545
+          "none of these": 0.13
+        }
       },
       "motion": {
         "label": "static",
@@ -10175,28 +10151,26 @@
     "sourceUrl": "https://bundui.io/r/banners-02.json",
     "dimensions": {
       "category": {
-        "label": "hero",
-        "confidence": 0.65,
+        "label": "layout-section",
+        "confidence": 0.38,
         "scores": {
-          "hero": 0.68,
+          "hero": 0.28,
           "navigation": 0,
           "card": 0,
           "form-input": 0,
           "button": 0,
           "modal-overlay": 0,
-          "data-display": 0,
+          "data-display": 0.01,
           "chart": 0,
           "media": 0,
-          "layout-section": 0.11,
-          "feedback-notification": 0.13,
+          "layout-section": 0.43,
+          "feedback-notification": 0.14,
           "typography": 0,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0.08
-        },
-        "model": "jev-1.13.0",
-        "ms": 545
+          "none of these": 0.14
+        }
       },
       "motion": {
         "label": "static",
@@ -10257,10 +10231,10 @@
     "sourceUrl": "https://bundui.io/r/banners-03.json",
     "dimensions": {
       "category": {
-        "label": "hero",
-        "confidence": 0.68,
+        "label": "layout-section",
+        "confidence": 0.29,
         "scores": {
-          "hero": 0.71,
+          "hero": 0.32,
           "navigation": 0,
           "card": 0,
           "form-input": 0,
@@ -10269,16 +10243,14 @@
           "data-display": 0,
           "chart": 0,
           "media": 0,
-          "layout-section": 0.08,
-          "feedback-notification": 0.16,
+          "layout-section": 0.34,
+          "feedback-notification": 0.13,
           "typography": 0,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0.05
-        },
-        "model": "jev-1.13.0",
-        "ms": 545
+          "none of these": 0.21
+        }
       },
       "motion": {
         "label": "static",
@@ -12144,9 +12116,9 @@
     "dimensions": {
       "category": {
         "label": "hero",
-        "confidence": 0.86,
+        "confidence": 0.42,
         "scores": {
-          "hero": 0.87,
+          "hero": 0.46,
           "navigation": 0,
           "card": 0.01,
           "form-input": 0,
@@ -12155,16 +12127,14 @@
           "data-display": 0,
           "chart": 0,
           "media": 0,
-          "layout-section": 0.1,
-          "feedback-notification": 0,
+          "layout-section": 0.36,
+          "feedback-notification": 0.01,
           "typography": 0,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0.02
-        },
-        "model": "jev-1.13.0",
-        "ms": 545
+          "none of these": 0.16
+        }
       },
       "motion": {
         "label": "static",
@@ -12225,10 +12195,10 @@
     "sourceUrl": "https://bundui.io/r/promo-sections-02.json",
     "dimensions": {
       "category": {
-        "label": "hero",
-        "confidence": 0.77,
+        "label": "layout-section",
+        "confidence": 0.37,
         "scores": {
-          "hero": 0.8,
+          "hero": 0.36,
           "navigation": 0,
           "card": 0.01,
           "form-input": 0,
@@ -12237,16 +12207,14 @@
           "data-display": 0,
           "chart": 0,
           "media": 0,
-          "layout-section": 0.16,
-          "feedback-notification": 0,
+          "layout-section": 0.42,
+          "feedback-notification": 0.01,
           "typography": 0,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0.03
-        },
-        "model": "jev-1.13.0",
-        "ms": 545
+          "none of these": 0.2
+        }
       },
       "motion": {
         "label": "static",
@@ -15096,7 +15064,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.99,
+        "confidence": 1,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -15114,9 +15082,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 245
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -15196,9 +15162,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 245
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -15278,9 +15242,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 245
+        }
       },
       "motion": {
         "label": "animated-on-interaction",
@@ -15360,9 +15322,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 245
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -16490,27 +16450,25 @@
     "dimensions": {
       "category": {
         "label": "hero",
-        "confidence": 0.8,
+        "confidence": 0.62,
         "scores": {
-          "hero": 0.81,
-          "navigation": 0,
-          "card": 0.01,
+          "hero": 0.65,
+          "navigation": 0.01,
+          "card": 0,
           "form-input": 0,
-          "button": 0.16,
-          "modal-overlay": 0,
+          "button": 0.31,
+          "modal-overlay": 0.01,
           "data-display": 0,
           "chart": 0,
           "media": 0,
-          "layout-section": 0.01,
+          "layout-section": 0,
           "feedback-notification": 0,
           "typography": 0,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 245
+          "none of these": 0.02
+        }
       },
       "motion": {
         "label": "static",
@@ -16818,27 +16776,25 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.53,
+        "confidence": 0.38,
         "scores": {
-          "hero": 0,
-          "navigation": 0,
+          "hero": 0.01,
+          "navigation": 0.01,
           "card": 0,
           "form-input": 0,
           "button": 0,
           "modal-overlay": 0,
-          "data-display": 0.21,
+          "data-display": 0.1,
           "chart": 0,
           "media": 0,
-          "layout-section": 0.01,
-          "feedback-notification": 0.04,
-          "typography": 0.5700000000000001,
-          "background-effect": 0.13,
+          "layout-section": 0.11,
+          "feedback-notification": 0.03,
+          "typography": 0.43,
+          "background-effect": 0.03,
           "cursor": 0,
-          "transition-wrapper": 0.02,
-          "none of these": 0.01
-        },
-        "model": "jev-1.13.0",
-        "ms": 245
+          "transition-wrapper": 0.21000000000000002,
+          "none of these": 0.07
+        }
       },
       "motion": {
         "label": "continuous-background-motion",

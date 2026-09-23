@@ -418,7 +418,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.43,
+        "confidence": 0.52,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -431,14 +431,12 @@
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.47000000000000003,
+          "typography": 0.56,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.09,
+          "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 874
+        }
       },
       "motion": {
         "label": "animated-on-interaction",
@@ -1502,9 +1500,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 874
+        }
       },
       "motion": {
         "label": "subtle-transitions",
@@ -1812,9 +1808,9 @@
     "dimensions": {
       "category": {
         "label": "hero",
-        "confidence": 0.59,
+        "confidence": 0.78,
         "scores": {
-          "hero": 0.62,
+          "hero": 0.8,
           "navigation": 0,
           "card": 0,
           "form-input": 0,
@@ -1823,16 +1819,14 @@
           "data-display": 0,
           "chart": 0,
           "media": 0,
-          "layout-section": 0.08,
+          "layout-section": 0.06,
           "feedback-notification": 0,
-          "typography": 0,
-          "background-effect": 0.29000000000000004,
+          "typography": 0.01,
+          "background-effect": 0.12,
           "cursor": 0,
           "transition-wrapper": 0.01,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 874
+        }
       },
       "motion": {
         "label": "subtle-transitions",
@@ -2568,9 +2562,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 874
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -3046,23 +3038,21 @@
         "scores": {
           "hero": 0.92,
           "navigation": 0,
-          "card": 0.02,
+          "card": 0.01,
           "form-input": 0,
           "button": 0,
           "modal-overlay": 0,
           "data-display": 0.01,
           "chart": 0,
-          "media": 0.01,
-          "layout-section": 0.02,
+          "media": 0.04,
+          "layout-section": 0.01,
           "feedback-notification": 0,
           "typography": 0,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.02,
+          "transition-wrapper": 0.01,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 874
+        }
       },
       "motion": {
         "label": "animated-on-interaction",
@@ -4108,9 +4098,9 @@
     "dimensions": {
       "category": {
         "label": "hero",
-        "confidence": 0.64,
+        "confidence": 0.39,
         "scores": {
-          "hero": 0.67,
+          "hero": 0.44,
           "navigation": 0,
           "card": 0,
           "form-input": 0,
@@ -4122,13 +4112,11 @@
           "layout-section": 0.01,
           "feedback-notification": 0,
           "typography": 0.02,
-          "background-effect": 0.25,
+          "background-effect": 0.22,
           "cursor": 0.01,
-          "transition-wrapper": 0.04,
+          "transition-wrapper": 0.3,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 874
+        }
       },
       "motion": {
         "label": "animated-on-interaction",
@@ -4436,7 +4424,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.99,
+        "confidence": 1,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -4449,14 +4437,12 @@
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.99,
+          "typography": 1,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.01,
+          "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 874
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -5748,7 +5734,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.56,
+        "confidence": 1,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -5761,14 +5747,12 @@
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.6,
+          "typography": 1,
           "background-effect": 0,
-          "cursor": 0.01,
-          "transition-wrapper": 0.38,
-          "none of these": 0.01
-        },
-        "model": "jev-1.13.0",
-        "ms": 874
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        }
       },
       "motion": {
         "label": "animated-on-interaction",
@@ -6340,9 +6324,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 874
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -6404,7 +6386,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.9,
+        "confidence": 0.78,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -6417,14 +6399,12 @@
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.91,
+          "typography": 0.8,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.09,
-          "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 874
+          "transition-wrapper": 0.19,
+          "none of these": 0.01
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -6896,7 +6876,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.99,
+        "confidence": 1,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -6914,9 +6894,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 874
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -7816,9 +7794,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 874
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -7880,9 +7856,9 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.98,
+        "confidence": 1,
         "scores": {
-          "hero": 0.01,
+          "hero": 0,
           "navigation": 0,
           "card": 0,
           "form-input": 0,
@@ -7893,14 +7869,12 @@
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.98,
+          "typography": 1,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.01,
+          "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 874
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -8144,9 +8118,7 @@
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0
-        },
-        "model": "jev-1.13.0",
-        "ms": 874
+        }
       },
       "motion": {
         "label": "animated-on-interaction",
@@ -8782,27 +8754,25 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.38,
+        "confidence": 0.75,
         "scores": {
           "hero": 0,
           "navigation": 0,
-          "card": 0.07,
+          "card": 0.01,
           "form-input": 0,
           "button": 0,
           "modal-overlay": 0,
-          "data-display": 0.39,
+          "data-display": 0.13,
           "chart": 0,
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.42,
+          "typography": 0.78,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0.12
-        },
-        "model": "jev-1.13.0",
-        "ms": 874
+          "none of these": 0.08
+        }
       },
       "motion": {
         "label": "animated-on-interaction",
@@ -9110,27 +9080,25 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.96,
+        "confidence": 0.98,
         "scores": {
           "hero": 0,
           "navigation": 0,
-          "card": 0.01,
+          "card": 0,
           "form-input": 0,
           "button": 0,
           "modal-overlay": 0,
-          "data-display": 0.02,
+          "data-display": 0,
           "chart": 0,
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.96,
+          "typography": 0.99,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
           "none of these": 0.01
-        },
-        "model": "jev-1.13.0",
-        "ms": 874
+        }
       },
       "motion": {
         "label": "continuous-background-motion",

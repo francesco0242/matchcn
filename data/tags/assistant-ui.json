@@ -582,7 +582,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.9,
+        "confidence": 0.83,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -590,19 +590,17 @@
           "form-input": 0,
           "button": 0,
           "modal-overlay": 0,
-          "data-display": 0.03,
+          "data-display": 0.04,
           "chart": 0,
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0.01,
-          "typography": 0.91,
+          "typography": 0.85,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0.01,
-          "none of these": 0.04
-        },
-        "model": "jev-1.13.0",
-        "ms": 638
+          "none of these": 0.09
+        }
       },
       "motion": {
         "label": "subtle-transitions",
@@ -2714,27 +2712,25 @@
     "dimensions": {
       "category": {
         "label": "hero",
-        "confidence": 0.8,
+        "confidence": 0.58,
         "scores": {
-          "hero": 0.81,
-          "navigation": 0.02,
+          "hero": 0.62,
+          "navigation": 0.04,
           "card": 0,
-          "form-input": 0.01,
-          "button": 0,
+          "form-input": 0,
+          "button": 0.02,
           "modal-overlay": 0,
           "data-display": 0,
           "chart": 0,
           "media": 0,
-          "layout-section": 0.08,
+          "layout-section": 0.09999999999999999,
           "feedback-notification": 0,
           "typography": 0,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0.08
-        },
-        "model": "jev-1.13.0",
-        "ms": 638
+          "none of these": 0.22
+        }
       },
       "motion": {
         "label": "static",
@@ -3943,8 +3939,8 @@
     "sourceUrl": "https://r.assistant-ui.com/elements-read-aloud.json",
     "dimensions": {
       "category": {
-        "label": "typography",
-        "confidence": 0.54,
+        "label": "media",
+        "confidence": 0.37,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -3954,17 +3950,15 @@
           "modal-overlay": 0,
           "data-display": 0.02,
           "chart": 0,
-          "media": 0.24,
+          "media": 0.42,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.5700000000000001,
+          "typography": 0.26,
           "background-effect": 0,
           "cursor": 0,
-          "transition-wrapper": 0.01,
-          "none of these": 0.14
-        },
-        "model": "jev-1.13.0",
-        "ms": 638
+          "transition-wrapper": 0,
+          "none of these": 0.29000000000000004
+        }
       },
       "motion": {
         "label": "continuous-background-motion",
@@ -8043,28 +8037,26 @@
     "sourceUrl": "https://r.assistant-ui.com/elements-onboarding.json",
     "dimensions": {
       "category": {
-        "label": "hero",
-        "confidence": 0.43,
+        "label": "none of these",
+        "confidence": 0.54,
         "scores": {
-          "hero": 0.47000000000000003,
+          "hero": 0.21,
           "navigation": 0.01,
           "card": 0.01,
-          "form-input": 0.01,
-          "button": 0,
-          "modal-overlay": 0.15,
+          "form-input": 0,
+          "button": 0.01,
+          "modal-overlay": 0.12,
           "data-display": 0,
           "chart": 0,
           "media": 0,
           "layout-section": 0.04,
-          "feedback-notification": 0,
-          "typography": 0,
+          "feedback-notification": 0.01,
+          "typography": 0.01,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0.31
-        },
-        "model": "jev-1.13.0",
-        "ms": 638
+          "none of these": 0.58
+        }
       },
       "motion": {
         "label": "static",
@@ -9192,7 +9184,7 @@
     "dimensions": {
       "category": {
         "label": "typography",
-        "confidence": 0.85,
+        "confidence": 0.46,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -9200,19 +9192,17 @@
           "form-input": 0,
           "button": 0,
           "modal-overlay": 0,
-          "data-display": 0.03,
+          "data-display": 0.07,
           "chart": 0,
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.86,
+          "typography": 0.5,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0.11
-        },
-        "model": "jev-1.13.0",
-        "ms": 638
+          "none of these": 0.43
+        }
       },
       "motion": {
         "label": "static",
@@ -10175,8 +10165,8 @@
     "sourceUrl": "https://r.assistant-ui.com/syntax-highlighter.json",
     "dimensions": {
       "category": {
-        "label": "typography",
-        "confidence": 0.55,
+        "label": "none of these",
+        "confidence": 0.75,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -10184,19 +10174,17 @@
           "form-input": 0,
           "button": 0,
           "modal-overlay": 0,
-          "data-display": 0.09,
+          "data-display": 0.12,
           "chart": 0,
           "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.59,
+          "typography": 0.11,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0.32
-        },
-        "model": "jev-1.13.0",
-        "ms": 638
+          "none of these": 0.77
+        }
       },
       "motion": {
         "label": "static",
@@ -10585,8 +10573,8 @@
     "sourceUrl": "https://r.assistant-ui.com/shiki-highlighter.json",
     "dimensions": {
       "category": {
-        "label": "typography",
-        "confidence": 0.38,
+        "label": "none of these",
+        "confidence": 0.76,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -10594,19 +10582,17 @@
           "form-input": 0,
           "button": 0,
           "modal-overlay": 0,
-          "data-display": 0.25,
+          "data-display": 0.11,
           "chart": 0,
-          "media": 0.01,
+          "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.42,
+          "typography": 0.1,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0.32
-        },
-        "model": "jev-1.13.0",
-        "ms": 638
+          "none of these": 0.79
+        }
       },
       "motion": {
         "label": "static",
@@ -10667,8 +10653,8 @@
     "sourceUrl": "https://r.assistant-ui.com/elements-shiki-highlighter.json",
     "dimensions": {
       "category": {
-        "label": "typography",
-        "confidence": 0.35,
+        "label": "none of these",
+        "confidence": 0.6,
         "scores": {
           "hero": 0,
           "navigation": 0,
@@ -10676,19 +10662,17 @@
           "form-input": 0,
           "button": 0,
           "modal-overlay": 0,
-          "data-display": 0.3,
+          "data-display": 0.18,
           "chart": 0,
-          "media": 0.01,
+          "media": 0,
           "layout-section": 0,
           "feedback-notification": 0,
-          "typography": 0.4,
+          "typography": 0.18,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0.29
-        },
-        "model": "jev-1.13.0",
-        "ms": 638
+          "none of these": 0.64
+        }
       },
       "motion": {
         "label": "static",
@@ -12471,28 +12455,26 @@
     "sourceUrl": "https://r.assistant-ui.com/elements-directive-text.json",
     "dimensions": {
       "category": {
-        "label": "typography",
-        "confidence": 0.31,
+        "label": "none of these",
+        "confidence": 0.51,
         "scores": {
           "hero": 0,
           "navigation": 0,
-          "card": 0.01,
+          "card": 0.02,
           "form-input": 0,
-          "button": 0,
+          "button": 0.03,
           "modal-overlay": 0,
-          "data-display": 0.29000000000000004,
+          "data-display": 0.26,
           "chart": 0,
           "media": 0,
           "layout-section": 0,
-          "feedback-notification": 0,
-          "typography": 0.36,
+          "feedback-notification": 0.02,
+          "typography": 0.11,
           "background-effect": 0,
           "cursor": 0,
           "transition-wrapper": 0,
-          "none of these": 0.34
-        },
-        "model": "jev-1.13.0",
-        "ms": 131
+          "none of these": 0.55
+        }
       },
       "motion": {
         "label": "static",
