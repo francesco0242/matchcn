@@ -94,11 +94,76 @@ export function weightedDistance(brief: DimensionVector, candidate: DimensionVec
   return weightedSum / totalWeight;
 }
 
+// Stopwords filtered out before token overlap: brief sentences are full
+// English prose ("a hero section with a headline"), and function words
+// would otherwise contribute equal, non-discriminating overlap against
+// every candidate regardless of actual topical relevance.
+const STOPWORDS = new Set([
+  "a", "an", "the", "with", "and", "or", "for", "to", "of", "in", "on",
+  "that", "this", "is", "are", "it", "its", "at", "by", "from", "as",
+  "showing", "using", "each", "some",
+]);
+
+function tokenize(text: string): Set<string> {
+  return new Set(
+    text
+      .toLowerCase()
+      .split(/[^a-z0-9]+/)
+      .filter((t) => t.length > 1 && !STOPWORDS.has(t)),
+  );
+}
+
+// A component's only runtime text is its `name` (a slug, always present)
+// and `title` (often null, especially for registries whose index never
+// set one, e.g. cnippet at 0% and many aceternity page-templates). The
+// full description used at tagging time is not persisted in TagRecord,
+// so this is the only text signal available at match time.
+function candidateText(record: TagRecord): string {
+  return `${record.title ?? ""} ${record.name}`;
+}
+
+// Distance in [0, 1] from Jaccard overlap between brief and candidate
+// tokens (0 = every candidate token appears in the brief, 1 = no shared
+// tokens at all). Exists because the six tagged dimensions are purely
+// structural (motion, density, interaction model, ...): two components
+// that are both "form-input" + "static" + "minimal" are indistinguishable
+// to weightedDistance even when one is a login form and the other is a
+// calendar. A 20-brief pilot found this exact failure mode causing most
+// no_match outcomes: a coarse-dimension match with no literal-word check
+// at all, so Resolve correctly rejected calendars and autocompletes
+// offered up for a "login form" brief. This is deterministic word
+// overlap, not a model call, consistent with Match staying local code.
+function textDistance(briefText: string, record: TagRecord): number {
+  const briefTokens = tokenize(briefText);
+  const candidateTokens = tokenize(candidateText(record));
+  if (briefTokens.size === 0 || candidateTokens.size === 0) return 1;
+  let intersection = 0;
+  for (const t of candidateTokens) if (briefTokens.has(t)) intersection++;
+  const union = briefTokens.size + candidateTokens.size - intersection;
+  return 1 - intersection / union;
+}
+
+// Fixed weight for the text-overlap term, blended alongside the tagged
+// dimensions' confidence-based weights. Not confidence-weighted itself
+// (there is no model confidence for a deterministic word-overlap check),
+// but kept modest relative to a single dimension's typical weight so it
+// nudges ranking toward literal-word matches without letting a brief
+// that happens to share a rare word with an unrelated candidate dominate
+// six real structural dimensions.
+const TEXT_WEIGHT = 0.5;
+
 export function rankCandidates(
   brief: DimensionVector,
   candidates: TagRecord[],
+  briefText?: string,
 ): Array<{ record: TagRecord; distance: number }> {
   return candidates
-    .map((record) => ({ record, distance: weightedDistance(brief, record.dimensions) }))
+    .map((record) => {
+      const structuralDistance = weightedDistance(brief, record.dimensions);
+      const distance = briefText
+        ? (structuralDistance * 1 + textDistance(briefText, record) * TEXT_WEIGHT) / (1 + TEXT_WEIGHT)
+        : structuralDistance;
+      return { record, distance };
+    })
     .sort((a, b) => a.distance - b.distance);
 }

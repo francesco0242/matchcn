@@ -222,7 +222,7 @@ export async function pickComponent(opts: PickOptions): Promise<PickResult> {
   const parsed = await parseBrief(opts.brief);
   let decisionsSpent = parsed.decisionsSpent;
 
-  const ranked: RankedCandidate[] = rankCandidates(parsed.dimensions, candidates);
+  const ranked: RankedCandidate[] = rankCandidates(parsed.dimensions, candidates, opts.brief);
   const top = ranked.slice(0, Math.max(5, maxResults));
 
   let resolveUsed = false;
