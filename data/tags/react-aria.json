@@ -1,0 +1,5086 @@
+[
+  {
+    "registry": "react-aria",
+    "name": "tailwind-alertdialog",
+    "title": "AlertDialog",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-alertdialog.json",
+    "dimensions": {
+      "category": {
+        "label": "modal-overlay",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 1,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.85,
+        "scores": {
+          "static": 0.89,
+          "subtle-transitions": 0.09,
+          "animated-on-interaction": 0.02,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.91,
+        "scores": {
+          "minimal": 0.06,
+          "moderate": 0.94,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 1,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.25,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.478Z",
+    "inputCharCount": 1395
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-breadcrumbs",
+    "title": "Breadcrumbs",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-breadcrumbs.json",
+    "dimensions": {
+      "category": {
+        "label": "navigation",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 1,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.93,
+        "scores": {
+          "static": 0.95,
+          "subtle-transitions": 0.05,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.64,
+        "scores": {
+          "minimal": 0.76,
+          "moderate": 0.24,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.57,
+        "scores": {
+          "display-only": 0.65,
+          "hover": 0.02,
+          "click-toggle": 0.2,
+          "form-input": 0.02,
+          "drag-or-gesture": 0,
+          "none of these": 0.11
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.64,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.478Z",
+    "inputCharCount": 846
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-button",
+    "title": "Button",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-button.json",
+    "dimensions": {
+      "category": {
+        "label": "button",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 1,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.15,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.28,
+          "animated-on-interaction": 0.37,
+          "continuous-background-motion": 0.35
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.78,
+        "scores": {
+          "minimal": 0.85,
+          "moderate": 0.14,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.44,
+        "scores": {
+          "display-only": 0,
+          "hover": 0.1,
+          "click-toggle": 0.53,
+          "form-input": 0.08,
+          "drag-or-gesture": 0,
+          "none of these": 0.29
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.03,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 3000
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-calendar",
+    "title": "Calendar",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-calendar.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 1,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.41,
+        "scores": {
+          "static": 0.3,
+          "subtle-transitions": 0.56,
+          "animated-on-interaction": 0.12,
+          "continuous-background-motion": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.26,
+        "scores": {
+          "minimal": 0.01,
+          "moderate": 0.51,
+          "dense": 0.48
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 1,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.38,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 3293
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-checkbox",
+    "title": "Checkbox",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-checkbox.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 1,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.97,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.98,
+          "animated-on-interaction": 0.01,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.26,
+        "scores": {
+          "minimal": 0.49,
+          "moderate": 0.51,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0.01,
+          "form-input": 0.99,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.34,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 3027
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-checkboxgroup",
+    "title": "CheckboxGroup",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-checkboxgroup.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 1,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.96,
+        "scores": {
+          "static": 0.97,
+          "subtle-transitions": 0.03,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.72,
+        "scores": {
+          "minimal": 0.16,
+          "moderate": 0.81,
+          "dense": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 0.97,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0.01,
+          "form-input": 0.98,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.47,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 840
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-colorarea",
+    "title": "ColorArea",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-colorarea.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 0.97,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0.98,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.93,
+        "scores": {
+          "static": 0.95,
+          "subtle-transitions": 0.04,
+          "animated-on-interaction": 0.01,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.97,
+        "scores": {
+          "minimal": 0.98,
+          "moderate": 0.02,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "drag-or-gesture",
+        "confidence": 0.75,
+        "scores": {
+          "display-only": 0.01,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0.19,
+          "drag-or-gesture": 0.8,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.31,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 697
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-colorfield",
+    "title": "ColorField",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-colorfield.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 1,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.95,
+        "scores": {
+          "static": 0.02,
+          "subtle-transitions": 0.97,
+          "animated-on-interaction": 0.01,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.55,
+        "scores": {
+          "minimal": 0.3,
+          "moderate": 0.7,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 1,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.18,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 1169
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-colorpicker",
+    "title": "ColorPicker",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-colorpicker.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 0.5,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0.55,
+          "button": 0.03,
+          "modal-overlay": 0.39,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.52,
+        "scores": {
+          "static": 0.64,
+          "subtle-transitions": 0.3,
+          "animated-on-interaction": 0.06,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.47,
+        "scores": {
+          "minimal": 0.24,
+          "moderate": 0.64,
+          "dense": 0.12
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.58,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0.66,
+          "form-input": 0.33,
+          "drag-or-gesture": 0.01,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.07,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 1242
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-colorslider",
+    "title": "ColorSlider",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-colorslider.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 0.98,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0.99,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.77,
+        "scores": {
+          "static": 0.82,
+          "subtle-transitions": 0.13,
+          "animated-on-interaction": 0.02,
+          "continuous-background-motion": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.49,
+        "scores": {
+          "minimal": 0.33,
+          "moderate": 0.67,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "drag-or-gesture",
+        "confidence": 0.75,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0.2,
+          "drag-or-gesture": 0.8,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.29,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 1418
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-colorswatch",
+    "title": "ColorSwatch",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-colorswatch.json",
+    "dimensions": {
+      "category": {
+        "label": "none of these",
+        "confidence": 0.5,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0.2,
+          "button": 0.01,
+          "modal-overlay": 0,
+          "data-display": 0.07,
+          "chart": 0,
+          "media": 0.17,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.54
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.95,
+        "scores": {
+          "static": 0.97,
+          "subtle-transitions": 0.01,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.86,
+        "scores": {
+          "display-only": 0.89,
+          "hover": 0,
+          "click-toggle": 0.02,
+          "form-input": 0.06,
+          "drag-or-gesture": 0.01,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.24,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0.07,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 565
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-colorswatchpicker",
+    "title": "ColorSwatchPicker",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-colorswatchpicker.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 0.45,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.03,
+          "card": 0,
+          "form-input": 0.5,
+          "button": 0.03,
+          "modal-overlay": 0.05,
+          "data-display": 0.03,
+          "chart": 0,
+          "media": 0.02,
+          "layout-section": 0.03,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.31
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.78,
+        "scores": {
+          "static": 0.84,
+          "subtle-transitions": 0.13,
+          "animated-on-interaction": 0.03,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.35,
+        "scores": {
+          "minimal": 0.1,
+          "moderate": 0.33,
+          "dense": 0.57
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 0.79,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0.16,
+          "form-input": 0.83,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.36,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 1406
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-colorthumb",
+    "title": "ColorThumb",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-colorthumb.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 0.46,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0.51,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0.08,
+          "transition-wrapper": 0,
+          "none of these": 0.41000000000000003
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.52,
+        "scores": {
+          "static": 0.64,
+          "subtle-transitions": 0.27,
+          "animated-on-interaction": 0.08,
+          "continuous-background-motion": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 0.99,
+          "moderate": 0.01,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "drag-or-gesture",
+        "confidence": 0.93,
+        "scores": {
+          "display-only": 0.03,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0.01,
+          "drag-or-gesture": 0.94,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.07,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0.14,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 865
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-colorwheel",
+    "title": "ColorWheel",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-colorwheel.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 0.83,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0.85,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0.04,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.11
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.91,
+        "scores": {
+          "static": 0.93,
+          "subtle-transitions": 0.04,
+          "animated-on-interaction": 0.01,
+          "continuous-background-motion": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.86,
+        "scores": {
+          "minimal": 0.91,
+          "moderate": 0.08,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 0.44,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0.55,
+          "drag-or-gesture": 0.45,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.16,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 849
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-combobox",
+    "title": "ComboBox",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-combobox.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 0.98,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0.99,
+          "button": 0,
+          "modal-overlay": 0.01,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.58,
+        "scores": {
+          "static": 0.6900000000000001,
+          "subtle-transitions": 0.25,
+          "animated-on-interaction": 0.06,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.95,
+        "scores": {
+          "minimal": 0.02,
+          "moderate": 0.97,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 0.9,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0.08,
+          "form-input": 0.92,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.96,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 1951
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-commandpalette",
+    "title": "CommandPalette",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-commandpalette.json",
+    "dimensions": {
+      "category": {
+        "label": "modal-overlay",
+        "confidence": 0.9,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.05,
+          "card": 0,
+          "form-input": 0.04,
+          "button": 0,
+          "modal-overlay": 0.91,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.83,
+        "scores": {
+          "static": 0.87,
+          "subtle-transitions": 0.08,
+          "animated-on-interaction": 0.05,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.38,
+        "scores": {
+          "minimal": 0.39,
+          "moderate": 0.58,
+          "dense": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.45,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0.55,
+          "form-input": 0.44,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.9,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 1602
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-datefield",
+    "title": "DateField",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-datefield.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 1,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.46,
+        "scores": {
+          "static": 0.59,
+          "subtle-transitions": 0.35,
+          "animated-on-interaction": 0.06,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.47,
+        "scores": {
+          "minimal": 0.35,
+          "moderate": 0.65,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 1,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.34,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 2043
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-datepicker",
+    "title": "DatePicker",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-datepicker.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0.99,
+          "button": 0,
+          "modal-overlay": 0.01,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.68,
+        "scores": {
+          "static": 0.76,
+          "subtle-transitions": 0.17,
+          "animated-on-interaction": 0.07,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.94,
+        "scores": {
+          "minimal": 0.04,
+          "moderate": 0.96,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0.01,
+          "form-input": 0.99,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.26,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 1259
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-daterangepicker",
+    "title": "DateRangePicker",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-daterangepicker.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 1,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.59,
+        "scores": {
+          "static": 0.69,
+          "subtle-transitions": 0.2,
+          "animated-on-interaction": 0.11,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.95,
+        "scores": {
+          "minimal": 0.01,
+          "moderate": 0.97,
+          "dense": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0.01,
+          "form-input": 0.99,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.4,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 1822
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-dialog",
+    "title": "Dialog",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-dialog.json",
+    "dimensions": {
+      "category": {
+        "label": "modal-overlay",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 1,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.91,
+        "scores": {
+          "static": 0.93,
+          "subtle-transitions": 0.05,
+          "animated-on-interaction": 0.02,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.63,
+        "scores": {
+          "minimal": 0.75,
+          "moderate": 0.24,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 1,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.12,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 310
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-disclosure",
+    "title": "Disclosure",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-disclosure.json",
+    "dimensions": {
+      "category": {
+        "label": "none of these",
+        "confidence": 0.23,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.04,
+          "card": 0.11,
+          "form-input": 0.02,
+          "button": 0.03,
+          "modal-overlay": 0.16,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0.12,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.23,
+          "none of these": 0.29000000000000004
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.76,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.18,
+          "animated-on-interaction": 0.82,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.5,
+        "scores": {
+          "minimal": 0.33,
+          "moderate": 0.67,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 1,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.09,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 2178
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-disclosuregroup",
+    "title": "DisclosureGroup",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-disclosuregroup.json",
+    "dimensions": {
+      "category": {
+        "label": "layout-section",
+        "confidence": 0.4,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.02,
+          "card": 0.02,
+          "form-input": 0.01,
+          "button": 0,
+          "modal-overlay": 0.02,
+          "data-display": 0.01,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0.45,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0.08,
+          "none of these": 0.39
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.97,
+        "scores": {
+          "static": 0.98,
+          "subtle-transitions": 0.01,
+          "animated-on-interaction": 0.01,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.74,
+        "scores": {
+          "minimal": 0.83,
+          "moderate": 0.16,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "none of these",
+        "confidence": 0.31,
+        "scores": {
+          "display-only": 0.21,
+          "hover": 0,
+          "click-toggle": 0.35,
+          "form-input": 0.01,
+          "drag-or-gesture": 0,
+          "none of these": 0.43
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.09,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 437
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-dropzone",
+    "title": "DropZone",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-dropzone.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 0.54,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0.15,
+          "form-input": 0.58,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0.01,
+          "layout-section": 0.06,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.2
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.66,
+        "scores": {
+          "static": 0.74,
+          "subtle-transitions": 0.21,
+          "animated-on-interaction": 0.05,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.91,
+        "scores": {
+          "minimal": 0.94,
+          "moderate": 0.06,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "drag-or-gesture",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 1,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.22,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 868
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-field",
+    "title": "Field",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-field.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 0.88,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0.9,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.1
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.92,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.94,
+          "animated-on-interaction": 0.06,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.59,
+        "scores": {
+          "minimal": 0.2,
+          "moderate": 0.73,
+          "dense": 0.07
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 0.97,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0.98,
+          "drag-or-gesture": 0,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.02,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 2531
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-fieldbutton",
+    "title": "FieldButton",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-fieldbutton.json",
+    "dimensions": {
+      "category": {
+        "label": "button",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 1,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.87,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.9,
+          "animated-on-interaction": 0.1,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.95,
+        "scores": {
+          "minimal": 0.97,
+          "moderate": 0.03,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.41,
+        "scores": {
+          "display-only": 0,
+          "hover": 0.18,
+          "click-toggle": 0.51,
+          "form-input": 0.05,
+          "drag-or-gesture": 0,
+          "none of these": 0.26
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.03,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 1153
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-form",
+    "title": "Form",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-form.json",
+    "dimensions": {
+      "category": {
+        "label": "layout-section",
+        "confidence": 0.46,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0.29000000000000004,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0.5,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.21
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 1,
+        "scores": {
+          "static": 1,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.62,
+        "scores": {
+          "minimal": 0.75,
+          "moderate": 0.22,
+          "dense": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 0.58,
+        "scores": {
+          "display-only": 0.03,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0.65,
+          "drag-or-gesture": 0,
+          "none of these": 0.32
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.09,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 156
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-gridlist",
+    "title": "GridList",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-gridlist.json",
+    "dimensions": {
+      "category": {
+        "label": "data-display",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.99,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0.01,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.29,
+        "scores": {
+          "static": 0.41,
+          "subtle-transitions": 0.47000000000000003,
+          "animated-on-interaction": 0.12,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.45,
+        "scores": {
+          "minimal": 0.01,
+          "moderate": 0.36,
+          "dense": 0.63
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.29,
+        "scores": {
+          "display-only": 0.01,
+          "hover": 0.02,
+          "click-toggle": 0.41,
+          "form-input": 0.21,
+          "drag-or-gesture": 0.28,
+          "none of these": 0.07
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.81,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 3789
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-link",
+    "title": "Link",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-link.json",
+    "dimensions": {
+      "category": {
+        "label": "navigation",
+        "confidence": 0.66,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.68,
+          "card": 0,
+          "form-input": 0,
+          "button": 0.12,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0.07,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.13
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.97,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.97,
+          "animated-on-interaction": 0.02,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.99,
+        "scores": {
+          "minimal": 1,
+          "moderate": 0,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "none of these",
+        "confidence": 0.29,
+        "scores": {
+          "display-only": 0.01,
+          "hover": 0.21,
+          "click-toggle": 0.36,
+          "form-input": 0.01,
+          "drag-or-gesture": 0,
+          "none of these": 0.41
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.08,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 1036
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-listbox",
+    "title": "ListBox",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-listbox.json",
+    "dimensions": {
+      "category": {
+        "label": "data-display",
+        "confidence": 0.6,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.14,
+          "card": 0,
+          "form-input": 0.12,
+          "button": 0,
+          "modal-overlay": 0.07,
+          "data-display": 0.64,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.36,
+        "scores": {
+          "static": 0.52,
+          "subtle-transitions": 0.4,
+          "animated-on-interaction": 0.08,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.65,
+        "scores": {
+          "minimal": 0.04,
+          "moderate": 0.77,
+          "dense": 0.19
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 0.66,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0.27,
+          "form-input": 0.72,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.74,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 4340
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-menu",
+    "title": "Menu",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-menu.json",
+    "dimensions": {
+      "category": {
+        "label": "navigation",
+        "confidence": 0.57,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.61,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0.38,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.41,
+        "scores": {
+          "static": 0.55,
+          "subtle-transitions": 0.15,
+          "animated-on-interaction": 0.3,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.53,
+        "scores": {
+          "minimal": 0.16,
+          "moderate": 0.6799999999999999,
+          "dense": 0.16
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 1,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.56,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 3349
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-meter",
+    "title": "Meter",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-meter.json",
+    "dimensions": {
+      "category": {
+        "label": "feedback-notification",
+        "confidence": 0.51,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.04,
+          "chart": 0.41,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0.55,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.92,
+        "scores": {
+          "static": 0.95,
+          "subtle-transitions": 0.05,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.41,
+        "scores": {
+          "minimal": 0.39,
+          "moderate": 0.61,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.97,
+        "scores": {
+          "display-only": 0.98,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0.02,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.67,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 1502
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-modal",
+    "title": "Modal",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-modal.json",
+    "dimensions": {
+      "category": {
+        "label": "modal-overlay",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 1,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.88,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.09,
+          "animated-on-interaction": 0.91,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.48,
+        "scores": {
+          "minimal": 0.65,
+          "moderate": 0.34,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 1,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.19,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 1248
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-navigationtree",
+    "title": "NavigationTree",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-navigationtree.json",
+    "dimensions": {
+      "category": {
+        "label": "navigation",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 1,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.56,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.67,
+          "animated-on-interaction": 0.32,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.65,
+        "scores": {
+          "minimal": 0.06,
+          "moderate": 0.76,
+          "dense": 0.18
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.85,
+        "scores": {
+          "display-only": 0.01,
+          "hover": 0.08,
+          "click-toggle": 0.88,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.88,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 6840
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-numberfield",
+    "title": "NumberField",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-numberfield.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 1,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.6,
+        "scores": {
+          "static": 0.71,
+          "subtle-transitions": 0.27,
+          "animated-on-interaction": 0.02,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.78,
+        "scores": {
+          "minimal": 0.14,
+          "moderate": 0.86,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 1,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.2,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 2039
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-popover",
+    "title": "Popover",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-popover.json",
+    "dimensions": {
+      "category": {
+        "label": "modal-overlay",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 1,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.9,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.07,
+          "animated-on-interaction": 0.93,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.53,
+        "scores": {
+          "minimal": 0.69,
+          "moderate": 0.3,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.73,
+        "scores": {
+          "display-only": 0.16,
+          "hover": 0,
+          "click-toggle": 0.78,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.06
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.16,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 1922
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-progressbar",
+    "title": "ProgressBar",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-progressbar.json",
+    "dimensions": {
+      "category": {
+        "label": "feedback-notification",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 1,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.92,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.04,
+          "animated-on-interaction": 0.01,
+          "continuous-background-motion": 0.94
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.4,
+        "scores": {
+          "minimal": 0.6,
+          "moderate": 0.4,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0.99,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0.01,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.67,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 1330
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-radiogroup",
+    "title": "RadioGroup",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-radiogroup.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 1,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.87,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.91,
+          "animated-on-interaction": 0.09,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.77,
+        "scores": {
+          "minimal": 0.14,
+          "moderate": 0.85,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0.01,
+          "form-input": 0.99,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.52,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 2699
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-rangecalendar",
+    "title": "RangeCalendar",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-rangecalendar.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 1,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.45,
+        "scores": {
+          "static": 0.28,
+          "subtle-transitions": 0.59,
+          "animated-on-interaction": 0.13,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.33,
+        "scores": {
+          "minimal": 0.01,
+          "moderate": 0.44,
+          "dense": 0.55
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 1,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.62,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 4895
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-searchfield",
+    "title": "SearchField",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-searchfield.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 1,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.71,
+        "scores": {
+          "static": 0.78,
+          "subtle-transitions": 0.2,
+          "animated-on-interaction": 0.02,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.42,
+        "scores": {
+          "minimal": 0.38,
+          "moderate": 0.62,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 1,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.11,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 1462
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-select",
+    "title": "Select",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-select.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 1,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.53,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.65,
+          "animated-on-interaction": 0.35,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.63,
+        "scores": {
+          "minimal": 0.24,
+          "moderate": 0.75,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 0.92,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0.06,
+          "form-input": 0.94,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.88,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 2756
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-separator",
+    "title": "Separator",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-separator.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 0.45,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0.49,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0.43,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.08
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.24,
+        "scores": {
+          "static": 0.36,
+          "subtle-transitions": 0.43,
+          "animated-on-interaction": 0.21,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.49,
+        "scores": {
+          "minimal": 0.32,
+          "moderate": 0.66,
+          "dense": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "drag-or-gesture",
+        "confidence": 0.49,
+        "scores": {
+          "display-only": 0.33,
+          "hover": 0.01,
+          "click-toggle": 0.01,
+          "form-input": 0.07,
+          "drag-or-gesture": 0.5599999999999999,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.29,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0.23,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 508
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-slider",
+    "title": "Slider",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-slider.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0.99,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.39,
+        "scores": {
+          "static": 0.05,
+          "subtle-transitions": 0.54,
+          "animated-on-interaction": 0.4,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.59,
+        "scores": {
+          "minimal": 0.26,
+          "moderate": 0.73,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "drag-or-gesture",
+        "confidence": 0.62,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0.31,
+          "drag-or-gesture": 0.69,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.51,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 2809
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-switch",
+    "title": "Switch",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-switch.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 0.9,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0.91,
+          "button": 0.09,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.66,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.25,
+          "animated-on-interaction": 0.75,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.42,
+        "scores": {
+          "minimal": 0.61,
+          "moderate": 0.39,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 0.54,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0.38,
+          "form-input": 0.62,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.23,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 2704
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-table",
+    "title": "Table",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-table.json",
+    "dimensions": {
+      "category": {
+        "label": "data-display",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 1,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.45,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.4,
+          "animated-on-interaction": 0.59,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.87,
+        "scores": {
+          "minimal": 0,
+          "moderate": 0.09,
+          "dense": 0.91
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.27,
+        "scores": {
+          "display-only": 0.2,
+          "hover": 0.01,
+          "click-toggle": 0.39,
+          "form-input": 0.03,
+          "drag-or-gesture": 0.29,
+          "none of these": 0.08
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.98,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 7139
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-tabs",
+    "title": "Tabs",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-tabs.json",
+    "dimensions": {
+      "category": {
+        "label": "navigation",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 1,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.56,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.33,
+          "animated-on-interaction": 0.67,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.76,
+        "scores": {
+          "minimal": 0.12,
+          "moderate": 0.85,
+          "dense": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 1,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.34,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 3132
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-taggroup",
+    "title": "TagGroup",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-taggroup.json",
+    "dimensions": {
+      "category": {
+        "label": "data-display",
+        "confidence": 0.94,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0.02,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.95,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.71,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.79,
+          "animated-on-interaction": 0.21,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.59,
+        "scores": {
+          "minimal": 0.03,
+          "moderate": 0.72,
+          "dense": 0.25
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.29,
+        "scores": {
+          "display-only": 0.31,
+          "hover": 0.01,
+          "click-toggle": 0.41,
+          "form-input": 0.24,
+          "drag-or-gesture": 0.01,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.81,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 4013
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-textfield",
+    "title": "TextField",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-textfield.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 1,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.93,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.94,
+          "animated-on-interaction": 0.05,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.52,
+        "scores": {
+          "minimal": 0.32,
+          "moderate": 0.68,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 1,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.11,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 1139
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-timefield",
+    "title": "TimeField",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-timefield.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 1,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.87,
+        "scores": {
+          "static": 0.9,
+          "subtle-transitions": 0.09,
+          "animated-on-interaction": 0.01,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.51,
+        "scores": {
+          "minimal": 0.32,
+          "moderate": 0.68,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 1,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.38,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 838
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-toast",
+    "title": "Toast",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-toast.json",
+    "dimensions": {
+      "category": {
+        "label": "feedback-notification",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 1,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.52,
+        "scores": {
+          "static": 0.02,
+          "subtle-transitions": 0.34,
+          "animated-on-interaction": 0.64,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.83,
+        "scores": {
+          "minimal": 0.11,
+          "moderate": 0.89,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.66,
+        "scores": {
+          "display-only": 0.72,
+          "hover": 0,
+          "click-toggle": 0.16,
+          "form-input": 0.01,
+          "drag-or-gesture": 0,
+          "none of these": 0.11
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.54,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 2773
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-togglebutton",
+    "title": "ToggleButton",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-togglebutton.json",
+    "dimensions": {
+      "category": {
+        "label": "button",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 1,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.72,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.79,
+          "animated-on-interaction": 0.21,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.83,
+        "scores": {
+          "minimal": 0.89,
+          "moderate": 0.11,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.99,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0.99,
+          "form-input": 0.01,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "needs_external_data": {
+        "probability": 0.05,
+        "model": "jev-1.13.0",
+        "ms": 556
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 556
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:36.479Z",
+    "inputCharCount": 1554
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-togglebuttongroup",
+    "title": "ToggleButtonGroup",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-togglebuttongroup.json",
+    "dimensions": {
+      "category": {
+        "label": "button",
+        "confidence": 0.83,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.04,
+          "card": 0,
+          "form-input": 0.09,
+          "button": 0.85,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.94,
+        "scores": {
+          "static": 0.96,
+          "subtle-transitions": 0.04,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.41,
+        "scores": {
+          "minimal": 0.37,
+          "moderate": 0.6,
+          "dense": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.65,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0.72,
+          "form-input": 0.28,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "needs_external_data": {
+        "probability": 0.26,
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 308
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:37.976Z",
+    "inputCharCount": 574
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-tokenfield",
+    "title": "TokenField",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-tokenfield.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 1,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.95,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.96,
+          "animated-on-interaction": 0.04,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.7,
+        "scores": {
+          "minimal": 0.15,
+          "moderate": 0.8,
+          "dense": 0.05
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 1,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "needs_external_data": {
+        "probability": 0.53,
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 308
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:37.976Z",
+    "inputCharCount": 2634
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-toolbar",
+    "title": "Toolbar",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-toolbar.json",
+    "dimensions": {
+      "category": {
+        "label": "button",
+        "confidence": 0.35,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.21,
+          "card": 0,
+          "form-input": 0,
+          "button": 0.41000000000000003,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0.26,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.12
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.96,
+        "scores": {
+          "static": 0.97,
+          "subtle-transitions": 0.02,
+          "animated-on-interaction": 0.01,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.55,
+        "scores": {
+          "minimal": 0.19,
+          "moderate": 0.71,
+          "dense": 0.1
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.73,
+        "scores": {
+          "display-only": 0.03,
+          "hover": 0,
+          "click-toggle": 0.78,
+          "form-input": 0.1,
+          "drag-or-gesture": 0,
+          "none of these": 0.09
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "needs_external_data": {
+        "probability": 0.19,
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 308
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:37.976Z",
+    "inputCharCount": 578
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-tooltip",
+    "title": "Tooltip",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-tooltip.json",
+    "dimensions": {
+      "category": {
+        "label": "modal-overlay",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 1,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.57,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.32,
+          "animated-on-interaction": 0.68,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.81,
+        "scores": {
+          "minimal": 0.88,
+          "moderate": 0.12,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.75,
+        "scores": {
+          "display-only": 0.8,
+          "hover": 0.1,
+          "click-toggle": 0.07,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.03
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "needs_external_data": {
+        "probability": 0.1,
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 308
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:37.976Z",
+    "inputCharCount": 1712
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-tree",
+    "title": "Tree",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-tree.json",
+    "dimensions": {
+      "category": {
+        "label": "data-display",
+        "confidence": 0.52,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.43,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0.56,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "motion": {
+        "label": "subtle-transitions",
+        "confidence": 0.64,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.73,
+          "animated-on-interaction": 0.26,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.66,
+        "scores": {
+          "minimal": 0.04,
+          "moderate": 0.78,
+          "dense": 0.18
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.95,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0.97,
+          "form-input": 0.03,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "needs_external_data": {
+        "probability": 0.77,
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 308
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:37.976Z",
+    "inputCharCount": 3101
+  },
+  {
+    "registry": "react-aria",
+    "name": "tailwind-utils",
+    "title": "utils",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/tailwind-utils.json",
+    "dimensions": {
+      "category": {
+        "label": "none of these",
+        "confidence": 0.99,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0.01,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.99
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.94,
+        "scores": {
+          "static": 0.95,
+          "subtle-transitions": 0.04,
+          "animated-on-interaction": 0.01,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.97,
+        "scores": {
+          "minimal": 0.98,
+          "moderate": 0.02,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "interaction_model": {
+        "label": "none of these",
+        "confidence": 0.8,
+        "scores": {
+          "display-only": 0.08,
+          "hover": 0,
+          "click-toggle": 0.01,
+          "form-input": 0.07,
+          "drag-or-gesture": 0,
+          "none of these": 0.84
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "needs_external_data": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "decorative_only": {
+        "probability": 0.06,
+        "model": "jev-1.13.0",
+        "ms": 308
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:37.976Z",
+    "inputCharCount": 472
+  },
+  {
+    "registry": "react-aria",
+    "name": "css-content",
+    "title": "Content",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/css-content.json",
+    "dimensions": {
+      "category": {
+        "label": "typography",
+        "confidence": 0.78,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0.8,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.2
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 1,
+        "scores": {
+          "static": 1,
+          "subtle-transitions": 0,
+          "animated-on-interaction": 0,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.96,
+        "scores": {
+          "minimal": 0.98,
+          "moderate": 0.02,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.97,
+        "scores": {
+          "display-only": 0.98,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "needs_external_data": {
+        "probability": 0.04,
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 308
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:37.976Z",
+    "inputCharCount": 210
+  },
+  {
+    "registry": "react-aria",
+    "name": "css-inputgroup",
+    "title": "InputGroup",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/css-inputgroup.json",
+    "dimensions": {
+      "category": {
+        "label": "form-input",
+        "confidence": 0.73,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0.76,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.24
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.79,
+        "scores": {
+          "static": 0.84,
+          "subtle-transitions": 0.13,
+          "animated-on-interaction": 0.03,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "visual_density": {
+        "label": "dense",
+        "confidence": 0.05,
+        "scores": {
+          "minimal": 0.34,
+          "moderate": 0.29,
+          "dense": 0.37
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "interaction_model": {
+        "label": "form-input",
+        "confidence": 0.94,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0.96,
+          "drag-or-gesture": 0,
+          "none of these": 0.04
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "needs_external_data": {
+        "probability": 0.08,
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "decorative_only": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 308
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:37.976Z",
+    "inputCharCount": 8012
+  },
+  {
+    "registry": "react-aria",
+    "name": "css-progresscircle",
+    "title": "ProgressCircle",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/css-progresscircle.json",
+    "dimensions": {
+      "category": {
+        "label": "feedback-notification",
+        "confidence": 0.86,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 0,
+          "data-display": 0,
+          "chart": 0.13,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0.87,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "motion": {
+        "label": "continuous-background-motion",
+        "confidence": 0.97,
+        "scores": {
+          "static": 0.01,
+          "subtle-transitions": 0.01,
+          "animated-on-interaction": 0.01,
+          "continuous-background-motion": 0.97
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.98,
+        "scores": {
+          "minimal": 0.99,
+          "moderate": 0.01,
+          "dense": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "interaction_model": {
+        "label": "display-only",
+        "confidence": 0.96,
+        "scores": {
+          "display-only": 0.97,
+          "hover": 0,
+          "click-toggle": 0,
+          "form-input": 0.02,
+          "drag-or-gesture": 0,
+          "none of these": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "needs_external_data": {
+        "probability": 0.38,
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "decorative_only": {
+        "probability": 0.01,
+        "model": "jev-1.13.0",
+        "ms": 308
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:37.976Z",
+    "inputCharCount": 1939
+  },
+  {
+    "registry": "react-aria",
+    "name": "css-segmentedcontrol",
+    "title": "SegmentedControl",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/css-segmentedcontrol.json",
+    "dimensions": {
+      "category": {
+        "label": "button",
+        "confidence": 0.54,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.26,
+          "card": 0,
+          "form-input": 0.13,
+          "button": 0.58,
+          "modal-overlay": 0.01,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.89,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.08,
+          "animated-on-interaction": 0.92,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "visual_density": {
+        "label": "moderate",
+        "confidence": 0.55,
+        "scores": {
+          "minimal": 0.28,
+          "moderate": 0.7,
+          "dense": 0.02
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.7,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0.75,
+          "form-input": 0.25,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "needs_external_data": {
+        "probability": 0.29,
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 308
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:37.976Z",
+    "inputCharCount": 8018
+  },
+  {
+    "registry": "react-aria",
+    "name": "css-sheet",
+    "title": "Sheet",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/css-sheet.json",
+    "dimensions": {
+      "category": {
+        "label": "modal-overlay",
+        "confidence": 1,
+        "scores": {
+          "hero": 0,
+          "navigation": 0,
+          "card": 0,
+          "form-input": 0,
+          "button": 0,
+          "modal-overlay": 1,
+          "data-display": 0,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "motion": {
+        "label": "animated-on-interaction",
+        "confidence": 0.97,
+        "scores": {
+          "static": 0,
+          "subtle-transitions": 0.02,
+          "animated-on-interaction": 0.98,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.64,
+        "scores": {
+          "minimal": 0.76,
+          "moderate": 0.23,
+          "dense": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 1,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 1,
+          "form-input": 0,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "needs_external_data": {
+        "probability": 0.13,
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 308
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:37.976Z",
+    "inputCharCount": 1523
+  },
+  {
+    "registry": "react-aria",
+    "name": "hooks-dropdownlistbox",
+    "title": "DropdownListBox",
+    "compositionLevel": "primitive",
+    "sourceUrl": "https://react-aria.adobe.com/registry/hooks-dropdownlistbox.json",
+    "dimensions": {
+      "category": {
+        "label": "modal-overlay",
+        "confidence": 0.67,
+        "scores": {
+          "hero": 0,
+          "navigation": 0.06,
+          "card": 0,
+          "form-input": 0.17,
+          "button": 0,
+          "modal-overlay": 0.7,
+          "data-display": 0.03,
+          "chart": 0,
+          "media": 0,
+          "layout-section": 0,
+          "feedback-notification": 0,
+          "typography": 0,
+          "background-effect": 0,
+          "cursor": 0,
+          "transition-wrapper": 0,
+          "none of these": 0.04
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "motion": {
+        "label": "static",
+        "confidence": 0.93,
+        "scores": {
+          "static": 0.94,
+          "subtle-transitions": 0.05,
+          "animated-on-interaction": 0.01,
+          "continuous-background-motion": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "visual_density": {
+        "label": "minimal",
+        "confidence": 0.28,
+        "scores": {
+          "minimal": 0.51,
+          "moderate": 0.44,
+          "dense": 0.05
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "interaction_model": {
+        "label": "click-toggle",
+        "confidence": 0.56,
+        "scores": {
+          "display-only": 0,
+          "hover": 0,
+          "click-toggle": 0.64,
+          "form-input": 0.36,
+          "drag-or-gesture": 0,
+          "none of these": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "needs_external_data": {
+        "probability": 0.65,
+        "model": "jev-1.13.0",
+        "ms": 308
+      },
+      "decorative_only": {
+        "probability": 0,
+        "model": "jev-1.13.0",
+        "ms": 308
+      }
+    },
+    "taggedAt": "2026-09-24T14:30:37.976Z",
+    "inputCharCount": 779
+  }
+]
