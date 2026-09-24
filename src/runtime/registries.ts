@@ -90,4 +90,25 @@ export const REGISTRIES: RegistryConfig[] = [
     indexUrl: "https://uiable.com/r/registry.json",
     itemUrlTemplate: "https://uiable.com/r/{name}.json",
   },
+
+  // Third expansion: the two of the three candidates excluded in
+  // REGISTRY_EXPANSION_STEP1_2.md for a fixable filter gap (plate,
+  // react-aria) once their filters were written (filterPlate,
+  // filterReactAria) and a real per-item availability check found no
+  // paywall on either. shadcn-ui-blocks (the third candidate, same batch)
+  // is NOT included here despite also getting a fixed filter
+  // (filterShadcnUiBlocks): a real per-item availability check of its
+  // "-pro-" named blocks found 3,198 of 3,903 (82%) return 401
+  // unauthenticated, far past the 40%/33.3% bar that already ruled out
+  // shadcnuikit/shadcn-space as "not worth the complexity."
+  {
+    name: "plate",
+    indexUrl: "https://platejs.org/r/registry.json",
+    itemUrlTemplate: "https://platejs.org/r/{name}.json",
+  },
+  {
+    name: "react-aria",
+    indexUrl: "https://react-aria.adobe.com/registry/registry.json",
+    itemUrlTemplate: "https://react-aria.adobe.com/registry/{name}.json",
+  },
 ];
