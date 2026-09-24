@@ -172,6 +172,7 @@ export async function runTagging(opts: RunTaggingOptions): Promise<TaggingSummar
           interaction_model: toChoiceAnswer(dims["interaction_model"]),
           needs_external_data: toNoulAnswer(dims["needs_external_data"]),
           decorative_only: toNoulAnswer(dims["decorative_only"]),
+          domain: toChoiceAnswer(dims["domain"]),
         },
         taggedAt: new Date().toISOString(),
         inputCharCount: items[j].length,
