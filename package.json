@@ -37,6 +37,9 @@
     "data/tags"
   ],
   "scripts": {
+    "ingest": "tsx src/pipeline/ingest.ts",
+    "tag": "tsx src/pipeline/tag.ts",
+    "check-availability": "tsx src/pipeline/check-availability.ts",
     "mcp": "tsx src/mcp-server.ts",
     "demo": "tsx src/demo.ts",
     "typecheck": "tsc --noEmit"

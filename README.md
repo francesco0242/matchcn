@@ -244,10 +244,55 @@ tagging and ranking design, not a disclaimer bolted on afterward.
 
 ```bash
 pnpm install
-pnpm mcp          # run the MCP server directly, for local testing
-pnpm demo         # run 3 briefs end to end with clean terminal output
+pnpm mcp                # run the MCP server directly, for local testing
+pnpm demo               # run 3 briefs end to end with clean terminal output
 pnpm typecheck
 ```
+
+The ingest/tag pipeline that produces `data/tags/` is also in this repo:
+
+```bash
+pnpm ingest                          # fetch and normalize every registry.json in REGISTRIES
+pnpm ingest --registry=magicui       # just one registry
+pnpm tag                             # tag normalized components via classifier.dev, chunked and resumable
+pnpm check-availability --registry=some-registry   # real per-item install-URL check, no classifier.dev cost
+```
+
+`pnpm tag` spends real classifier.dev decisions (free tier: 20,000/day,
+3,000/min per IP, no API key needed). It checkpoints after every chunk, so
+an interrupted run resumes without re-tagging anything already done.
+
+## Contributing
+
+Issues and PRs are welcome, on a separate branch, never directly to
+`main`. Only [@whosfranki](https://github.com/whosfranki) merges; opening
+a PR does not mean it lands, but every one gets read.
+
+Good first contributions:
+
+- **Fix a registry's filter.** `src/pipeline/filter.ts` has one function
+  per registry (see [open issues](https://github.com/francesco0242/matchcn/issues)
+  for known gaps, e.g. a non-component `type` the current filter doesn't
+  drop). Run `pnpm ingest --registry=<name>` against the affected
+  registry and check the normalized output by hand before proposing a fix.
+- **Add a registry.** Add an entry to `src/runtime/registries.ts`, verify
+  its filter is correct (no demo/duplicate/non-component pollution, the
+  same manual check every existing registry got, not an assumption), run
+  `pnpm check-availability` before shipping (a registry.json's index gives
+  no signal about which components are actually paywalled), then `pnpm tag`.
+  Do not add a registry and tag it in the same PR as an unrelated change.
+- **Improve a tagging dimension's criteria.** `src/runtime/dimensions.ts`.
+  Any wording change needs a before/after comparison on a real sample
+  before it's proposed, not just a plausible-sounding rewrite; a prior
+  attempt at a "make non-English briefs work" wording fix was tested this
+  way and reverted for no measured benefit, which is the standard this
+  project holds fixes to.
+- **Runtime bugs** in `src/runtime/match.ts`, `pick.ts`, `resolve.ts`.
+
+What a PR should include: what was measured before the change, what
+changed, what was measured after. "This should help" without a before/
+after comparison on a real brief or component sample will get sent back
+for one.
 
 ## License
 
