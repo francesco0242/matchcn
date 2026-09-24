@@ -268,6 +268,126 @@ function filterUiable(items: RawRegistryItem[]): FilterResult {
   return { kept, dropped };
 }
 
+// Third product-UI expansion candidates, previously excluded (see
+// docs/REGISTRY_EXPANSION_STEP1_2.md and the tracking issues for each).
+// All three verified against a fresh live fetch before being coded, not
+// just the original recon snapshot.
+
+// shadcn-ui-blocks: 99 of 4,002 raw items are type "registry:item",
+// confirmed to be Open Graph share-image templates ("Webinar Open Graph
+// image", "Year in review Open Graph image"), not UI components a
+// developer installs into a running app. The remaining 3,903
+// registry:block entries are real, distinct block designs (verified
+// during the original recon) and need no other rule.
+function filterShadcnUiBlocks(items: RawRegistryItem[]): FilterResult {
+  const dropped: FilterDropped[] = [];
+  const kept: FilterKeptItem[] = [];
+  for (const item of items) {
+    if (item.type === "registry:item") {
+      dropped.push({
+        registry: "shadcn-ui-blocks",
+        name: item.name,
+        rule: "og-image-template",
+        reason: 'type is "registry:item"; these are Open Graph share-image templates rendered at build time for a page\'s link preview, not a component a developer installs into a running UI',
+      });
+      continue;
+    }
+    kept.push({ item, compositionLevel: "page-template" });
+  }
+  return { kept, dropped };
+}
+
+// plate: 134 of 324 raw items (41%) are type "registry:file": API
+// reference and documentation pages ("Getting Started", "Releases",
+// "From Slate to Plate"), not components. The 16 items already correctly
+// caught by the generic registry:example/registry:style rules elsewhere
+// are unaffected by this rule; this only adds registry:file.
+function filterPlate(items: RawRegistryItem[]): FilterResult {
+  const dropped: FilterDropped[] = [];
+  const kept: FilterKeptItem[] = [];
+  for (const item of items) {
+    if (item.type === "registry:file") {
+      dropped.push({
+        registry: "plate",
+        name: item.name,
+        rule: "docs-page",
+        reason: 'type is "registry:file"; these are documentation/API-reference pages, not components',
+      });
+      continue;
+    }
+    if (item.type === "registry:example" || item.type === "registry:style") {
+      dropped.push({
+        registry: "plate",
+        name: item.name,
+        rule: item.type === "registry:example" ? "demo-type" : "style-config",
+        reason: `type is "${item.type}", not a real installable component`,
+      });
+      continue;
+    }
+    let compositionLevel: CompositionLevel = "composite";
+    if (item.type === "registry:ui") compositionLevel = "primitive";
+    else if (item.type === "registry:hook" || item.type === "registry:lib") compositionLevel = "utility-hook";
+    kept.push({ item, compositionLevel });
+  }
+  return { kept, dropped };
+}
+
+// react-aria: every real component is published up to three times under
+// a style-prefix naming convention (tailwind-, css-, hooks-), confirmed
+// on 52 of 61 distinct titles (e.g. tailwind-alertdialog, css-alertdialog
+// both titled "AlertDialog"). All three prefixes ship real, styled
+// components (checked directly: even the "hooks" prefix bundles its own
+// .css files, it is not a headless/unstyled variant), so the choice of
+// canonical style is about ecosystem fit, not completeness. "tailwind"
+// is picked as canonical because every other registry in this catalog
+// (and the `npx shadcn add` convention matchcn's whole install flow
+// assumes) is Tailwind-styled; shipping "css" or "hooks" duplicates
+// alongside it would tag near-identical components under a styling
+// convention nothing else in the catalog uses.
+function filterReactAria(items: RawRegistryItem[]): FilterResult {
+  const dropped: FilterDropped[] = [];
+  const groups = new Map<string, RawRegistryItem[]>();
+  const ungrouped: RawRegistryItem[] = [];
+
+  for (const item of items) {
+    if (item.type === "registry:style") {
+      dropped.push(styleConfigDrop("react-aria", item.name));
+      continue;
+    }
+    const m = item.name.match(/^(tailwind|css|hooks)-(.+)$/);
+    if (!m) {
+      ungrouped.push(item);
+      continue;
+    }
+    const base = m[2];
+    const group = groups.get(base) ?? [];
+    group.push(item);
+    groups.set(base, group);
+  }
+
+  const kept: FilterKeptItem[] = ungrouped.map((item) => ({ item, compositionLevel: "primitive" }));
+  const STYLE_PRIORITY = ["tailwind", "css", "hooks"];
+  for (const [base, group] of groups) {
+    let canonical: RawRegistryItem | undefined;
+    for (const style of STYLE_PRIORITY) {
+      canonical = group.find((i) => i.name.startsWith(style + "-"));
+      if (canonical) break;
+    }
+    if (!canonical) canonical = group[0];
+    kept.push({ item: canonical, compositionLevel: "primitive" });
+    for (const i of group) {
+      if (i.name === canonical.name) continue;
+      dropped.push({
+        registry: "react-aria",
+        name: i.name,
+        rule: "style-duplicate",
+        reason: `duplicate style publishing of "${base}", canonical kept is "${canonical.name}"`,
+      });
+    }
+  }
+  return { kept, dropped };
+}
+
 export function applyFilter(registry: string, items: RawRegistryItem[]): FilterResult {
   switch (registry) {
     case "react-bits":
@@ -294,6 +414,12 @@ export function applyFilter(registry: string, items: RawRegistryItem[]): FilterR
       return filterCnippet(items);
     case "uiable":
       return filterUiable(items);
+    case "shadcn-ui-blocks":
+      return filterShadcnUiBlocks(items);
+    case "plate":
+      return filterPlate(items);
+    case "react-aria":
+      return filterReactAria(items);
     default:
       throw new Error(`No filter rule defined for registry "${registry}". See docs/FILTER_REPORT.md.`);
   }
