@@ -124,15 +124,19 @@ function candidateText(record: TagRecord): string {
 
 // Distance in [0, 1] from Jaccard overlap between brief and candidate
 // tokens (0 = every candidate token appears in the brief, 1 = no shared
-// tokens at all). Exists because the six tagged dimensions are purely
-// structural (motion, density, interaction model, ...): two components
-// that are both "form-input" + "static" + "minimal" are indistinguishable
-// to weightedDistance even when one is a login form and the other is a
-// calendar. A 20-brief pilot found this exact failure mode causing most
-// no_match outcomes: a coarse-dimension match with no literal-word check
-// at all, so Resolve correctly rejected calendars and autocompletes
-// offered up for a "login form" brief. This is deterministic word
-// overlap, not a model call, consistent with Match staying local code.
+// tokens at all). Originally added because most of the tagged dimensions
+// are purely structural (motion, density, interaction model, ...): two
+// components that are both "form-input" + "static" + "minimal" were
+// indistinguishable to weightedDistance even when one is a login form and
+// the other is a calendar. A 20-brief pilot found this exact failure mode
+// causing most no_match outcomes: a coarse-dimension match with no
+// literal-word check at all, so Resolve correctly rejected calendars and
+// autocompletes offered up for a "login form" brief. The `domain`
+// dimension (auth/scheduling/commerce/...) now gives a real semantic
+// signal for this same case, but this word-overlap term is kept as a
+// second, independent, zero-cost signal rather than removed. This is
+// deterministic word overlap, not a model call, consistent with Match
+// staying local code.
 function textDistance(briefText: string, record: TagRecord): number {
   const briefTokens = tokenize(briefText);
   const candidateTokens = tokenize(candidateText(record));
@@ -149,7 +153,7 @@ function textDistance(briefText: string, record: TagRecord): number {
 // but kept modest relative to a single dimension's typical weight so it
 // nudges ranking toward literal-word matches without letting a brief
 // that happens to share a rare word with an unrelated candidate dominate
-// six real structural dimensions.
+// the seven tagged dimensions.
 const TEXT_WEIGHT = 0.5;
 
 export function rankCandidates(

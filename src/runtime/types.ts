@@ -103,6 +103,7 @@ export const TagRecordSchema = z.object({
     interaction_model: ChoiceAnswerSchema,
     needs_external_data: NoulAnswerSchema,
     decorative_only: NoulAnswerSchema,
+    domain: ChoiceAnswerSchema,
   }),
   taggedAt: z.string(),
   inputCharCount: z.number(),

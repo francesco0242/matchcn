@@ -70,6 +70,24 @@ export const DIMENSIONS: DimensionDef[] = [
     instructions:
       "Return the probability that this component is purely decorative, a visual or motion effect with no informational or functional content of its own (background animations, particle fields, gradient or blob effects, cursor trails). A component that displays real content (text, data, an image the caller provides) even if it is heavily animated should score low.",
   },
+  {
+    key: "domain",
+    kind: "choice",
+    labels: [
+      "auth",
+      "scheduling",
+      "commerce",
+      "messaging",
+      "analytics",
+      "content",
+      "settings",
+      "search",
+      "marketing",
+      "general-purpose",
+    ],
+    instructions:
+      'Classify what real-world task or subject matter this component is FOR, independent of its visual shape (a form, a card, and a modal can all serve the same task). "auth" is signing in, signing up, password reset, or account verification. "scheduling" is calendars, date/time pickers, bookings, or event/agenda views. "commerce" is pricing, checkout, cart, product listings, or payment. "messaging" is chat, comments, direct messages, or notification feeds. "analytics" is dashboards, stats, metrics, or data-heavy displays whose subject is numbers/performance. "content" is articles, blog posts, docs, or media galleries whose subject is written or visual content itself. "settings" is account/app preferences or configuration panels. "search" is search bars, filters, or command palettes for finding things. "marketing" is landing-page sections meant to persuade or introduce a product (hero sections, testimonials, feature highlights, CTAs), not a specific task the user performs. "general-purpose" is a low-level UI primitive (a generic button, badge, tooltip, layout wrapper) with no specific task or subject tied to it — pick this whenever the component could equally serve any of the above.',
+  },
 ];
 
 export const CHOICE_DIMENSIONS = DIMENSIONS.filter((d) => d.kind !== "noul");

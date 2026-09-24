@@ -30,9 +30,9 @@ section with three plans" does not search well against a component named
 `simple-pricing-with-three-tiers`, unless you already know that name
 exists.
 
-matchcn tags every component it indexes across six fixed properties
-(category, motion, visual density, interaction model, and two others)
-using [classifier.dev](https://classifier.dev), then matches a
+matchcn tags every component it indexes across seven fixed properties
+(category, domain, motion, visual density, interaction model, and two
+others) using [classifier.dev](https://classifier.dev), then matches a
 plain-language brief against those tags with deterministic code. Same
 brief, same ranking, every time. No forced guesses: when nothing fits
 well, matchcn says so instead of returning the closest wrong answer.
@@ -91,8 +91,8 @@ slightly between calls (classifier.dev does not guarantee identical
 answers across calls), but the outcome, the chosen component, and the
 install command have been stable across every run tried.
 
-Every response includes a per-dimension reason: which of the six tagged
-properties matched the brief and which did not, both sides' actual
+Every response includes a per-dimension reason: which of the seven
+tagged properties matched the brief and which did not, both sides' actual
 values, never just a pass or fail bit. That is what makes a `no_match` or
 a `shortlist` result debuggable instead of a dead end.
 
@@ -146,10 +146,10 @@ a model call, so results are reproducible.
 1. **Ingest** — fetch each registry's `registry.json`, normalize into one
    shape.
 2. **Tag** — one batched call per chunk of components to classifier.dev,
-   across six dimensions: `category`, `motion`, `visual_density`,
-   `interaction_model`, `needs_external_data`, `decorative_only`. Output
-   is committed JSON, reviewable like code.
-3. **Match** — parse the brief into the same six dimensions with one
+   across seven dimensions: `category`, `domain`, `motion`,
+   `visual_density`, `interaction_model`, `needs_external_data`,
+   `decorative_only`. Output is committed JSON, reviewable like code.
+3. **Match** — parse the brief into the same seven dimensions with one
    classifier.dev call, then rank every tagged component against it in
    plain code. Each dimension's contribution to the ranking is weighted
    by its own confidence, so a weak tag pulls its weight down instead of

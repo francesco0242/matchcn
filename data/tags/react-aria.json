@@ -76,6 +76,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 180
       }
     },
     "taggedAt": "2026-09-24T14:30:36.478Z",
@@ -158,6 +176,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.93,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0.06,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.9400000000000001
+        },
+        "model": "jev-1.13.0",
+        "ms": 180
       }
     },
     "taggedAt": "2026-09-24T14:30:36.478Z",
@@ -240,6 +276,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 180
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -322,6 +376,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "scheduling",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 1,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 180
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -404,6 +476,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.95,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0.04,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.96
+        },
+        "model": "jev-1.13.0",
+        "ms": 180
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -486,6 +576,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.88,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0.1,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.9
+        },
+        "model": "jev-1.13.0",
+        "ms": 180
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -568,6 +676,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.75,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0.01,
+          "settings": 0.21,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.78
+        },
+        "model": "jev-1.13.0",
+        "ms": 180
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -650,6 +776,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.73,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0.01,
+          "settings": 0.23,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.76
+        },
+        "model": "jev-1.13.0",
+        "ms": 180
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -732,6 +876,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.65,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0.03,
+          "settings": 0.27,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.7
+        },
+        "model": "jev-1.13.0",
+        "ms": 180
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -814,6 +976,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.72,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0.01,
+          "settings": 0.23,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.76
+        },
+        "model": "jev-1.13.0",
+        "ms": 180
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -896,6 +1076,24 @@
         "probability": 0.07,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.87,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0.11,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.89
+        },
+        "model": "jev-1.13.0",
+        "ms": 161
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -978,6 +1176,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.82,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0.15,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.85
+        },
+        "model": "jev-1.13.0",
+        "ms": 161
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -1060,6 +1276,24 @@
         "probability": 0.14,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.9,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0.02,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0.06,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.92
+        },
+        "model": "jev-1.13.0",
+        "ms": 161
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -1142,6 +1376,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.73,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0.01,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0.22,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.77
+        },
+        "model": "jev-1.13.0",
+        "ms": 161
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -1224,6 +1476,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.95,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0.04,
+          "marketing": 0,
+          "general-purpose": 0.96
+        },
+        "model": "jev-1.13.0",
+        "ms": 161
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -1306,6 +1576,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "search",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 1,
+          "marketing": 0,
+          "general-purpose": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 161
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -1388,6 +1676,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "scheduling",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 1,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 161
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -1470,6 +1776,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "scheduling",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 1,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 161
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -1552,6 +1876,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "scheduling",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 1,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 161
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -1634,6 +1976,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 161
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -1716,6 +2076,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.98,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0.01,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.99
+        },
+        "model": "jev-1.13.0",
+        "ms": 201
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -1798,6 +2176,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.99,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0.01,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.99
+        },
+        "model": "jev-1.13.0",
+        "ms": 201
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -1880,6 +2276,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.95,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0.01,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0.03,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.96
+        },
+        "model": "jev-1.13.0",
+        "ms": 201
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -1962,6 +2376,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.99,
+        "scores": {
+          "auth": 0.01,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0.01,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.98
+        },
+        "model": "jev-1.13.0",
+        "ms": 201
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -2044,6 +2476,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 201
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -2126,6 +2576,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.99,
+        "scores": {
+          "auth": 0.01,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.99
+        },
+        "model": "jev-1.13.0",
+        "ms": 201
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -2208,6 +2676,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.94,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0.01,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0.04,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.95
+        },
+        "model": "jev-1.13.0",
+        "ms": 201
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -2290,6 +2776,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.99,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0.01,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.99
+        },
+        "model": "jev-1.13.0",
+        "ms": 201
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -2372,6 +2876,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.99,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0.01,
+          "marketing": 0,
+          "general-purpose": 0.99
+        },
+        "model": "jev-1.13.0",
+        "ms": 201
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -2454,6 +2976,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 201
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -2536,6 +3076,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "analytics",
+        "confidence": 0.74,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0.77,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.23
+        },
+        "model": "jev-1.13.0",
+        "ms": 187
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -2618,6 +3176,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 187
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -2700,6 +3276,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.78,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0.17,
+          "settings": 0.01,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.81
+        },
+        "model": "jev-1.13.0",
+        "ms": 187
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -2782,6 +3376,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.92,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0.01,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0.05,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.93
+        },
+        "model": "jev-1.13.0",
+        "ms": 187
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -2864,6 +3476,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 187
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -2946,6 +3576,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.44,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0.5,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.5
+        },
+        "model": "jev-1.13.0",
+        "ms": 187
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -3028,6 +3676,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.77,
+        "scores": {
+          "auth": 0.01,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0.19,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.8
+        },
+        "model": "jev-1.13.0",
+        "ms": 187
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -3110,6 +3776,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "scheduling",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 1,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 187
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -3192,6 +3876,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "search",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 1,
+          "marketing": 0,
+          "general-purpose": 0
+        },
+        "model": "jev-1.13.0",
+        "ms": 187
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -3274,6 +3976,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.97,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0.02,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.98
+        },
+        "model": "jev-1.13.0",
+        "ms": 187
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -3356,6 +4076,24 @@
         "probability": 0.23,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 214
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -3438,6 +4176,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.72,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0.25,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.75
+        },
+        "model": "jev-1.13.0",
+        "ms": 214
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -3520,6 +4276,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.86,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0.12,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.88
+        },
+        "model": "jev-1.13.0",
+        "ms": 214
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -3602,6 +4376,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.43,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0.46,
+          "content": 0.04,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.5
+        },
+        "model": "jev-1.13.0",
+        "ms": 214
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -3684,6 +4476,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.93,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0.06,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.94
+        },
+        "model": "jev-1.13.0",
+        "ms": 214
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -3766,6 +4576,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.94,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0.02,
+          "analytics": 0,
+          "content": 0.01,
+          "settings": 0,
+          "search": 0.02,
+          "marketing": 0,
+          "general-purpose": 0.95
+        },
+        "model": "jev-1.13.0",
+        "ms": 214
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -3848,6 +4676,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.98,
+        "scores": {
+          "auth": 0.01,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0.01,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.98
+        },
+        "model": "jev-1.13.0",
+        "ms": 214
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -3930,6 +4776,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "scheduling",
+        "confidence": 0.99,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0.99,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.01
+        },
+        "model": "jev-1.13.0",
+        "ms": 214
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -4012,6 +4876,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.67,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0.29,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.71
+        },
+        "model": "jev-1.13.0",
+        "ms": 214
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -4094,6 +4976,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 556
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 214
       }
     },
     "taggedAt": "2026-09-24T14:30:36.479Z",
@@ -4176,6 +5076,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 308
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 213
       }
     },
     "taggedAt": "2026-09-24T14:30:37.976Z",
@@ -4258,6 +5176,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 308
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.72,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0.11,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0.13,
+          "marketing": 0,
+          "general-purpose": 0.76
+        },
+        "model": "jev-1.13.0",
+        "ms": 213
       }
     },
     "taggedAt": "2026-09-24T14:30:37.976Z",
@@ -4340,6 +5276,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 308
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 213
       }
     },
     "taggedAt": "2026-09-24T14:30:37.976Z",
@@ -4422,6 +5376,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 308
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 213
       }
     },
     "taggedAt": "2026-09-24T14:30:37.976Z",
@@ -4504,6 +5476,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 308
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.94,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0.05,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.95
+        },
+        "model": "jev-1.13.0",
+        "ms": 213
       }
     },
     "taggedAt": "2026-09-24T14:30:37.976Z",
@@ -4586,6 +5576,24 @@
         "probability": 0.06,
         "model": "jev-1.13.0",
         "ms": 308
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 213
       }
     },
     "taggedAt": "2026-09-24T14:30:37.976Z",
@@ -4668,6 +5676,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 308
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.62,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0.33,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.67
+        },
+        "model": "jev-1.13.0",
+        "ms": 213
       }
     },
     "taggedAt": "2026-09-24T14:30:37.976Z",
@@ -4750,6 +5776,24 @@
         "probability": 0.01,
         "model": "jev-1.13.0",
         "ms": 308
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.99,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 213
       }
     },
     "taggedAt": "2026-09-24T14:30:37.976Z",
@@ -4832,6 +5876,24 @@
         "probability": 0.01,
         "model": "jev-1.13.0",
         "ms": 308
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.81,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0.17,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.83
+        },
+        "model": "jev-1.13.0",
+        "ms": 213
       }
     },
     "taggedAt": "2026-09-24T14:30:37.976Z",
@@ -4914,6 +5976,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 308
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 0.99,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0.01,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 0.99
+        },
+        "model": "jev-1.13.0",
+        "ms": 213
       }
     },
     "taggedAt": "2026-09-24T14:30:37.976Z",
@@ -4996,6 +6076,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 308
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 151
       }
     },
     "taggedAt": "2026-09-24T14:30:37.976Z",
@@ -5078,6 +6176,24 @@
         "probability": 0,
         "model": "jev-1.13.0",
         "ms": 308
+      },
+      "domain": {
+        "label": "general-purpose",
+        "confidence": 1,
+        "scores": {
+          "auth": 0,
+          "scheduling": 0,
+          "commerce": 0,
+          "messaging": 0,
+          "analytics": 0,
+          "content": 0,
+          "settings": 0,
+          "search": 0,
+          "marketing": 0,
+          "general-purpose": 1
+        },
+        "model": "jev-1.13.0",
+        "ms": 151
       }
     },
     "taggedAt": "2026-09-24T14:30:37.976Z",

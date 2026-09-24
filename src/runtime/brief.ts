@@ -36,6 +36,7 @@ export async function parseBrief(brief: string): Promise<ParsedBrief> {
     interaction_model: toChoiceAnswer(dims["interaction_model"]),
     needs_external_data: toNoulAnswer(dims["needs_external_data"]),
     decorative_only: toNoulAnswer(dims["decorative_only"]),
+    domain: toChoiceAnswer(dims["domain"]),
   };
 
   return { dimensions, decisionsSpent: DIMENSIONS.length };
