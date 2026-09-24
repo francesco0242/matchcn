@@ -220,14 +220,19 @@ Read this before relying on matchcn for something important.
 - **Tag confidence varies by registry and dimension, and the matcher
   already accounts for it.** `visual_density` is the weakest dimension
   overall. assistant-ui (agent/chat UI content, far from the schema's
-  motion/marketing anchors) and uiable (largely name-echoed, auto-generated
-  descriptions) tag less confidently than the rest of the catalog; cnippet
-  and uiable haven't had a full-scale confidence measurement yet. A
-  confidence-weighted matcher discounts all of this automatically, so a
-  weak tag pulls its own weight down instead of producing a wrong
-  confident answer, but a brief that leans heavily on these registries or
-  on visual density is the one most likely to get a shortlist or
-  no-match instead of a clean pick.
+  motion/marketing anchors) tags less confidently than the rest of the
+  catalog. cnippet and uiable were measured at full scale after an
+  earlier 20-item pre-tagging sample suggested they might be worse
+  (35% under 0.6): they are not. Across their full 8,388 choice-dimension
+  answers, 24.4% score under 0.6 confidence, matching the catalog-wide
+  baseline almost exactly. A confidence-weighted matcher discounts all
+  of this automatically, so a weak tag pulls its own weight down instead
+  of producing a wrong confident answer, but a brief that leans heavily
+  on visual density or assistant-ui-style content is the one most likely
+  to get a shortlist or no-match instead of a clean pick. Separately,
+  uiable's descriptions are still largely name-echoed templates ("Button
+  component.") rather than hand-written text — a real data-quality gap,
+  it just doesn't show up as measurably lower tag confidence.
 - **Non-English briefs are known to be weaker.** Tested directly: an
   English brief and its translated equivalent were compared side by
   side, and English found a real, well-tagged match that the translated
