@@ -95,12 +95,7 @@ export const REGISTRIES: RegistryConfig[] = [
   // REGISTRY_EXPANSION_STEP1_2.md for a fixable filter gap (plate,
   // react-aria) once their filters were written (filterPlate,
   // filterReactAria) and a real per-item availability check found no
-  // paywall on either. shadcn-ui-blocks (the third candidate, same batch)
-  // is NOT included here despite also getting a fixed filter
-  // (filterShadcnUiBlocks): a real per-item availability check of its
-  // "-pro-" named blocks found 3,198 of 3,903 (82%) return 401
-  // unauthenticated, far past the 40%/33.3% bar that already ruled out
-  // shadcnuikit/shadcn-space as "not worth the complexity."
+  // paywall on either.
   {
     name: "plate",
     indexUrl: "https://platejs.org/r/registry.json",
@@ -110,5 +105,23 @@ export const REGISTRIES: RegistryConfig[] = [
     name: "react-aria",
     indexUrl: "https://react-aria.adobe.com/registry/registry.json",
     itemUrlTemplate: "https://react-aria.adobe.com/registry/{name}.json",
+  },
+
+  // shadcn-ui-blocks was evaluated once already (see the third-expansion
+  // comment above, and README Limitations) against its full registry.json,
+  // which mixes free and "-pro-" paid blocks: a per-item check found 82%
+  // of that combined index (3,198/3,903) return 401 unauthenticated, so it
+  // was excluded entirely. The registry's own maintainer (Vaedros) later
+  // reached out and pointed at a separate, curated free-only index the
+  // vendor publishes at this URL, distinct from the mixed one. A fresh
+  // per-item availability check against this URL's own 626 items found
+  // 626/626 (100%) genuinely installable unauthenticated, zero "-pro-"
+  // named items, zero registry:item (OG-image) pollution. Uses the same
+  // filterShadcnUiBlocks() filter (which only drops registry:item; not
+  // reached in practice here since this index has none).
+  {
+    name: "shadcn-ui-blocks",
+    indexUrl: "https://www.shadcn-ui-blocks.com/r/free-registry.json",
+    itemUrlTemplate: "https://www.shadcn-ui-blocks.com/r/{name}.json",
   },
 ];

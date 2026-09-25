@@ -183,8 +183,9 @@ component you install still comes directly from its own registry via
 | uiable | [uiable.com](https://uiable.com) | 969 |
 | plate | [platejs.org](https://platejs.org) | 174 |
 | react-aria | [react-aria.adobe.com](https://react-aria.adobe.com) | 62 |
+| shadcn-ui-blocks | [shadcn-ui-blocks.com](https://www.shadcn-ui-blocks.com) | 626 |
 
-3,953 components total. The first six are the original motion/marketing
+4,579 components total. The first six are the original motion/marketing
 family; the middle three are a product-UI expansion (forms, tables,
 dashboards, data display) added after checking each registry's
 demo/duplicate conventions individually rather than assuming they match
@@ -192,8 +193,12 @@ the original six; cnippet and uiable are a second product-UI expansion,
 added the same way; plate and react-aria are a third, added the same
 way after each got its own filter fix (dropping plate's documentation
 pages, collapsing react-aria's tailwind/css/hooks style-prefix
-duplicates down to one canonical component each). One other candidate
-from that same third expansion is not indexed, see Limitations below.
+duplicates down to one canonical component each). shadcn-ui-blocks is a
+fourth: its combined free+paid index was excluded outright (82% of it
+paywalled, see Limitations below), but the vendor's own maintainer
+pointed at a separate, curated free-only index, which a real per-item
+check found 100% installable unauthenticated, so only that free-only
+index is used here.
 aceternity's count already excludes 163 page-template components a real
 per-item availability check found paywalled at their actual install URL;
 shadcn-dashboard's count already excludes 165 components for the same
@@ -220,12 +225,16 @@ Read this before relying on matchcn for something important.
   held back entirely: its own filter check got contaminated by the
   vendor's rate limiter, so it ships once a clean check runs rather than
   on bad data. shadcnuikit and shadcn-space were evaluated and skipped
-  outright for the same reason (40% and 33.3% paywalled). shadcn-ui-blocks
-  was evaluated for this same expansion and skipped for the same reason,
-  worse than either: 3,198 of its 3,903 real blocks (82%) are `-pro-`
-  named and return 401 unauthenticated on their actual install URL.
-  cult-ui.com isn't indexed at all: its registry sits behind a bot
-  challenge.
+  outright for the same reason (40% and 33.3% paywalled). shadcn-ui-blocks's
+  combined registry.json was evaluated the same way and skipped for the
+  same reason, worse than either: 3,198 of its 3,903 real blocks (82%)
+  are `-pro-` named and return 401 unauthenticated on their actual
+  install URL. Its maintainer later pointed at a separate, curated
+  free-only index the vendor publishes at a different URL; a fresh
+  per-item check against that one found 626/626 (100%) installable
+  unauthenticated, so only that free-only index is indexed here, not the
+  combined one. cult-ui.com isn't indexed at all: its registry sits
+  behind a bot challenge.
 - **Tag confidence varies by registry and dimension, and the matcher
   already accounts for it.** `visual_density` is the weakest dimension
   overall. assistant-ui (agent/chat UI content, far from the schema's
@@ -246,7 +255,7 @@ Read this before relying on matchcn for something important.
   English brief and its translated equivalent were compared side by
   side, and English found a real, well-tagged match that the translated
   version did not. Do not assume non-English input works as well.
-- **13 of 372+ shadcn-format registries are indexed.** This is not a
+- **14 of 372+ shadcn-format registries are indexed.** This is not a
   comprehensive index of the ecosystem.
 
 None of the above produces a wrong forced answer: when confidence is
