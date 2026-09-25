@@ -134,13 +134,45 @@ function filterAnimateUi(items: RawRegistryItem[]): FilterResult {
 }
 
 function filterAceternity(items: RawRegistryItem[]): FilterResult {
-  // No drops: the primitive/block join was attempted and found unreliable
-  // (docs/DECISIONS.md #8). Both sides stay.
-  const kept: FilterKeptItem[] = items.map((item) => ({
-    item,
-    compositionLevel: item.type === "registry:block" ? "page-template" : "primitive",
-  }));
-  return { kept, dropped: [] };
+  // No content join between primitives and blocks: that was attempted and
+  // found unreliable (docs/DECISIONS.md #8), so different-named items on
+  // both sides stay untouched. This is a separate, narrower case: the same
+  // `name` listed twice in aceternity's own index (confirmed live, only
+  // one such collision exists: "background-lines", once as registry:ui,
+  // once as registry:block), both pointing at the identical install URL
+  // (same {name}.json). That is not two different components, it is the
+  // same installable artifact catalogued twice, so only one entry ships.
+  // registry:ui is kept as canonical: it is what the shared install URL
+  // itself reports as the item's type, while registry:block's own
+  // per-item join was already shown unreliable and is not a stronger
+  // signal here.
+  const dropped: FilterDropped[] = [];
+  const kept: FilterKeptItem[] = [];
+  const seenNames = new Set<string>();
+  const uiNames = new Set(items.filter((i) => i.type === "registry:ui").map((i) => i.name));
+  for (const item of items) {
+    if (item.type === "registry:block" && uiNames.has(item.name)) {
+      dropped.push({
+        registry: "aceternity",
+        name: item.name,
+        rule: "duplicate-name",
+        reason: `"${item.name}" is also listed as registry:ui, pointing at the same install URL; the registry:ui entry ships as canonical`,
+      });
+      continue;
+    }
+    if (seenNames.has(item.name)) {
+      dropped.push({
+        registry: "aceternity",
+        name: item.name,
+        rule: "duplicate-name",
+        reason: `"${item.name}" already kept from an earlier entry with the same name`,
+      });
+      continue;
+    }
+    seenNames.add(item.name);
+    kept.push({ item, compositionLevel: item.type === "registry:block" ? "page-template" : "primitive" });
+  }
+  return { kept, dropped };
 }
 
 function filterKokonutui(items: RawRegistryItem[]): FilterResult {

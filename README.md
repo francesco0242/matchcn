@@ -172,7 +172,7 @@ component you install still comes directly from its own registry via
 |---|---|---|
 | react-bits | [reactbits.dev](https://reactbits.dev) | 204 |
 | magicui | [magicui.design](https://magicui.design) | 79 |
-| aceternity | [ui.aceternity.com](https://ui.aceternity.com) | 119 |
+| aceternity | [ui.aceternity.com](https://ui.aceternity.com) | 118 |
 | kokonutui | [kokonutui.com](https://kokonutui.com) | 51 |
 | animate-ui | [animate-ui.com](https://animate-ui.com) | 420 |
 | motion-primitives | [motion-primitives.com](https://motion-primitives.com) | 33 |
@@ -185,7 +185,7 @@ component you install still comes directly from its own registry via
 | react-aria | [react-aria.adobe.com](https://react-aria.adobe.com) | 62 |
 | shadcn-ui-blocks | [shadcn-ui-blocks.com](https://www.shadcn-ui-blocks.com) | 626 |
 
-4,579 components total. The first six are the original motion/marketing
+4,578 components total. The first six are the original motion/marketing
 family; the middle three are a product-UI expansion (forms, tables,
 dashboards, data display) added after checking each registry's
 demo/duplicate conventions individually rather than assuming they match
@@ -219,7 +219,7 @@ Read this before relying on matchcn for something important.
 - **Some registries are partly or fully excluded for paywalled components,
   found by a real per-item availability check** (does `npx shadcn add`
   actually work unauthenticated, not just what the index claims):
-  aceternity (163 of 282 tagged components, mostly page-template demo
+  aceternity (163 of 281 tagged components, mostly page-template demo
   pages) and shadcn-dashboard (165 of 508) had the gated share filtered
   out before shipping. shadcnblocks was tagged (4,171 components) but is
   held back entirely: its own filter check got contaminated by the
