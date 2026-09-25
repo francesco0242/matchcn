@@ -40,12 +40,22 @@ function candidateKey(record: TagRecord): string {
   return `${record.registry}/${record.name}`;
 }
 
+// visual_density is a noul (continuous probability), not a labeled choice
+// like the others here; render it as a short human-readable phrase for
+// the resolve prompt instead of a raw number.
+function densityPhrase(probability: number | null): string {
+  if (probability == null) return "unknown";
+  if (probability < 0.35) return "sparse";
+  if (probability > 0.65) return "dense";
+  return "moderate";
+}
+
 function candidateDescription(record: TagRecord): string {
   const d = record.dimensions;
   return (
     `${record.title ?? record.name} (${record.registry}, ${record.compositionLevel}). ` +
     `category: ${d.category.label ?? "unknown"}. motion: ${d.motion.label ?? "unknown"}. ` +
-    `visual density: ${d.visual_density.label ?? "unknown"}. interaction: ${d.interaction_model.label ?? "unknown"}.`
+    `visual density: ${densityPhrase(d.visual_density.probability)}. interaction: ${d.interaction_model.label ?? "unknown"}.`
   );
 }
 

@@ -168,7 +168,7 @@ export async function runTagging(opts: RunTaggingOptions): Promise<TaggingSummar
         dimensions: {
           category: toChoiceAnswer(dims["category"]),
           motion: toChoiceAnswer(dims["motion"]),
-          visual_density: toChoiceAnswer(dims["visual_density"]),
+          visual_density: toNoulAnswer(dims["visual_density"]),
           interaction_model: toChoiceAnswer(dims["interaction_model"]),
           needs_external_data: toNoulAnswer(dims["needs_external_data"]),
           decorative_only: toNoulAnswer(dims["decorative_only"]),

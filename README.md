@@ -78,12 +78,12 @@ BRIEF: a dense bento grid for a landing page
 OUTCOME: CONFIDENT
 Selected "bento-grid" from magicui.
 
-  -> bento-grid  (magicui)  confidence 0.91
+  -> bento-grid  (magicui)  confidence 0.93
     install: npx shadcn@latest add https://magicui.design/r/bento-grid.json
-    matched:     category, motion, visual_density, interaction_model, needs_external_data, decorative_only
+    matched:     category, motion, visual_density, interaction_model, needs_external_data, decorative_only, domain
     not matched: (none)
 
-resolve used: true   decisions spent: 7
+resolve used: true   decisions spent: 8
 ```
 
 This is real output from a real run. The exact confidence number varies
@@ -236,21 +236,25 @@ Read this before relying on matchcn for something important.
   combined one. cult-ui.com isn't indexed at all: its registry sits
   behind a bot challenge.
 - **Tag confidence varies by registry and dimension, and the matcher
-  already accounts for it.** `visual_density` is the weakest dimension
-  overall. assistant-ui (agent/chat UI content, far from the schema's
-  motion/marketing anchors) tags less confidently than the rest of the
-  catalog. cnippet and uiable were measured at full scale after an
-  earlier 20-item pre-tagging sample suggested they might be worse
-  (35% under 0.6): they are not. Across their full 8,388 choice-dimension
-  answers, 24.4% score under 0.6 confidence, matching the catalog-wide
-  baseline almost exactly. A confidence-weighted matcher discounts all
-  of this automatically, so a weak tag pulls its own weight down instead
-  of producing a wrong confident answer, but a brief that leans heavily
-  on visual density or assistant-ui-style content is the one most likely
-  to get a shortlist or no-match instead of a clean pick. Separately,
-  uiable's descriptions are still largely name-echoed templates ("Button
-  component.") rather than hand-written text — a real data-quality gap,
-  it just doesn't show up as measurably lower tag confidence.
+  already accounts for it.** `visual_density` used to be the clear
+  weakest dimension (36-37% under 0.6 confidence, both a counting-based
+  and a named-anchor wording were tried and both plateaued there). It was
+  reformulated from a 3-way label choice to a continuous probability
+  (a structural change, not another wording tweak), piloted against a
+  real sample before any backfill, then backfilled across the full
+  catalog: full-catalog result is now 21.4% under-threshold, in line
+  with the rest of the schema (13.5-21.5% across all seven dimensions;
+  `motion` is nominally the new low point, by less than a percentage
+  point). assistant-ui (agent/chat UI content, far from the schema's
+  motion/marketing anchors) still tags less confidently than the rest of
+  the catalog. A confidence-weighted matcher discounts all of this
+  automatically, so a weak tag pulls its own weight down instead of
+  producing a wrong confident answer, but a brief that leans heavily on
+  assistant-ui-style content is the one most likely to get a shortlist
+  or no-match instead of a clean pick. Separately, uiable's descriptions
+  are still largely name-echoed templates ("Button component.") rather
+  than hand-written text — a real data-quality gap, it just doesn't show
+  up as measurably lower tag confidence.
 - **Non-English briefs are known to be weaker.** Tested directly: an
   English brief and its translated equivalent were compared side by
   side, and English found a real, well-tagged match that the translated
