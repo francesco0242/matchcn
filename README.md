@@ -247,18 +247,35 @@ Read this before relying on matchcn for something important.
   `motion` is nominally the new low point, by less than a percentage
   point). assistant-ui (agent/chat UI content, far from the schema's
   motion/marketing anchors) still tags less confidently than the rest of
-  the catalog. A confidence-weighted matcher discounts all of this
-  automatically, so a weak tag pulls its own weight down instead of
-  producing a wrong confident answer, but a brief that leans heavily on
-  assistant-ui-style content is the one most likely to get a shortlist
-  or no-match instead of a clean pick. Separately, uiable's descriptions
-  are still largely name-echoed templates ("Button component.") rather
-  than hand-written text — a real data-quality gap, it just doesn't show
-  up as measurably lower tag confidence.
-- **Non-English briefs are known to be weaker.** Tested directly: an
-  English brief and its translated equivalent were compared side by
-  side, and English found a real, well-tagged match that the translated
-  version did not. Do not assume non-English input works as well.
+  the catalog. cnippet and uiable were measured at full scale after an
+  earlier 20-item pre-tagging sample suggested they might be worse
+  (35% under 0.6): they are not. Across their full 8,388 choice-dimension
+  answers, 24.4% score under 0.6 confidence, matching the catalog-wide
+  baseline almost exactly. A confidence-weighted matcher discounts all
+  of this automatically, so a weak tag pulls its own weight down instead
+  of producing a wrong confident answer, but a brief that leans heavily
+  on assistant-ui-style content is the one most likely to get a
+  shortlist or no-match instead of a clean pick. Separately, uiable's
+  descriptions are still largely name-echoed templates ("Button
+  component.") rather than hand-written text — a real data-quality gap,
+  it just doesn't show up as measurably lower tag confidence.
+- **Non-English briefs are auto-translated before matching, quality
+  depends on the source language and phrasing.** A free wording-only fix
+  ("judge by meaning, any language") was tried first and reverted for no
+  measured benefit. What actually closed the gap: local language
+  detection plus real translation to English before parsing (see
+  `src/runtime/translate.ts`). Verified directly on the exact case that
+  first exposed this: a Polish pricing brief that previously returned
+  `no_match` now returns a real shortlist of pricing components once
+  translated. Detection is local and free; translation calls a free,
+  keyless third-party API (rate-limited per calling machine, not a
+  shared pool this project could exhaust for everyone, since matchcn
+  runs locally per user). Any detection or translation failure falls
+  back to the original text silently, exactly as if this did not exist,
+  so this can only help or be a no-op, never break a brief that already
+  worked. Detection on short phrases is imperfect (a French/Italian/etc.
+  misdetection on an ambiguous short brief is possible); translation
+  quality for the detected language is out of this project's control.
 - **14 of 372+ shadcn-format registries are indexed.** This is not a
   comprehensive index of the ecosystem.
 
