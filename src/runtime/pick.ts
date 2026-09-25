@@ -15,6 +15,7 @@ import { readJsonCache } from "./lib/cache.js";
 import { REGISTRIES } from "./registries.js";
 import { DIMENSIONS } from "./dimensions.js";
 import { parseBrief } from "./brief.js";
+import { translateBriefToEnglish } from "./translate.js";
 import { rankCandidates } from "./match.js";
 import { resolveAmbiguous, shouldSkipResolve, RESOLVE_CONFIDENCE_FLOOR, type RankedCandidate } from "./resolve.js";
 import type { TagRecord, ChoiceAnswer, NoulAnswer } from "./types.js";
@@ -86,6 +87,12 @@ export interface PickResult {
   differentiators?: Differentiator[];
   resolveUsed: boolean;
   decisionsSpent: number;
+  // Set when the brief was detected as non-English and auto-translated
+  // before matching (see translate.ts). Absent when the brief was already
+  // English, too short to detect, or translation was attempted but
+  // unavailable (network/quota failure) -- in the last case matching
+  // still ran on the original text, exactly as if this did not exist.
+  translatedFrom?: string;
 }
 
 export interface PickOptions {
@@ -219,10 +226,14 @@ export async function pickComponent(opts: PickOptions): Promise<PickResult> {
     };
   }
 
-  const parsed = await parseBrief(opts.brief);
+  const translation = await translateBriefToEnglish(opts.brief);
+  const briefText = translation.text;
+  const translatedFrom = translation.translated ? translation.detectedLanguage : undefined;
+
+  const parsed = await parseBrief(briefText);
   let decisionsSpent = parsed.decisionsSpent;
 
-  const ranked: RankedCandidate[] = rankCandidates(parsed.dimensions, candidates, opts.brief);
+  const ranked: RankedCandidate[] = rankCandidates(parsed.dimensions, candidates, briefText);
   const top = ranked.slice(0, Math.max(5, maxResults));
 
   let resolveUsed = false;
@@ -231,7 +242,7 @@ export async function pickComponent(opts: PickOptions): Promise<PickResult> {
 
   if (!shouldSkipResolve(top)) {
     resolveUsed = true;
-    const resolved = await resolveAmbiguous(opts.brief, top);
+    const resolved = await resolveAmbiguous(briefText, top);
     decisionsSpent += resolved.decisionsSpent;
     resolvedLabel = resolved.label;
     resolvedConfidence = resolved.confidence;
@@ -247,6 +258,7 @@ export async function pickComponent(opts: PickOptions): Promise<PickResult> {
       candidates: top.slice(0, maxResults).map((r) => toComponentOutput(r.record, 1 - r.distance, parsed.dimensions)),
       resolveUsed,
       decisionsSpent,
+      translatedFrom,
     };
   }
 
@@ -270,6 +282,7 @@ export async function pickComponent(opts: PickOptions): Promise<PickResult> {
       chosen: toComponentOutput(top[0].record, bestConfidence, parsed.dimensions),
       resolveUsed,
       decisionsSpent,
+      translatedFrom,
     };
   }
 
@@ -292,5 +305,6 @@ export async function pickComponent(opts: PickOptions): Promise<PickResult> {
     differentiators,
     resolveUsed,
     decisionsSpent,
+    translatedFrom,
   };
 }
