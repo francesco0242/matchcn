@@ -99,7 +99,7 @@ export const TagRecordSchema = z.object({
   dimensions: z.object({
     category: ChoiceAnswerSchema,
     motion: ChoiceAnswerSchema,
-    visual_density: ChoiceAnswerSchema,
+    visual_density: NoulAnswerSchema,
     interaction_model: ChoiceAnswerSchema,
     needs_external_data: NoulAnswerSchema,
     decorative_only: NoulAnswerSchema,

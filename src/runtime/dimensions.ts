@@ -46,10 +46,9 @@ export const DIMENSIONS: DimensionDef[] = [
   },
   {
     key: "visual_density",
-    kind: "choice-ordered",
-    labels: ["minimal", "moderate", "dense"],
+    kind: "noul",
     instructions:
-      'Judge how the component would feel to someone looking at it, as an overall impression, not by counting elements (do not count, counting is unreliable for this kind of judgment; go with the first impression instead). "minimal" is one focal element with lots of empty space around it, nothing competes for attention, like motion-primitives\' text-shimmer: a single line of text with a shimmer effect and nothing else on screen. "moderate" is a few grouped elements with one clear primary and the rest supporting it rather than competing with it, like magicui\'s tweet-card: an avatar, a name, a handle, and the tweet text, all clearly reading as one grouped unit around the tweet itself. "dense" is many elements competing for attention at once, with no single obvious place for the eye to land first, like magicui\'s bento-grid: a full grid of simultaneous feature tiles, each pulling attention equally. If the component genuinely sits between two levels, pick whichever level matches the overall first impression, not a literal tally of parts.',
+      'Return the probability that this component would feel visually DENSE to someone looking at it. Anchor low (sparse): motion-primitives\' text-shimmer (a single line of text, nothing else on screen) and magicui\'s tweet-card (an avatar, name, handle, and text, all clearly one grouped unit around a single subject). Anchor high (dense): magicui\'s bento-grid (a full grid of simultaneous feature tiles, each pulling attention equally) and any dashboard-style layout with several distinct cards, charts, or panels visible together. The deciding question: is there one clear subject the whole component is organized around (low probability), or do several independent things share attention at once (high probability)? Judge the overall first impression, not a literal count of parts.',
   },
   {
     key: "interaction_model",

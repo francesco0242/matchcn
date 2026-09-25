@@ -43,15 +43,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 0.43,
-        "scores": {
-          "minimal": 0.62,
-          "moderate": 0.37,
-          "dense": 0.01
-        },
+        "probability": 0.06,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 181
       },
       "interaction_model": {
         "label": "click-toggle",
@@ -143,15 +137,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 0.88,
-        "scores": {
-          "minimal": 0.92,
-          "moderate": 0.02,
-          "dense": 0.06
-        },
+        "probability": 0.02,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 181
       },
       "interaction_model": {
         "label": "display-only",
@@ -243,15 +231,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "moderate",
-        "confidence": 0.55,
-        "scores": {
-          "minimal": 0.12,
-          "moderate": 0.7,
-          "dense": 0.18
-        },
+        "probability": 0.26,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 181
       },
       "interaction_model": {
         "label": "display-only",
@@ -343,15 +325,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 1,
-        "scores": {
-          "minimal": 1,
-          "moderate": 0,
-          "dense": 0
-        },
+        "probability": 0,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 181
       },
       "interaction_model": {
         "label": "display-only",
@@ -443,15 +419,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 0.99,
-        "scores": {
-          "minimal": 0.99,
-          "moderate": 0.01,
-          "dense": 0
-        },
+        "probability": 0.01,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 181
       },
       "interaction_model": {
         "label": "hover",
@@ -543,15 +513,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "moderate",
-        "confidence": 0.57,
-        "scores": {
-          "minimal": 0.18,
-          "moderate": 0.71,
-          "dense": 0.11
-        },
+        "probability": 0.21,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 181
       },
       "interaction_model": {
         "label": "drag-or-gesture",
@@ -643,15 +607,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 0.99,
-        "scores": {
-          "minimal": 1,
-          "moderate": 0,
-          "dense": 0
-        },
+        "probability": 0.01,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 181
       },
       "interaction_model": {
         "label": "display-only",
@@ -743,15 +701,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "moderate",
-        "confidence": 0.41,
-        "scores": {
-          "minimal": 0.38,
-          "moderate": 0.61,
-          "dense": 0.01
-        },
+        "probability": 0.03,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 181
       },
       "interaction_model": {
         "label": "click-toggle",
@@ -843,15 +795,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 0.57,
-        "scores": {
-          "minimal": 0.71,
-          "moderate": 0.28,
-          "dense": 0.01
-        },
+        "probability": 0.03,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 181
       },
       "interaction_model": {
         "label": "click-toggle",
@@ -943,15 +889,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 0.98,
-        "scores": {
-          "minimal": 0.99,
-          "moderate": 0.01,
-          "dense": 0
-        },
+        "probability": 0.01,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 181
       },
       "interaction_model": {
         "label": "display-only",
@@ -1043,15 +983,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "moderate",
-        "confidence": 0.22,
-        "scores": {
-          "minimal": 0.45,
-          "moderate": 0.47,
-          "dense": 0.08
-        },
+        "probability": 0.11,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 157
       },
       "interaction_model": {
         "label": "drag-or-gesture",
@@ -1143,15 +1077,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 0.61,
-        "scores": {
-          "minimal": 0.74,
-          "moderate": 0.25,
-          "dense": 0.01
-        },
+        "probability": 0.03,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 157
       },
       "interaction_model": {
         "label": "none of these",
@@ -1241,15 +1169,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 1,
-        "scores": {
-          "minimal": 1,
-          "moderate": 0,
-          "dense": 0
-        },
+        "probability": 0,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 157
       },
       "interaction_model": {
         "label": "display-only",
@@ -1339,15 +1261,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 0.99,
-        "scores": {
-          "minimal": 0.99,
-          "moderate": 0.01,
-          "dense": 0
-        },
+        "probability": 0.01,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 157
       },
       "interaction_model": {
         "label": "display-only",
@@ -1437,15 +1353,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 1,
-        "scores": {
-          "minimal": 1,
-          "moderate": 0,
-          "dense": 0
-        },
+        "probability": 0.01,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 157
       },
       "interaction_model": {
         "label": "display-only",
@@ -1535,15 +1445,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 1,
-        "scores": {
-          "minimal": 1,
-          "moderate": 0,
-          "dense": 0
-        },
+        "probability": 0.01,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 157
       },
       "interaction_model": {
         "label": "display-only",
@@ -1633,15 +1537,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 1,
-        "scores": {
-          "minimal": 1,
-          "moderate": 0,
-          "dense": 0
-        },
+        "probability": 0.01,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 157
       },
       "interaction_model": {
         "label": "display-only",
@@ -1731,15 +1629,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 1,
-        "scores": {
-          "minimal": 1,
-          "moderate": 0,
-          "dense": 0
-        },
+        "probability": 0,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 157
       },
       "interaction_model": {
         "label": "display-only",
@@ -1829,15 +1721,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 1,
-        "scores": {
-          "minimal": 1,
-          "moderate": 0,
-          "dense": 0
-        },
+        "probability": 0.01,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 157
       },
       "interaction_model": {
         "label": "display-only",
@@ -1929,15 +1815,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 0.97,
-        "scores": {
-          "minimal": 0.98,
-          "moderate": 0.02,
-          "dense": 0
-        },
+        "probability": 0.01,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 157
       },
       "interaction_model": {
         "label": "hover",
@@ -2029,15 +1909,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "moderate",
-        "confidence": 0.43,
-        "scores": {
-          "minimal": 0.37,
-          "moderate": 0.62,
-          "dense": 0.01
-        },
+        "probability": 0.01,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 183
       },
       "interaction_model": {
         "label": "click-toggle",
@@ -2129,15 +2003,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "moderate",
-        "confidence": 0.36,
-        "scores": {
-          "minimal": 0.41,
-          "moderate": 0.57,
-          "dense": 0.02
-        },
+        "probability": 0.01,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 183
       },
       "interaction_model": {
         "label": "click-toggle",
@@ -2229,15 +2097,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "dense",
-        "confidence": 0.2,
-        "scores": {
-          "minimal": 0.13,
-          "moderate": 0.41,
-          "dense": 0.45999999999999996
-        },
+        "probability": 0.61,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 183
       },
       "interaction_model": {
         "label": "hover",
@@ -2329,15 +2191,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 0.97,
-        "scores": {
-          "minimal": 0.98,
-          "moderate": 0.01,
-          "dense": 0.01
-        },
+        "probability": 0.01,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 183
       },
       "interaction_model": {
         "label": "hover",
@@ -2429,15 +2285,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "moderate",
-        "confidence": 0.25,
-        "scores": {
-          "minimal": 0.49,
-          "moderate": 0.5,
-          "dense": 0.01
-        },
+        "probability": 0.06,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 183
       },
       "interaction_model": {
         "label": "drag-or-gesture",
@@ -2529,15 +2379,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "moderate",
-        "confidence": 0.66,
-        "scores": {
-          "minimal": 0.07,
-          "moderate": 0.77,
-          "dense": 0.16
-        },
+        "probability": 0.2,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 183
       },
       "interaction_model": {
         "label": "none of these",
@@ -2629,15 +2473,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "moderate",
-        "confidence": 0.46,
-        "scores": {
-          "minimal": 0.32,
-          "moderate": 0.64,
-          "dense": 0.04
-        },
+        "probability": 0.09,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 183
       },
       "interaction_model": {
         "label": "click-toggle",
@@ -2729,15 +2567,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 0.96,
-        "scores": {
-          "minimal": 0.97,
-          "moderate": 0.02,
-          "dense": 0.01
-        },
+        "probability": 0.02,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 183
       },
       "interaction_model": {
         "label": "display-only",
@@ -2829,15 +2661,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 0.9,
-        "scores": {
-          "minimal": 0.93,
-          "moderate": 0.07,
-          "dense": 0
-        },
+        "probability": 0.01,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 183
       },
       "interaction_model": {
         "label": "display-only",
@@ -2929,15 +2755,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 1,
-        "scores": {
-          "minimal": 1,
-          "moderate": 0,
-          "dense": 0
-        },
+        "probability": 0.01,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 183
       },
       "interaction_model": {
         "label": "display-only",
@@ -3029,15 +2849,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 0.99,
-        "scores": {
-          "minimal": 0.99,
-          "moderate": 0.01,
-          "dense": 0
-        },
+        "probability": 0.01,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 199
       },
       "interaction_model": {
         "label": "hover",
@@ -3127,15 +2941,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 1,
-        "scores": {
-          "minimal": 1,
-          "moderate": 0,
-          "dense": 0
-        },
+        "probability": 0,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 199
       },
       "interaction_model": {
         "label": "display-only",
@@ -3227,15 +3035,9 @@
         "ms": 248
       },
       "visual_density": {
-        "label": "minimal",
-        "confidence": 0.97,
-        "scores": {
-          "minimal": 0.98,
-          "moderate": 0.02,
-          "dense": 0
-        },
+        "probability": 0.01,
         "model": "jev-1.13.0",
-        "ms": 248
+        "ms": 199
       },
       "interaction_model": {
         "label": "hover",
