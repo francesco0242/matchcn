@@ -213,6 +213,21 @@ async function loadCandidates(registryFilter?: string): Promise<TagRecord[]> {
 
 export async function pickComponent(opts: PickOptions): Promise<PickResult> {
   const maxResults = opts.maxResults ?? 3;
+
+  // classifier.dev rejects an empty-string item with HTTP 400 (the same
+  // class of error already handled on the tagging side, see
+  // docs/DECISIONS.md #14). Reject here with a clear, handled result
+  // instead of letting that 400 propagate as an unhandled exception
+  // through translateBriefToEnglish -> parseBrief -> classifyChunk.
+  if (opts.brief.trim().length === 0) {
+    return {
+      outcome: "no_match",
+      message: "Brief cannot be empty. Describe the UI component you're looking for.",
+      resolveUsed: false,
+      decisionsSpent: 0,
+    };
+  }
+
   const candidates = await loadCandidates(opts.registry);
 
   if (candidates.length === 0) {
