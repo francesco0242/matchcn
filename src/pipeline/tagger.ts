@@ -13,9 +13,28 @@ function componentKey(c: { registry: string; name: string; compositionLevel: str
   return `${c.registry}/${c.name}/${c.compositionLevel}`;
 }
 
+// Pure routing for a chunk-classification failure, factored out of the
+// try/catch below so it can be unit-tested without a real network call:
+// recognized errors mean "stop this run cleanly, it's retryable later"
+// (with stoppedForQuota set only for actual quota exhaustion, so callers
+// can tell that apart from a stuck/unavailable batch); anything else
+// means the caller should rethrow.
+export function classifyErrorOutcome(err: unknown): { stoppedForQuota: boolean } | null {
+  if (err instanceof ClassifyQuotaExhaustedError) return { stoppedForQuota: true };
+  if (err instanceof ClassifyBatchUnavailableError || err instanceof ClassifySpendingLimitError) {
+    return { stoppedForQuota: false };
+  }
+  return null;
+}
+
 import { join } from "node:path";
 import { DIMENSIONS, CHOICE_DIMENSIONS, NOUL_DIMENSIONS } from "../runtime/dimensions.js";
-import { classifyChunk, ClassifyBatchUnavailableError, ClassifySpendingLimitError } from "../runtime/classify.js";
+import {
+  classifyChunk,
+  ClassifyBatchUnavailableError,
+  ClassifySpendingLimitError,
+  ClassifyQuotaExhaustedError,
+} from "../runtime/classify.js";
 import { toChoiceAnswer, toNoulAnswer } from "../runtime/answer-convert.js";
 import { readJsonCache, writeJsonCache } from "../runtime/lib/cache.js";
 import { sleep } from "../runtime/lib/concurrency.js";
@@ -143,11 +162,13 @@ export async function runTagging(opts: RunTaggingOptions): Promise<TaggingSummar
     try {
       result = await classifyChunk(items, DIMENSIONS);
     } catch (err) {
-      if (err instanceof ClassifyBatchUnavailableError || err instanceof ClassifySpendingLimitError) {
+      const outcome = classifyErrorOutcome(err);
+      if (outcome) {
         // Retryable in a later run; stop here rather than losing the
         // whole run to one stuck chunk. Checkpoint already reflects
         // everything before this chunk.
-        console.error(`[${opts.registry}] chunk failed, stopping run: ${err.message}`);
+        console.error(`[${opts.registry}] chunk failed, stopping run: ${(err as Error).message}`);
+        summary.stoppedForQuota = outcome.stoppedForQuota;
         break;
       }
       throw err;
