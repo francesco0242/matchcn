@@ -17,7 +17,7 @@ import { DIMENSIONS } from "./dimensions.js";
 import { parseBrief } from "./brief.js";
 import { translateBriefToEnglish } from "./translate.js";
 import { rankCandidates, choiceWeight, noulWeight } from "./match.js";
-import { resolveAmbiguous, shouldSkipResolve, RESOLVE_CONFIDENCE_FLOOR, type RankedCandidate } from "./resolve.js";
+import { resolveAmbiguous, shouldSkipResolve, candidateKey, RESOLVE_CONFIDENCE_FLOOR, type RankedCandidate } from "./resolve.js";
 import type { TagRecord, ChoiceAnswer, NoulAnswer } from "./types.js";
 import type { DimensionVector } from "./brief.js";
 
@@ -285,7 +285,7 @@ export async function pickComponent(opts: PickOptions): Promise<PickResult> {
 
   // Resolve picked one of the candidates by name; reorder so it leads.
   if (resolveUsed && resolvedLabel) {
-    const idx = top.findIndex((r) => `${r.record.registry}/${r.record.name}` === resolvedLabel);
+    const idx = top.findIndex((r) => candidateKey(r.record) === resolvedLabel);
     if (idx > 0) {
       const [picked] = top.splice(idx, 1);
       top.unshift(picked);
