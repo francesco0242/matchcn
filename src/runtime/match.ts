@@ -26,11 +26,11 @@ export type DimensionVector = TagRecord["dimensions"];
 //   Its weight is derived from how far the probability sits from 0.5,
 //   scaled to [0, 1]: 0.5 (genuinely uncertain) weighs 0, 0.0 or 1.0
 //   (confident either way) weighs 1. A null probability weighs 0.
-function choiceWeight(answer: ChoiceAnswer): number {
+export function choiceWeight(answer: ChoiceAnswer): number {
   return answer.confidence ?? 0;
 }
 
-function noulWeight(answer: NoulAnswer): number {
+export function noulWeight(answer: NoulAnswer): number {
   if (answer.probability == null) return 0;
   return Math.abs(answer.probability - 0.5) * 2;
 }
