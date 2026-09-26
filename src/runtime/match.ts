@@ -104,12 +104,24 @@ const STOPWORDS = new Set([
   "showing", "using", "each", "some",
 ]);
 
+// Crude plural stemming (strip a trailing "s", not "ss"), not a real
+// stemmer: found empirically necessary when a real eval run showed
+// "sign-in-forms-01" (an actual login form) scoring zero text overlap
+// against a "login form" brief purely because "forms" != "form" as
+// distinct tokens. A real stemming library is overkill for slug/title
+// vocabulary this short; this one heuristic closed the specific gap
+// observed without a dependency.
+function stem(token: string): string {
+  return token.length > 3 && token.endsWith("s") && !token.endsWith("ss") ? token.slice(0, -1) : token;
+}
+
 function tokenize(text: string): Set<string> {
   return new Set(
     text
       .toLowerCase()
       .split(/[^a-z0-9]+/)
-      .filter((t) => t.length > 1 && !STOPWORDS.has(t)),
+      .filter((t) => t.length > 1 && !STOPWORDS.has(t))
+      .map(stem),
   );
 }
 
@@ -122,51 +134,112 @@ function candidateText(record: TagRecord): string {
   return `${record.title ?? ""} ${record.name}`;
 }
 
-// Distance in [0, 1] from Jaccard overlap between brief and candidate
-// tokens (0 = every candidate token appears in the brief, 1 = no shared
-// tokens at all). Originally added because most of the tagged dimensions
-// are purely structural (motion, density, interaction model, ...): two
-// components that are both "form-input" + "static" + "minimal" were
-// indistinguishable to weightedDistance even when one is a login form and
-// the other is a calendar. A 20-brief pilot found this exact failure mode
-// causing most no_match outcomes: a coarse-dimension match with no
-// literal-word check at all, so Resolve correctly rejected calendars and
-// autocompletes offered up for a "login form" brief. The `domain`
-// dimension (auth/scheduling/commerce/...) now gives a real semantic
-// signal for this same case, but this word-overlap term is kept as a
-// second, independent, zero-cost signal rather than removed. This is
-// deterministic word overlap, not a model call, consistent with Match
-// staying local code.
-function textDistance(briefText: string, record: TagRecord): number {
-  const briefTokens = tokenize(briefText);
-  const candidateTokens = tokenize(candidateText(record));
-  if (briefTokens.size === 0 || candidateTokens.size === 0) return 1;
-  let intersection = 0;
-  for (const t of candidateTokens) if (briefTokens.has(t)) intersection++;
-  const union = briefTokens.size + candidateTokens.size - intersection;
-  return 1 - intersection / union;
+// How many candidates in the ranking pool contain each token in their
+// name/title. Powers the IDF weighting below: a token that appears in a
+// handful of components ("login") is far more discriminating than one
+// that appears in hundreds ("form", "button", "card"), so a shared rare
+// word should count for much more than a shared common one. Built once
+// per rankCandidates call over the actual candidate pool, not a fixed
+// global list, so it reflects the real catalog's vocabulary.
+function buildDocumentFrequency(candidates: TagRecord[]): Map<string, number> {
+  const df = new Map<string, number>();
+  for (const record of candidates) {
+    for (const t of tokenize(candidateText(record))) {
+      df.set(t, (df.get(t) ?? 0) + 1);
+    }
+  }
+  return df;
 }
 
-// Fixed weight for the text-overlap term, blended alongside the tagged
+// Smoothed inverse document frequency, always positive: a token with
+// zero measured document frequency (e.g. one only ever seen in the brief,
+// never in any candidate name/title) still gets a real, maximal weight
+// rather than zero or a division-by-zero.
+function idf(token: string, df: Map<string, number>, totalDocs: number): number {
+  const docFreq = df.get(token) ?? 0;
+  return Math.log((totalDocs + 1) / (docFreq + 1)) + 1;
+}
+
+// TF-IDF cosine distance in [0, 1] (0 = identical weighted vocabulary,
+// 1 = no shared tokens at all). Originally a plain, unweighted Jaccard
+// overlap: added because most of the tagged dimensions are purely
+// structural (motion, density, interaction model, ...), so two
+// components that are both "form-input" + "static" + "auth" were
+// indistinguishable to weightedDistance even when one is an actual login
+// form and the other is, say, an OTP field -- the exact failure mode a
+// real eval run reproduced: "a login form with email and password
+// fields" ranked `field-one-time-password-form` above all 7 real
+// login-form components in the catalog, with the real logins landing as
+// far down as rank #35 of 4,578 (outside the top-5 window ever shown to
+// Resolve), because plain Jaccard let "password"+"form" (2 shared but
+// extremely common words) outweigh "login" (1 shared but far more
+// distinctive word).
+//
+// Two follow-up fixes were needed before this actually worked, found by
+// checking real numbers rather than assuming the first idea would work:
+// - Weighting by document frequency alone, combined with a union-based
+//   (Jaccard) denominator, still penalized short candidate titles (e.g.
+//   "Login 1") for not containing every word in a longer brief, even
+//   when every word the candidate DOES have is a perfect match.
+// - Switching to an overlap coefficient (divide by the smaller side
+//   instead of the union) fixed that, but over-rewarded near-empty
+//   candidate titles: a candidate whose only token is the common word
+//   "form" would score a "perfect" 0 distance just because its tiny
+//   vocabulary is fully contained in the brief's.
+// Cosine similarity between the two TF-IDF vectors (magnitude-normalized
+// by each side's own vocabulary, not the union or the smaller side) is
+// the standard fix for both failure modes at once, and is what a
+// real re-run of the login-form repro confirmed: the real login-form
+// components moved from rank #7-#35 to rank #1-#4 of 4,578, essentially
+// tied with the wrong OTP/reset candidates instead of losing by an order
+// of magnitude -- exactly the near-tie Resolve exists to break with real
+// descriptions, not a case Match should try to force a verdict on alone.
+function cosineTextDistance(briefTokens: Set<string>, record: TagRecord, df: Map<string, number>, totalDocs: number): number {
+  const candidateTokens = tokenize(candidateText(record));
+  if (briefTokens.size === 0 || candidateTokens.size === 0) return 1;
+
+  let dot = 0;
+  let briefNormSq = 0;
+  let candidateNormSq = 0;
+  for (const t of briefTokens) briefNormSq += idf(t, df, totalDocs) ** 2;
+  for (const t of candidateTokens) {
+    const w = idf(t, df, totalDocs);
+    candidateNormSq += w ** 2;
+    if (briefTokens.has(t)) dot += w ** 2;
+  }
+  if (briefNormSq === 0 || candidateNormSq === 0) return 1;
+  const cosineSimilarity = dot / (Math.sqrt(briefNormSq) * Math.sqrt(candidateNormSq));
+  return 1 - cosineSimilarity;
+}
+
+// Weight for the text-overlap term, blended alongside the tagged
 // dimensions' confidence-based weights. Not confidence-weighted itself
-// (there is no model confidence for a deterministic word-overlap check),
-// but kept modest relative to a single dimension's typical weight so it
-// nudges ranking toward literal-word matches without letting a brief
-// that happens to share a rare word with an unrelated candidate dominate
-// the seven tagged dimensions.
-const TEXT_WEIGHT = 0.5;
+// (there is no model confidence for a deterministic word-overlap check).
+// Raised from the original 0.5 (plain-Jaccard era) to 1.5: at 0.5, even
+// the corrected TF-IDF cosine signal was not enough to overcome the
+// structural distance's dominance for the login-form repro above (real
+// login components have unrelated `category` tags in a few cases, e.g.
+// "card" instead of "form-input", inflating their structural distance);
+// 1.5 was confirmed against a full re-run of the eval suite (see
+// docs/EVAL_REPORT.md) to bring the real login-form components into a
+// near-tie for the top rank without regressing any previously-correct
+// confident/shortlist outcome (bento-grid, mouse-trail, etc. unchanged).
+const TEXT_WEIGHT = 1.5;
 
 export function rankCandidates(
   brief: DimensionVector,
   candidates: TagRecord[],
   briefText?: string,
 ): Array<{ record: TagRecord; distance: number }> {
+  const briefTokens = briefText ? tokenize(briefText) : null;
+  const df = briefTokens ? buildDocumentFrequency(candidates) : null;
   return candidates
     .map((record) => {
       const structuralDistance = weightedDistance(brief, record.dimensions);
-      const distance = briefText
-        ? (structuralDistance * 1 + textDistance(briefText, record) * TEXT_WEIGHT) / (1 + TEXT_WEIGHT)
-        : structuralDistance;
+      const distance =
+        briefTokens && df
+          ? (structuralDistance * 1 + cosineTextDistance(briefTokens, record, df, candidates.length) * TEXT_WEIGHT) / (1 + TEXT_WEIGHT)
+          : structuralDistance;
       return { record, distance };
     })
     .sort((a, b) => a.distance - b.distance);

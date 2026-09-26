@@ -17,7 +17,14 @@ import { DIMENSIONS } from "./dimensions.js";
 import { parseBrief } from "./brief.js";
 import { translateBriefToEnglish } from "./translate.js";
 import { rankCandidates, choiceWeight, noulWeight } from "./match.js";
-import { resolveAmbiguous, shouldSkipResolve, candidateKey, RESOLVE_CONFIDENCE_FLOOR, type RankedCandidate } from "./resolve.js";
+import {
+  resolveAmbiguous,
+  shouldSkipResolve,
+  candidateKey,
+  RESOLVE_CONFIDENCE_FLOOR,
+  RESOLVE_CANDIDATE_WINDOW,
+  type RankedCandidate,
+} from "./resolve.js";
 import type { TagRecord, ChoiceAnswer, NoulAnswer } from "./types.js";
 import type { DimensionVector } from "./brief.js";
 
@@ -255,7 +262,12 @@ export async function pickComponent(opts: PickOptions): Promise<PickResult> {
   let decisionsSpent = parsed.decisionsSpent;
 
   const ranked: RankedCandidate[] = rankCandidates(parsed.dimensions, candidates, briefText);
-  const top = ranked.slice(0, Math.max(5, maxResults));
+  // 8, not 5: matches resolveAmbiguous's own RESOLVE_CANDIDATE_WINDOW, so
+  // a real candidate ranked 6th-8th (a known real occurrence once the
+  // tagged dimensions alone can't separate near-identical variants, see
+  // resolve.ts's comment) still reaches Resolve instead of being cut off
+  // here before Resolve ever sees it.
+  const top = ranked.slice(0, Math.max(RESOLVE_CANDIDATE_WINDOW, maxResults));
 
   let resolveUsed = false;
   let resolvedLabel: string | null = null;
