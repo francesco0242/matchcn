@@ -36,8 +36,19 @@ export interface ResolveResult {
   decisionsSpent: number;
 }
 
-function candidateKey(record: TagRecord): string {
-  return `${record.registry}/${record.name}`;
+// Includes compositionLevel, not just registry/name: at least one
+// registry (aceternity) publishes two genuinely different entries under
+// the identical name, distinguished only by compositionLevel (a
+// registry:ui primitive and a registry:block demo both named
+// "background-lines", see docs/DECISIONS.md #16, which fixed this same
+// collision for the tagger's checkpoint key). registry/name alone would
+// silently collide the two here too: resolveAmbiguous would emit
+// duplicate labels in the same classifier.dev choice call, and the
+// reorder-by-label lookup in pick.ts would match whichever of the two
+// happens to come first, not necessarily the one the model actually
+// picked (GitHub issue #24).
+export function candidateKey(record: TagRecord): string {
+  return `${record.registry}/${record.name}/${record.compositionLevel}`;
 }
 
 // visual_density is a noul (continuous probability), not a labeled choice
