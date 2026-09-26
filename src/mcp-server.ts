@@ -24,12 +24,18 @@ const server = new McpServer({
   version: "0.2.5",
 });
 
+// Built from REGISTRIES rather than hand-listed, so the tool description
+// can never drift out of sync with what's actually indexed again (it
+// previously named only 9 of 14 active registries after several were
+// added without updating this string, see GitHub issue #26).
+const registryNames = REGISTRIES.map((r) => r.name).join(", ");
+
 server.registerTool(
   "pick_component",
   {
     title: "Pick a shadcn-format component",
     description:
-      "Given a plain-language description of a UI need, finds the best-matching component across the indexed shadcn-format registries (react-bits, magicui, aceternity, kokonutui, animate-ui, motion-primitives, shadcn-dashboard, assistant-ui, bundui). Returns one of three outcomes: confident (one clear winner), shortlist (several strong candidates with the differentiating dimension named), or no_match (nothing fits, closest candidates shown but marked rejected). Never a forced best guess.",
+      `Given a plain-language description of a UI need, finds the best-matching component across the indexed shadcn-format registries (${registryNames}). Returns one of three outcomes: confident (one clear winner), shortlist (several strong candidates with the differentiating dimension named), or no_match (nothing fits, closest candidates shown but marked rejected). Never a forced best guess.`,
     inputSchema: {
       brief: z.string().describe("Plain-language description of the component needed, any language"),
       registry: z
