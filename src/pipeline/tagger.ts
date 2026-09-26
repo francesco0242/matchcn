@@ -108,10 +108,16 @@ export async function runTagging(opts: RunTaggingOptions): Promise<TaggingSummar
     lastRateLimitObservedAtMs: null,
     updatedAt: new Date().toISOString(),
   };
-  const taggedSet = new Set(checkpoint.taggedNames);
-
   const existing = (await readJsonCache<TagRecord[]>(opts.outputPath)) ?? [];
   const output = [...existing];
+
+  // Union of the checkpoint's claimed-tagged names and whatever is
+  // actually present in the output file, not the checkpoint alone. Output
+  // is now written before the checkpoint (see the write order below), so
+  // a crash between those two writes leaves output ahead of checkpoint;
+  // trusting the checkpoint alone here would re-tag and duplicate those
+  // components in `output` instead of correctly recognizing them as done.
+  const taggedSet = new Set([...checkpoint.taggedNames, ...existing.map((r) => componentKey(r))]);
 
   let pending = opts.components.filter((c) => !taggedSet.has(componentKey(c)));
   const skippedAlreadyTagged = opts.components.length - pending.length;
@@ -211,10 +217,16 @@ export async function runTagging(opts: RunTaggingOptions): Promise<TaggingSummar
     checkpoint.updatedAt = new Date().toISOString();
     summary.rateLimitRemaining = result.rateLimitRemaining;
 
-    // Checkpoint AND output are written after every chunk so a killed or
-    // restarted run resumes without re-tagging or losing progress.
-    await writeJsonCache(checkpointPath, checkpoint);
+    // Output is written BEFORE the checkpoint. If the process is killed
+    // between the two writes, the checkpoint understates progress but the
+    // tagged records are already safely on disk in `output` -- the next
+    // run's taggedSet (built above from checkpoint UNION output) still
+    // recognizes them as done, so nothing is lost or duplicated. The
+    // reverse order (checkpoint first, as this used to be) risked the
+    // checkpoint claiming a chunk was tagged while its records were never
+    // actually written, silently and permanently dropping them.
     await writeJsonCache(opts.outputPath, output);
+    await writeJsonCache(checkpointPath, checkpoint);
 
     if (i + CHUNK_SIZE < pending.length) await sleep(INTER_CHUNK_DELAY_MS);
   }
