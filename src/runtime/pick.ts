@@ -16,7 +16,7 @@ import { REGISTRIES } from "./registries.js";
 import { DIMENSIONS } from "./dimensions.js";
 import { parseBrief } from "./brief.js";
 import { translateBriefToEnglish } from "./translate.js";
-import { rankCandidates } from "./match.js";
+import { rankCandidates, choiceWeight, noulWeight } from "./match.js";
 import { resolveAmbiguous, shouldSkipResolve, RESOLVE_CONFIDENCE_FLOOR, type RankedCandidate } from "./resolve.js";
 import type { TagRecord, ChoiceAnswer, NoulAnswer } from "./types.js";
 import type { DimensionVector } from "./brief.js";
@@ -116,13 +116,19 @@ function variantOutputs(record: TagRecord): VariantOutput[] | undefined {
   }));
 }
 
-function buildReasons(brief: DimensionVector, candidate: DimensionVector): DimensionReason[] {
+export function buildReasons(brief: DimensionVector, candidate: DimensionVector): DimensionReason[] {
   return DIMENSIONS.map((dim) => {
     const key = dim.key as keyof DimensionVector;
     if (dim.kind === "noul") {
       const b = brief[key] as NoulAnswer;
       const c = candidate[key] as NoulAnswer;
-      const weight = b.probability == null || c.probability == null ? 0 : Math.abs((b.probability - 0.5) * 2) * 1;
+      // Same Math.min(brief-side, candidate-side) weight match.ts actually
+      // ranks with, not just the brief's side (see docs/DECISIONS.md and
+      // GitHub issue #23: reporting the brief-only weight here misrepresented
+      // dimensions that contributed nothing to the real ranking as strong
+      // factors, undermining the whole point of surfacing reasons for
+      // debugging -- see decision #18).
+      const weight = Math.min(noulWeight(b), noulWeight(c));
       const matched = b.probability != null && c.probability != null && Math.abs(b.probability - c.probability) < 0.3;
       return {
         dimension: dim.key,
@@ -134,7 +140,7 @@ function buildReasons(brief: DimensionVector, candidate: DimensionVector): Dimen
     }
     const b = brief[key] as ChoiceAnswer;
     const c = candidate[key] as ChoiceAnswer;
-    const weight = Math.min(b.confidence ?? 0, c.confidence ?? 0);
+    const weight = Math.min(choiceWeight(b), choiceWeight(c));
     const matched = b.label != null && c.label != null && b.label === c.label;
     return {
       dimension: dim.key,
