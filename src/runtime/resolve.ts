@@ -70,11 +70,25 @@ function candidateDescription(record: TagRecord): string {
   );
 }
 
-// Sends one Choice call: "which of these up-to-5 candidates best matches
-// the brief, or none of these." One item (the brief text), one dimension,
-// so this always costs exactly 1 decision.
+// Widened from 5 to RESOLVE_CANDIDATE_WINDOW: real login-form components
+// were found landing as far down as Match rank #35 of 4,578 for an exact,
+// unambiguous "login form" brief (see match.ts's cosineTextDistance
+// comment for the full repro), because the tagged dimensions alone often
+// cannot separate near-identical variants (a login form vs. an OTP field
+// vs. a generic form are all form-input/auth/static). The text-relevance
+// fix in match.ts brings real matches much closer to the top, but a fixed
+// window of exactly 5 was still tight enough to cut off real candidates
+// sitting at rank 6-8 in some cases. Costs nothing extra: this is one
+// Choice call with a growing label list, not one call per candidate, so
+// it is still exactly 1 decision regardless of window size.
+export const RESOLVE_CANDIDATE_WINDOW = 8;
+
+// Sends one Choice call: "which of these candidates best matches the
+// brief, or none of these." One item (the brief text), one dimension, so
+// this always costs exactly 1 decision no matter how many candidates are
+// in the window.
 export async function resolveAmbiguous(brief: string, top: RankedCandidate[]): Promise<ResolveResult> {
-  const candidates = top.slice(0, 5);
+  const candidates = top.slice(0, RESOLVE_CANDIDATE_WINDOW);
   const labels = [...candidates.map((c) => candidateKey(c.record)), "none of these"];
 
   const descriptions = candidates.map((c) => `- ${candidateKey(c.record)}: ${candidateDescription(c.record)}`).join("\n");
