@@ -94,7 +94,20 @@ export async function translateBriefToEnglish(brief: string): Promise<Translatio
     return { text: brief, translated: false };
   }
 
-  const detected = franc(brief, { minLength: MIN_LENGTH_FOR_DETECTION });
+  // Restricted to only the languages MyMemory can actually translate here
+  // (the keys of ISO_639_3_TO_1). Found necessary via a real eval run:
+  // unrestricted, franc considers all ~180 languages it knows and can
+  // confidently misdetect real text as an obscure, unsupported one purely
+  // from incidental n-gram overlap -- a real Polish brief ("sekcja
+  // cennika, trzy plany, środkowy wyróżniony") scored as Malagasy (plt),
+  // and a real Russian brief scored as Bosnian (bos), both silently
+  // skipping translation entirely since neither is in the supported map.
+  // Restricting the candidate set to only what this project can actually
+  // act on forces franc to pick the best-fitting *supported* language
+  // instead, which fixed both real cases with zero regressions verified
+  // across the other 11 languages this module's tests cover
+  // (see translate.test.ts).
+  const detected = franc(brief, { minLength: MIN_LENGTH_FOR_DETECTION, only: Object.keys(ISO_639_3_TO_1) });
   if (detected === "und" || detected === "eng") {
     return { text: brief, translated: false };
   }
