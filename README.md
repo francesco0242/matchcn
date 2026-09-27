@@ -5,10 +5,6 @@
 <h1 align="center">matchcn</h1>
 
 <p align="center">
-  <img src=".github/demo.gif" alt="Claude Code calling matchcn's pick_component tool to find and install a real login form component, live" width="100%" />
-</p>
-
-<p align="center">
   A semantic index across shadcn-format component registries.<br/>
   Find a component by what it does, not what it is called.
 </p>
@@ -19,6 +15,19 @@
   <a href="#for-ai-agents">For AI agents</a> ·
   <a href="#how-it-works">How it works</a> ·
   <a href="#limitations">Limitations</a>
+</p>
+
+<p align="center">
+  <a href="cursor://anysphere.cursor-deeplink/mcp/install?name=matchcn&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIm1hdGNoY24iXX0="><img src="https://img.shields.io/badge/Cursor-Install_matchcn-000000?style=for-the-badge&logo=cursor" alt="Install in Cursor" /></a>
+  <a href="vscode:mcp/install?%7B%22name%22%3A%22matchcn%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22matchcn%22%5D%7D"><img src="https://img.shields.io/badge/VS_Code-Install_matchcn-0098FF?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="Install in VS Code" /></a>
+</p>
+
+<p align="center">
+  <code>claude mcp add matchcn -- npx -y matchcn</code>
+</p>
+
+<p align="center">
+  <img src=".github/demo.gif" alt="Claude Code calling matchcn's pick_component tool to find and install a real login form component, live" width="100%" />
 </p>
 
 ---
