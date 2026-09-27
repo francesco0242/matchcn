@@ -31,7 +31,9 @@
 </p>
 
 <p align="center">
-  Claude Code: <code>claude mcp add matchcn -- npx -y matchcn</code>
+  Claude Code: <code>claude mcp add matchcn -- npx -y matchcn</code><br/>
+  Codex: <code>codex mcp add matchcn -- npx -y matchcn</code><br/>
+  Grok CLI: <code>grok mcp add matchcn -- npx -y matchcn</code>
 </p>
 
 <p align="center">
