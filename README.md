@@ -5,6 +5,10 @@
 <h1 align="center">matchcn</h1>
 
 <p align="center">
+  <img src=".github/demo.gif" alt="Claude Code calling matchcn's pick_component tool to find and install a real login form component, live" width="100%" />
+</p>
+
+<p align="center">
   A semantic index across shadcn-format component registries.<br/>
   Find a component by what it does, not what it is called.
 </p>
@@ -273,9 +277,28 @@ Read this before relying on matchcn for something important.
   runs locally per user). Any detection or translation failure falls
   back to the original text silently, exactly as if this did not exist,
   so this can only help or be a no-op, never break a brief that already
-  worked. Detection on short phrases is imperfect (a French/Italian/etc.
-  misdetection on an ambiguous short brief is possible); translation
-  quality for the detected language is out of this project's control.
+  worked. Detection is restricted to the languages this project actually
+  supports translating (found necessary after real briefs in Polish and
+  Russian were confidently misdetected as unsupported languages when the
+  detector was allowed to consider all ~180 it knows, silently skipping
+  translation); detection on short, ambiguous phrases within the
+  supported set can still occasionally misfire, and translation quality
+  for the detected language is out of this project's control.
+- **Ranking blends tagged-dimension distance with a text-relevance signal
+  over each candidate's name and title** (TF-IDF-weighted cosine
+  similarity against the brief, not the tagged dimensions alone), because
+  the seven tagged dimensions cannot by themselves distinguish
+  near-identical variants (a login form, an OTP field, and a generic
+  form-input block all score as `form-input`/`auth`/`static`). This
+  closed a real, measured gap: a real-catalog eval found "a login form
+  with email and password fields" losing to an OTP field by a wide margin
+  despite eight genuine login-form components being indexed; after the
+  fix, the real login form is a near-tie for the top rank, which Resolve
+  then breaks using each candidate's real description. Text relevance can
+  only be computed from a component's `name` and `title` (the full
+  description used at tagging time is not persisted for match-time use),
+  so components with a sparse or generic title benefit less from this
+  signal than ones with a specific, literal name.
 - **14 of 372+ shadcn-format registries are indexed.** This is not a
   comprehensive index of the ecosystem.
 
