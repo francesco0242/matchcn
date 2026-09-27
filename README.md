@@ -5,6 +5,14 @@
 <h1 align="center">matchcn</h1>
 
 <p align="center">
+  <a href="https://www.npmjs.com/package/matchcn"><img src="https://img.shields.io/npm/v/matchcn?style=for-the-badge&color=CB3837&logo=npm&logoColor=white" alt="npm version" /></a>
+  <a href="https://www.npmjs.com/package/matchcn"><img src="https://img.shields.io/npm/dt/matchcn?style=for-the-badge&label=downloads&color=CB3837&logo=npm&logoColor=white" alt="npm downloads" /></a>
+  <a href="https://github.com/francesco0242/matchcn/stargazers"><img src="https://img.shields.io/github/stars/francesco0242/matchcn?style=for-the-badge&logo=github&color=yellow" alt="GitHub stars" /></a>
+  <a href="https://github.com/francesco0242/matchcn/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/francesco0242/matchcn/ci.yml?branch=main&style=for-the-badge&label=CI" alt="CI status" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/francesco0242/matchcn?style=for-the-badge" alt="MIT license" /></a>
+</p>
+
+<p align="center">
   A semantic index across shadcn-format component registries.<br/>
   Find a component by what it does, not what it is called.
 </p>
@@ -23,7 +31,7 @@
 </p>
 
 <p align="center">
-  <code>claude mcp add matchcn -- npx -y matchcn</code>
+  Claude Code: <code>claude mcp add matchcn -- npx -y matchcn</code>
 </p>
 
 <p align="center">
