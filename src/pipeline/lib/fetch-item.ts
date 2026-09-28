@@ -22,7 +22,7 @@ const MAX_ATTEMPTS = 3;
 // future run until someone manually deletes the cache file
 // (GitHub issue #25). Permanent failures are still cached indefinitely,
 // same as before, since retrying those wastes a request for no benefit.
-const TRANSIENT_FAILURE_PREFIXES = ["network-error", "rate-limited-exhausted-retries", "server-error-", "json-parse-error", "exhausted-retries"];
+const TRANSIENT_FAILURE_PREFIXES = ["network-error", "rate-limited-exhausted-retries", "server-error-", "json-parse-error"];
 
 function isTransientFailure(reason: string | undefined): boolean {
   if (!reason) return false;
@@ -106,7 +106,9 @@ export async function fetchItemJson(url: string, cachePath: string): Promise<Fet
     }
   }
 
-  const result: FetchItemResult = { ok: false, reason: "exhausted-retries" };
-  await writeJsonCache(cachePath, result);
-  return result;
+  // Unreachable: every branch inside the loop above returns on its own,
+  // including the last-attempt case for both 429 and 5xx. TypeScript
+  // still requires a return path after a for-loop it can't prove always
+  // returns; this satisfies that without implying a real code path.
+  throw new Error("unreachable: fetchItemJson's retry loop always returns before exiting");
 }
