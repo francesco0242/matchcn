@@ -1,8 +1,14 @@
 // Registries covered in v0. `indexUrl` was found by probing during recon
 // (RECON.md); it is not always the same as the `{name}.json` per-item
 // template shadcn's own registries.json publishes for each registry.
-// `itemUrlTemplate` is that per-item template, used only for enrichment
-// (src/enrich.ts) of components whose index description is missing or thin.
+// `itemUrlTemplate` is that per-item template. It has two real uses, not
+// one: enrichment (src/pipeline/enrich.ts) of components whose index
+// description is missing or thin, AND every component's real sourceUrl /
+// `npx shadcn add` install command (src/pipeline/ingest.ts builds
+// NormalizedComponent.sourceUrl from it for every item, not just enriched
+// ones; src/runtime/pick.ts uses it again for variant install commands).
+// Changing it for a registry changes real end-user install commands, not
+// just an internal enrichment detail.
 
 export interface RegistryConfig {
   name: string;
