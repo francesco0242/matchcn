@@ -101,7 +101,12 @@ export interface RunTaggingOptions {
 
 export async function runTagging(opts: RunTaggingOptions): Promise<TaggingSummary> {
   const checkpointPath = join(opts.checkpointDir, `tag-checkpoint-${opts.registry}.json`);
-  const checkpoint = (await readJsonCache<Checkpoint>(checkpointPath)) ?? {
+  // strict: tagged records themselves can't be lost even from a corrupted
+  // checkpoint (taggedSet below is unioned with the strict-read `existing`
+  // output), but a silently-reset checkpoint would zero out decisionsSpent
+  // and rate-limit tracking, dropping the daily-quota-floor guard
+  // (rateLimitDataIsFresh below) for the whole run with no warning.
+  const checkpoint = (await readJsonCache<Checkpoint>(checkpointPath, { strict: true })) ?? {
     taggedNames: [],
     decisionsSpent: 0,
     lastRateLimitRemaining: null,
