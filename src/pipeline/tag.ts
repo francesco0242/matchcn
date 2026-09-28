@@ -40,14 +40,16 @@ function parseArgs() {
 // file had a `main().catch` branch for ClassifyQuotaExhaustedError that
 // could therefore never run -- the real check has to happen here, right
 // after runTagging returns, not in a catch block.
-async function reportQuotaExhaustionAndExit(registry: string): Promise<never> {
-  console.error(`\nSTOPPED: quota exhausted while tagging "${registry}".`);
+async function reportStoppedEarlyAndExit(registry: string, stoppedForQuota: boolean): Promise<never> {
+  console.error(
+    `\nSTOPPED: tagging "${registry}" stopped early (${stoppedForQuota ? "quota exhausted" : "batch unavailable or spending cap hit"}).`,
+  );
   const checkpoint = await readJsonCache<Checkpoint>(join(CACHE_DIR, `tag-checkpoint-${registry}.json`));
   if (checkpoint) {
     console.error(
       `[${registry}] resume point: ${checkpoint.taggedNames.length} component(s) already tagged and checkpointed, ` +
         `${checkpoint.decisionsSpent} decisions spent in "${registry}" so far. ` +
-        `Rerun the identical command after switching networks; already-tagged components are skipped automatically.`,
+        `Rerun the identical command later; already-tagged components are skipped automatically.`,
     );
   }
   process.exit(2); // distinct from the generic-crash exit(1) below
@@ -85,17 +87,17 @@ async function main() {
       `[${summary.registry}] attempted=${summary.attempted} tagged=${summary.tagged} ` +
         `alreadyTagged=${summary.skippedAlreadyTagged} decisionsSpent=${summary.decisionsSpent} ` +
         `chunksSent=${summary.chunksSent} rateLimitRemaining=${summary.rateLimitRemaining} ` +
-        `stoppedForQuota=${summary.stoppedForQuota}`,
+        `stoppedForQuota=${summary.stoppedForQuota} stoppedEarly=${summary.stoppedEarly}`,
     );
 
-    // Must stop here, not just log and move on: continuing to the next
-    // registry against an already-exhausted quota means every remaining
-    // registry redundantly repeats the same multi-minute 429 retry-and-
-    // backoff cycle in tagger.ts for nothing, and the run would still
-    // exit 0 at the end -- the same class of CI-invisible failure as the
-    // "nothing tagged" case below, just for quota exhaustion instead.
-    if (summary.stoppedForQuota) {
-      await reportQuotaExhaustionAndExit(target.name);
+    // Checks stoppedEarly, not just stoppedForQuota: a stuck/unavailable
+    // batch (502) or a spending cap (402) also stops the run with real
+    // components left untagged, but sets stoppedForQuota=false -- only
+    // checking that flag would silently treat those cases as a completed
+    // registry and let the loop continue into the next one, redundantly
+    // repeating the same failure, and still exit 0 at the end.
+    if (summary.stoppedEarly) {
+      await reportStoppedEarlyAndExit(target.name, summary.stoppedForQuota);
     }
   }
 
