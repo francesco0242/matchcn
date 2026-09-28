@@ -102,7 +102,14 @@ async function main() {
       );
     } catch (err) {
       failed.push(registry.name);
-      process.stderr.write(`  FAILED: ${err instanceof Error ? err.message : String(err)}\n`);
+      // Logged with console.error (full object, stack included), not
+      // just the message: a genuine programming bug deep in
+      // ingestRegistry deserves the same loud, stack-traced visibility
+      // it had before this per-registry isolation existed, not a
+      // one-line message indistinguishable from an expected network
+      // blip.
+      process.stderr.write(`  FAILED: ${registry.name}\n`);
+      console.error(err);
     }
   }
 
