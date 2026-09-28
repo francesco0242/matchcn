@@ -34,6 +34,14 @@ function parseArgs() {
   };
 }
 
+// Set at the top of each loop iteration below so the quota-exhaustion
+// catch handler in main().catch (which runs outside this function's own
+// scope, after runTagging has already thrown) knows which registry was
+// actually in progress -- re-parsing argv there gives `undefined` for a
+// no-flag, tag-everything run, silently dropping the resume-point
+// diagnostic for whichever registry was mid-run.
+let currentRegistry: string | undefined;
+
 async function main() {
   const { registry, limit } = parseArgs();
   const targets = registry ? REGISTRIES.filter((r) => r.name === registry) : REGISTRIES;
@@ -42,7 +50,10 @@ async function main() {
     process.exit(1);
   }
 
+  let processedCount = 0;
+
   for (const target of targets) {
+    currentRegistry = target.name;
     const components = await readJsonCache<NormalizedComponent[]>(
       join(CACHE_DIR, "normalized", `${target.name}.json`),
     );
@@ -58,6 +69,7 @@ async function main() {
       checkpointDir: CACHE_DIR,
       limit,
     });
+    processedCount++;
 
     console.log(
       `[${summary.registry}] attempted=${summary.attempted} tagged=${summary.tagged} ` +
@@ -65,6 +77,14 @@ async function main() {
         `chunksSent=${summary.chunksSent} rateLimitRemaining=${summary.rateLimitRemaining} ` +
         `stoppedForQuota=${summary.stoppedForQuota}`,
     );
+  }
+
+  // Every target was missing normalized data (most likely: pnpm ingest
+  // was never run) -- a CI job or orchestration script checking the exit
+  // code must not see this as success just because nothing threw.
+  if (processedCount === 0) {
+    console.error(`\nNothing tagged: no target had normalized data. Run "pnpm ingest" first.`);
+    process.exit(1);
   }
 }
 
@@ -77,14 +97,13 @@ main().catch(async (err) => {
     // to report the real resume point instead of guessing from summary
     // state, since the failure happened inside runTagging before it could
     // return one.
-    const { registry } = parseArgs();
     console.error(`\nSTOPPED: quota exhausted. ${err.message}`);
-    if (registry) {
-      const checkpoint = await readJsonCache<Checkpoint>(join(CACHE_DIR, `tag-checkpoint-${registry}.json`));
+    if (currentRegistry) {
+      const checkpoint = await readJsonCache<Checkpoint>(join(CACHE_DIR, `tag-checkpoint-${currentRegistry}.json`));
       if (checkpoint) {
         console.error(
-          `[${registry}] resume point: ${checkpoint.taggedNames.length} component(s) already tagged and checkpointed, ` +
-            `${checkpoint.decisionsSpent} decisions spent in "${registry}" so far. ` +
+          `[${currentRegistry}] resume point: ${checkpoint.taggedNames.length} component(s) already tagged and checkpointed, ` +
+            `${checkpoint.decisionsSpent} decisions spent in "${currentRegistry}" so far. ` +
             `Rerun the identical command after switching networks; already-tagged components are skipped automatically.`,
         );
       }
