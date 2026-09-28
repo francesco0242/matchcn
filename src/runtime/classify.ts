@@ -91,6 +91,11 @@ export async function classifyChunk(
         );
       }
       const retryAfterMs = (Number(res.headers.get("retry-after")) || 2 ** attempt) * 1000;
+      // Drain the body before retrying: an unread response stream can
+      // keep its underlying connection from being released promptly,
+      // adding needless socket pressure across a run with many chunks
+      // each retrying under rate limiting.
+      await res.text().catch(() => {});
       await sleep(Math.min(retryAfterMs, MAX_429_SLEEP_MS));
       continue;
     }

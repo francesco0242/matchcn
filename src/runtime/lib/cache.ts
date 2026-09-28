@@ -2,11 +2,20 @@ import { mkdir, readFile, writeFile, rename } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { randomUUID } from "node:crypto";
 
-export async function readJsonCache<T>(path: string): Promise<T | null> {
+// `strict: true` distinguishes "no file yet" (ENOENT -- a legitimate,
+// silent null, e.g. a first run) from "file exists but failed to parse"
+// (corrupted/truncated/hand-edited -- rethrown instead of silently
+// returning null). Callers that would otherwise treat "corrupted" the
+// same as "empty" and then overwrite the file with just newly-computed
+// data, permanently losing whatever the corrupted file held, should pass
+// this. Defaults to false (both cases return null) to keep every existing
+// caller's resilient-by-default behavior unchanged.
+export async function readJsonCache<T>(path: string, opts?: { strict?: boolean }): Promise<T | null> {
   try {
     const raw = await readFile(path, "utf8");
     return JSON.parse(raw) as T;
-  } catch {
+  } catch (err) {
+    if (opts?.strict && (err as NodeJS.ErrnoException)?.code !== "ENOENT") throw err;
     return null;
   }
 }
