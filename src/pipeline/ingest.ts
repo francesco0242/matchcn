@@ -11,18 +11,9 @@ import { REGISTRIES, type RegistryConfig } from "../runtime/registries.js";
 import { applyFilter, type FilterDropped } from "./filter.js";
 import { enrichThinComponents, type EnrichCandidate } from "./enrich.js";
 import { readJsonCache, writeJsonCache } from "../runtime/lib/cache.js";
+import { baseText } from "./lib/base-text.js";
 
 const CACHE_DIR = ".cache";
-
-// Falls back to `name` when both title and description are empty or
-// missing, so a component never ends up with zero taggable text (found on
-// cnippet: 69 items, mostly bare registry:ui primitives, with no title or
-// description at all). Applies to every registry, not just cnippet, in
-// case a future registry has the same gap.
-function baseText(title: string | null, description: string | null, name: string): string {
-  const text = [title, description].filter(Boolean).join(". ");
-  return text || name;
-}
 
 async function fetchIndex(registry: RegistryConfig): Promise<RawRegistryItem[]> {
   const cachePath = join(CACHE_DIR, "index", `${registry.name}.json`);
@@ -83,14 +74,49 @@ async function main() {
   const registryFilter = process.argv.find((a) => a.startsWith("--registry="))?.split("=")[1];
   const targets = registryFilter ? REGISTRIES.filter((r) => r.name === registryFilter) : REGISTRIES;
 
+  // One registry's transient failure (a flaky index endpoint, a
+  // momentary 5xx -- fetchIndex has no retry of its own) must not abort
+  // every registry after it in iteration order; each is independent, with
+  // no shared state. Failures are collected and reported at the end,
+  // still exiting non-zero so CI/automation notices, but every other
+  // registry gets its .cache/normalized/*.json written regardless.
+  //
+  // Known, accepted tradeoff: a bug shared across every registry (a
+  // regression in applyFilter/enrichThinComponents, a breaking schema
+  // change) now reproduces independently ~N times, once per registry,
+  // before this loop finishes and reports failure, instead of crashing
+  // on the first one. Still correct (same non-zero exit either way),
+  // just slower to fail on a systemic bug than a transient per-registry
+  // one -- deliberately accepted here since a hung/slow-to-report CI run
+  // is a far cheaper failure mode than silently losing every registry
+  // after whichever one happens to be first and transiently flaky.
+  const failed: string[] = [];
+
   for (const registry of targets) {
     process.stdout.write(`Ingesting ${registry.name}...\n`);
-    const { normalized, dropped } = await ingestRegistry(registry);
-    const enrichedCount = normalized.filter((n) => n.enrichedFromSource).length;
-    await writeJsonCache(join(CACHE_DIR, "normalized", `${registry.name}.json`), normalized);
-    process.stdout.write(
-      `  ${normalized.length} kept, ${dropped.length} dropped, ${enrichedCount} enriched from source\n`,
-    );
+    try {
+      const { normalized, dropped } = await ingestRegistry(registry);
+      const enrichedCount = normalized.filter((n) => n.enrichedFromSource).length;
+      await writeJsonCache(join(CACHE_DIR, "normalized", `${registry.name}.json`), normalized);
+      process.stdout.write(
+        `  ${normalized.length} kept, ${dropped.length} dropped, ${enrichedCount} enriched from source\n`,
+      );
+    } catch (err) {
+      failed.push(registry.name);
+      // Logged with console.error (full object, stack included), not
+      // just the message: a genuine programming bug deep in
+      // ingestRegistry deserves the same loud, stack-traced visibility
+      // it had before this per-registry isolation existed, not a
+      // one-line message indistinguishable from an expected network
+      // blip.
+      process.stderr.write(`  FAILED: ${registry.name}\n`);
+      console.error(err);
+    }
+  }
+
+  if (failed.length > 0) {
+    console.error(`\n${failed.length}/${targets.length} registries failed: ${failed.join(", ")}`);
+    process.exitCode = 1;
   }
 }
 

@@ -124,9 +124,12 @@ function filterAnimateUi(items: RawRegistryItem[]): FilterResult {
       dropped.push(styleConfigDrop("animate-ui", item.name));
       continue;
     }
+    // "primitive" is the default below, so a `primitives-`/`icons-`
+    // prefix needs no explicit branch of its own -- it was here before
+    // but had no effect (every non-`components-`/non-hook/non-lib item
+    // already lands on "primitive").
     let compositionLevel: CompositionLevel = "primitive";
     if (item.name.startsWith("components-")) compositionLevel = "composite";
-    else if (item.name.startsWith("primitives-") || item.name.startsWith("icons-")) compositionLevel = "primitive";
     else if (item.type === "registry:hook" || item.type === "registry:lib") compositionLevel = "utility-hook";
     kept.push({ item, compositionLevel });
   }

@@ -106,6 +106,13 @@ export async function fetchItemJson(url: string, cachePath: string): Promise<Fet
     }
   }
 
+  // Unreachable in practice (every branch inside the loop above,
+  // including both last-attempt cases, already returns on its own) --
+  // but this function's documented contract is "never throws", which
+  // enrich.ts's Promise.all relies on, so this stays a plain return
+  // rather than a throw even for a path that can't currently execute. A
+  // future control-flow change here should still fail safe, not violate
+  // that contract by accident.
   const result: FetchItemResult = { ok: false, reason: "exhausted-retries" };
   await writeJsonCache(cachePath, result);
   return result;

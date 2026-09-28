@@ -15,7 +15,14 @@ export function pLimit(concurrency: number) {
     return new Promise((resolve, reject) => {
       const run = () => {
         active++;
-        fn()
+        // Promise.resolve().then(fn), not a bare fn(): every current
+        // caller passes an async function (which per spec can't throw
+        // synchronously), but this is a shared, generic utility with no
+        // such contract enforced. A bare `fn()` that threw synchronously
+        // would skip the .catch below entirely, never calling next() and
+        // permanently leaking one unit of concurrency.
+        Promise.resolve()
+          .then(fn)
           .then((result) => {
             next();
             resolve(result);

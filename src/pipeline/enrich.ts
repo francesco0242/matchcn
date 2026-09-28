@@ -12,6 +12,7 @@
 
 import { join } from "node:path";
 import { fetchItemJson } from "./lib/fetch-item.js";
+import { baseText } from "./lib/base-text.js";
 import { pLimit } from "../runtime/lib/concurrency.js";
 import type { RegistryConfig } from "../runtime/registries.js";
 
@@ -30,12 +31,6 @@ export interface EnrichResult {
   enriched: boolean;
   taggingText: string;
   reason?: string; // set when enrichment was attempted but failed
-}
-
-// Same name-fallback rule as ingest.ts's baseText: never return empty text.
-function baseText(title: string | null, description: string | null, name: string): string {
-  const text = [title, description].filter(Boolean).join(". ");
-  return text || name;
 }
 
 function needsEnrichment(candidate: EnrichCandidate): boolean {
@@ -74,7 +69,15 @@ export async function enrichThinComponents(
   const toEnrich = candidates.filter(needsEnrichment);
   const limit = pLimit(MAX_CONCURRENT);
 
-  await Promise.all(
+  // Promise.allSettled, not Promise.all: a per-item task rejecting (this
+  // has happened for real -- the null-payload crash fixed above, before
+  // it was guarded) must not discard every other already-completed
+  // item's result for this registry. ingestRegistry's caller only sees
+  // this registry as "failed" as a whole either way (per-registry
+  // isolation lives in ingest.ts's main()), which would otherwise mean
+  // losing potentially thousands of good, already-fetched components
+  // over one bad item.
+  const settled = await Promise.allSettled(
     toEnrich.map((candidate) =>
       limit(async () => {
         const url = registry.itemUrlTemplate.replace("{name}", encodeURIComponent(candidate.name));
@@ -91,8 +94,15 @@ export async function enrichThinComponents(
           return;
         }
 
-        const payload = fetched.data as PerItemPayload;
-        const sourceParts = (payload.files ?? [])
+        // fetchItemJson's "ok: true" only guarantees the body parsed as
+        // JSON, not that it's a non-null object shaped like
+        // PerItemPayload -- a vendor endpoint returning a literal `null`
+        // or an array is valid JSON but would otherwise throw here
+        // reading `.files` off it, breaking fetchItemJson's documented
+        // "never throws" contract that this function's Promise.all
+        // relies on (no per-item try/catch).
+        const payload = fetched.data && typeof fetched.data === "object" ? (fetched.data as PerItemPayload) : null;
+        const sourceParts = (payload?.files ?? [])
           .filter((f) => typeof f.content === "string" && f.content.length > 0)
           .map((f) => trimSource(f.content!));
 
@@ -107,8 +117,8 @@ export async function enrichThinComponents(
         }
 
         const combinedSource = sourceParts.join("\n\n").slice(0, SOURCE_TRUNCATE_CHARS);
-        const title = candidate.title ?? payload.title ?? null;
-        const description = candidate.description ?? payload.description ?? null;
+        const title = candidate.title ?? payload?.title ?? null;
+        const description = candidate.description ?? payload?.description ?? null;
         const text = [baseText(title, description, candidate.name), combinedSource].filter(Boolean).join("\n\n");
 
         results.set(candidate.name, {
@@ -119,6 +129,22 @@ export async function enrichThinComponents(
       }),
     ),
   );
+
+  // A rejected task means results.set was never reached for that
+  // candidate inside the task above; fall back to the same
+  // un-enriched/base-text path fetchItemJson's own failure branch uses,
+  // rather than silently missing that candidate from the returned map.
+  settled.forEach((outcome, i) => {
+    if (outcome.status === "rejected") {
+      const candidate = toEnrich[i];
+      results.set(candidate.name, {
+        name: candidate.name,
+        enriched: false,
+        taggingText: baseText(candidate.title, candidate.description, candidate.name),
+        reason: `enrich-task-threw: ${outcome.reason instanceof Error ? outcome.reason.message : String(outcome.reason)}`,
+      });
+    }
+  });
 
   return results;
 }
