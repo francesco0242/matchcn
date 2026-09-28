@@ -11,7 +11,7 @@ import { join } from "node:path";
 import { REGISTRIES } from "../runtime/registries.js";
 import { readJsonCache } from "../runtime/lib/cache.js";
 import { runTagging } from "./tagger.js";
-import { ClassifyQuotaExhaustedError } from "../runtime/classify.js";
+import { parsePositiveInt } from "./lib/parse-args.js";
 import type { NormalizedComponent } from "../runtime/types.js";
 
 interface Checkpoint {
@@ -30,8 +30,30 @@ function parseArgs() {
   const limitArg = process.argv.find((a) => a.startsWith("--limit="))?.split("=")[1];
   return {
     registry: registryArg,
-    limit: limitArg ? Number(limitArg) : undefined,
+    limit: parsePositiveInt(limitArg, "--limit"),
   };
+}
+
+// tagger.ts's runTagging catches ClassifyQuotaExhaustedError internally
+// (classifyErrorOutcome always recognizes it, so its `throw err` fallback
+// is never reached for this error type) and reports it via
+// summary.stoppedForQuota instead of rethrowing. A prior version of this
+// file had a `main().catch` branch for ClassifyQuotaExhaustedError that
+// could therefore never run -- the real check has to happen here, right
+// after runTagging returns, not in a catch block.
+async function reportStoppedEarlyAndExit(registry: string, stoppedForQuota: boolean): Promise<never> {
+  console.error(
+    `\nSTOPPED: tagging "${registry}" stopped early (${stoppedForQuota ? "quota exhausted" : "batch unavailable or spending cap hit"}).`,
+  );
+  const checkpoint = await readJsonCache<Checkpoint>(join(CACHE_DIR, `tag-checkpoint-${registry}.json`));
+  if (checkpoint) {
+    console.error(
+      `[${registry}] resume point: ${checkpoint.taggedNames.length} component(s) already tagged and checkpointed, ` +
+        `${checkpoint.decisionsSpent} decisions spent in "${registry}" so far. ` +
+        `Rerun the identical command later; already-tagged components are skipped automatically.`,
+    );
+  }
+  process.exit(2); // distinct from the generic-crash exit(1) below
 }
 
 async function main() {
@@ -41,6 +63,8 @@ async function main() {
     console.error(`Unknown registry "${registry}"`);
     process.exit(1);
   }
+
+  let processedCount = 0;
 
   for (const target of targets) {
     const components = await readJsonCache<NormalizedComponent[]>(
@@ -58,39 +82,36 @@ async function main() {
       checkpointDir: CACHE_DIR,
       limit,
     });
+    processedCount++;
 
     console.log(
       `[${summary.registry}] attempted=${summary.attempted} tagged=${summary.tagged} ` +
         `alreadyTagged=${summary.skippedAlreadyTagged} decisionsSpent=${summary.decisionsSpent} ` +
         `chunksSent=${summary.chunksSent} rateLimitRemaining=${summary.rateLimitRemaining} ` +
-        `stoppedForQuota=${summary.stoppedForQuota}`,
+        `stoppedForQuota=${summary.stoppedForQuota} stoppedEarly=${summary.stoppedEarly}`,
     );
+
+    // Checks stoppedEarly, not just stoppedForQuota: a stuck/unavailable
+    // batch (502) or a spending cap (402) also stops the run with real
+    // components left untagged, but sets stoppedForQuota=false -- only
+    // checking that flag would silently treat those cases as a completed
+    // registry and let the loop continue into the next one, redundantly
+    // repeating the same failure, and still exit 0 at the end.
+    if (summary.stoppedEarly) {
+      await reportStoppedEarlyAndExit(target.name, summary.stoppedForQuota);
+    }
+  }
+
+  // Every target was missing normalized data (most likely: pnpm ingest
+  // was never run) -- a CI job or orchestration script checking the exit
+  // code must not see this as success just because nothing threw.
+  if (processedCount === 0) {
+    console.error(`\nNothing tagged: no target had normalized data. Run "pnpm ingest" first.`);
+    process.exit(1);
   }
 }
 
-main().catch(async (err) => {
-  if (err instanceof ClassifyQuotaExhaustedError) {
-    // Stop cleanly, no stack trace, no further retries: every chunk before
-    // this one already checkpointed to disk, so rerunning the identical
-    // command later resumes from exactly here (componentKey-based dedup in
-    // tagger.ts skips everything already tagged). Read the checkpoint back
-    // to report the real resume point instead of guessing from summary
-    // state, since the failure happened inside runTagging before it could
-    // return one.
-    const { registry } = parseArgs();
-    console.error(`\nSTOPPED: quota exhausted. ${err.message}`);
-    if (registry) {
-      const checkpoint = await readJsonCache<Checkpoint>(join(CACHE_DIR, `tag-checkpoint-${registry}.json`));
-      if (checkpoint) {
-        console.error(
-          `[${registry}] resume point: ${checkpoint.taggedNames.length} component(s) already tagged and checkpointed, ` +
-            `${checkpoint.decisionsSpent} decisions spent in "${registry}" so far. ` +
-            `Rerun the identical command after switching networks; already-tagged components are skipped automatically.`,
-        );
-      }
-    }
-    process.exit(2); // distinct from the generic-crash exit(1) below
-  }
+main().catch((err) => {
   console.error(err);
   process.exit(1);
 });

@@ -87,6 +87,13 @@ export interface TaggingSummary {
   decisionsSpent: number;
   rateLimitRemaining: number | null;
   stoppedForQuota: boolean;
+  // True whenever the run stopped before exhausting `pending` for ANY
+  // recognized reason -- quota exhaustion (stoppedForQuota=true) or a
+  // stuck/unavailable batch or spending cap (stoppedForQuota=false, but
+  // the run still stopped early with real components left untagged).
+  // Callers that only checked stoppedForQuota to decide whether the run
+  // is "done" would treat the 502/402 cases as complete success.
+  stoppedEarly: boolean;
   chunksSent: number;
 }
 
@@ -154,6 +161,7 @@ export async function runTagging(opts: RunTaggingOptions): Promise<TaggingSummar
     decisionsSpent: 0,
     rateLimitRemaining: checkpoint.lastRateLimitRemaining,
     stoppedForQuota: false,
+    stoppedEarly: false,
     chunksSent: 0,
   };
 
@@ -168,6 +176,7 @@ export async function runTagging(opts: RunTaggingOptions): Promise<TaggingSummar
       Date.now() - checkpoint.lastRateLimitObservedAtMs < RATE_LIMIT_TRUST_WINDOW_MS;
     if (rateLimitDataIsFresh && checkpoint.lastRateLimitRemaining != null && checkpoint.lastRateLimitRemaining < floor) {
       summary.stoppedForQuota = true;
+      summary.stoppedEarly = true;
       break;
     }
 
@@ -184,6 +193,7 @@ export async function runTagging(opts: RunTaggingOptions): Promise<TaggingSummar
         // everything before this chunk.
         console.error(`[${opts.registry}] chunk failed, stopping run: ${(err as Error).message}`);
         summary.stoppedForQuota = outcome.stoppedForQuota;
+        summary.stoppedEarly = true;
         break;
       }
       throw err;
