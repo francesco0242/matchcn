@@ -89,7 +89,7 @@ async function main() {
   // no shared state. Failures are collected and reported at the end,
   // still exiting non-zero so CI/automation notices, but every other
   // registry gets its .cache/normalized/*.json written regardless.
-  const failed: Array<{ registry: string; error: unknown }> = [];
+  const failed: string[] = [];
 
   for (const registry of targets) {
     process.stdout.write(`Ingesting ${registry.name}...\n`);
@@ -101,13 +101,13 @@ async function main() {
         `  ${normalized.length} kept, ${dropped.length} dropped, ${enrichedCount} enriched from source\n`,
       );
     } catch (err) {
-      failed.push({ registry: registry.name, error: err });
+      failed.push(registry.name);
       process.stderr.write(`  FAILED: ${err instanceof Error ? err.message : String(err)}\n`);
     }
   }
 
   if (failed.length > 0) {
-    console.error(`\n${failed.length}/${targets.length} registries failed: ${failed.map((f) => f.registry).join(", ")}`);
+    console.error(`\n${failed.length}/${targets.length} registries failed: ${failed.join(", ")}`);
     process.exitCode = 1;
   }
 }
