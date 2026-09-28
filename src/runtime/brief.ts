@@ -9,9 +9,12 @@
 // comparability, which is the whole reason this module does not define
 // its own dimension text.
 //
-// The brief is passed through as-is regardless of language. See
-// docs/DECISIONS.md #17: no separate translation call is made, and
-// non-English briefs are untested.
+// parseBrief itself takes the brief text as-is, with no translation call
+// of its own -- but its caller, pick.ts, runs translateBriefToEnglish
+// first (see translate.ts, added for docs/DECISIONS.md #17), so a
+// non-English brief reaching parseBrief has normally already been
+// translated to English by the time it gets here. Non-English support is
+// real and tested (translate.test.ts), just not implemented in this file.
 
 import { DIMENSIONS } from "./dimensions.js";
 import { classifyChunk } from "./classify.js";

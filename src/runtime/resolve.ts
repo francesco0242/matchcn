@@ -61,12 +61,22 @@ function densityPhrase(probability: number | null): string {
   return "moderate";
 }
 
+// probability >= 0.5 reads as "yes" -- same side of the line
+// isTie()/decorative_only's own tagging instructions treat as the
+// dimension's positive case, not a separately tuned threshold.
+function boolPhrase(probability: number | null): string {
+  if (probability == null) return "unknown";
+  return probability >= 0.5 ? "yes" : "no";
+}
+
 function candidateDescription(record: TagRecord): string {
   const d = record.dimensions;
   return (
     `${record.title ?? record.name} (${record.registry}, ${record.compositionLevel}). ` +
     `category: ${d.category.label ?? "unknown"}. motion: ${d.motion.label ?? "unknown"}. ` +
-    `visual density: ${densityPhrase(d.visual_density.probability)}. interaction: ${d.interaction_model.label ?? "unknown"}.`
+    `visual density: ${densityPhrase(d.visual_density.probability)}. interaction: ${d.interaction_model.label ?? "unknown"}. ` +
+    `domain: ${d.domain.label ?? "unknown"}. needs external data: ${boolPhrase(d.needs_external_data.probability)}. ` +
+    `purely decorative: ${boolPhrase(d.decorative_only.probability)}.`
   );
 }
 

@@ -141,10 +141,10 @@ function candidateText(record: TagRecord): string {
 // word should count for much more than a shared common one. Built once
 // per rankCandidates call over the actual candidate pool, not a fixed
 // global list, so it reflects the real catalog's vocabulary.
-function buildDocumentFrequency(candidates: TagRecord[]): Map<string, number> {
+function buildDocumentFrequency(candidateTokens: Set<string>[]): Map<string, number> {
   const df = new Map<string, number>();
-  for (const record of candidates) {
-    for (const t of tokenize(candidateText(record))) {
+  for (const tokens of candidateTokens) {
+    for (const t of tokens) {
       df.set(t, (df.get(t) ?? 0) + 1);
     }
   }
@@ -194,8 +194,7 @@ function idf(token: string, df: Map<string, number>, totalDocs: number): number 
 // tied with the wrong OTP/reset candidates instead of losing by an order
 // of magnitude -- exactly the near-tie Resolve exists to break with real
 // descriptions, not a case Match should try to force a verdict on alone.
-function cosineTextDistance(briefTokens: Set<string>, record: TagRecord, df: Map<string, number>, totalDocs: number): number {
-  const candidateTokens = tokenize(candidateText(record));
+function cosineTextDistance(briefTokens: Set<string>, candidateTokens: Set<string>, df: Map<string, number>, totalDocs: number): number {
   if (briefTokens.size === 0 || candidateTokens.size === 0) return 1;
 
   let dot = 0;
@@ -232,13 +231,29 @@ export function rankCandidates(
   briefText?: string,
 ): Array<{ record: TagRecord; distance: number }> {
   const briefTokens = briefText ? tokenize(briefText) : null;
-  const df = briefTokens ? buildDocumentFrequency(candidates) : null;
+  // A brief with no content tokens left after stopword filtering (very
+  // short input, or function-words-only) has no text signal to blend in.
+  // cosineTextDistance would return the maximum distance (1) for every
+  // candidate alike in that case, which -- unlike a zero-weight structural
+  // dimension, which weightedDistance excludes outright -- still gets
+  // blended in at full TEXT_WEIGHT, uniformly inflating every candidate's
+  // distance and capping confidence below RESOLVE_CONFIDENCE_FLOOR even
+  // for an otherwise-perfect structural match. Treat "no text signal" the
+  // same way a zero-weight dimension is treated: skip it, don't penalize.
+  const hasTextSignal = briefTokens != null && briefTokens.size > 0;
+  // Each candidate's name/title is tokenized once here and reused for both
+  // the document-frequency count and the per-candidate cosine distance
+  // below, instead of tokenizing the same ~4,578-candidate catalog twice
+  // on every rankCandidates call.
+  const candidateTokens = hasTextSignal ? candidates.map((record) => tokenize(candidateText(record))) : null;
+  const df = candidateTokens ? buildDocumentFrequency(candidateTokens) : null;
   return candidates
-    .map((record) => {
+    .map((record, i) => {
       const structuralDistance = weightedDistance(brief, record.dimensions);
       const distance =
-        briefTokens && df
-          ? (structuralDistance * 1 + cosineTextDistance(briefTokens, record, df, candidates.length) * TEXT_WEIGHT) / (1 + TEXT_WEIGHT)
+        hasTextSignal && df && candidateTokens
+          ? (structuralDistance * 1 + cosineTextDistance(briefTokens, candidateTokens[i], df, candidates.length) * TEXT_WEIGHT) /
+            (1 + TEXT_WEIGHT)
           : structuralDistance;
       return { record, distance };
     })
