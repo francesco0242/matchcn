@@ -80,6 +80,16 @@ async function main() {
   // no shared state. Failures are collected and reported at the end,
   // still exiting non-zero so CI/automation notices, but every other
   // registry gets its .cache/normalized/*.json written regardless.
+  //
+  // Known, accepted tradeoff: a bug shared across every registry (a
+  // regression in applyFilter/enrichThinComponents, a breaking schema
+  // change) now reproduces independently ~N times, once per registry,
+  // before this loop finishes and reports failure, instead of crashing
+  // on the first one. Still correct (same non-zero exit either way),
+  // just slower to fail on a systemic bug than a transient per-registry
+  // one -- deliberately accepted here since a hung/slow-to-report CI run
+  // is a far cheaper failure mode than silently losing every registry
+  // after whichever one happens to be first and transiently flaky.
   const failed: string[] = [];
 
   for (const registry of targets) {

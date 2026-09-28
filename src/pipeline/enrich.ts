@@ -69,7 +69,15 @@ export async function enrichThinComponents(
   const toEnrich = candidates.filter(needsEnrichment);
   const limit = pLimit(MAX_CONCURRENT);
 
-  await Promise.all(
+  // Promise.allSettled, not Promise.all: a per-item task rejecting (this
+  // has happened for real -- the null-payload crash fixed above, before
+  // it was guarded) must not discard every other already-completed
+  // item's result for this registry. ingestRegistry's caller only sees
+  // this registry as "failed" as a whole either way (per-registry
+  // isolation lives in ingest.ts's main()), which would otherwise mean
+  // losing potentially thousands of good, already-fetched components
+  // over one bad item.
+  const settled = await Promise.allSettled(
     toEnrich.map((candidate) =>
       limit(async () => {
         const url = registry.itemUrlTemplate.replace("{name}", encodeURIComponent(candidate.name));
@@ -121,6 +129,22 @@ export async function enrichThinComponents(
       }),
     ),
   );
+
+  // A rejected task means results.set was never reached for that
+  // candidate inside the task above; fall back to the same
+  // un-enriched/base-text path fetchItemJson's own failure branch uses,
+  // rather than silently missing that candidate from the returned map.
+  settled.forEach((outcome, i) => {
+    if (outcome.status === "rejected") {
+      const candidate = toEnrich[i];
+      results.set(candidate.name, {
+        name: candidate.name,
+        enriched: false,
+        taggingText: baseText(candidate.title, candidate.description, candidate.name),
+        reason: `enrich-task-threw: ${outcome.reason instanceof Error ? outcome.reason.message : String(outcome.reason)}`,
+      });
+    }
+  });
 
   return results;
 }
