@@ -11,6 +11,7 @@ import { join } from "node:path";
 import { REGISTRIES } from "../runtime/registries.js";
 import { readJsonCache } from "../runtime/lib/cache.js";
 import { runTagging } from "./tagger.js";
+import { parsePositiveInt } from "./lib/parse-args.js";
 import type { NormalizedComponent } from "../runtime/types.js";
 
 interface Checkpoint {
@@ -29,7 +30,7 @@ function parseArgs() {
   const limitArg = process.argv.find((a) => a.startsWith("--limit="))?.split("=")[1];
   return {
     registry: registryArg,
-    limit: limitArg ? Number(limitArg) : undefined,
+    limit: parsePositiveInt(limitArg, "--limit"),
   };
 }
 
