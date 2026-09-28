@@ -28,7 +28,8 @@ const server = new McpServer({
 // can never drift out of sync with what's actually indexed again (it
 // previously named only 9 of 14 active registries after several were
 // added without updating this string, see GitHub issue #26).
-const registryNames = REGISTRIES.map((r) => r.name).join(", ");
+const registryNameList = REGISTRIES.map((r) => r.name);
+const registryNames = registryNameList.join(", ");
 
 server.registerTool(
   "pick_component",
@@ -39,7 +40,7 @@ server.registerTool(
     inputSchema: {
       brief: z.string().describe("Plain-language description of the component needed, any language"),
       registry: z
-        .enum(REGISTRIES.map((r) => r.name) as [string, ...string[]])
+        .enum(registryNameList as [string, ...string[]])
         .optional()
         .describe("Restrict the search to one registry"),
       maxResults: z.number().int().min(1).max(10).optional().describe("Max candidates to return for a shortlist or no_match outcome (default 3)"),

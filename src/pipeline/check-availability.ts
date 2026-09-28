@@ -131,7 +131,11 @@ async function checkRegistry(registry: string): Promise<void> {
   // today could become free again later (see ROADMAP.md), at which point
   // re-running this script picks it back up without re-tagging.
   const rawPath = join(RAW_DIR, `${registry}.json`);
-  const existingRaw = await readJsonCache<TagRecord[]>(rawPath);
+  // strict: this file is "never overwritten once written" by design (see
+  // comment above) -- a corrupted rawPath must not be silently read as
+  // "nothing written yet" and then have the write branch below overwrite
+  // it, permanently losing the real classifier.dev spend it represents.
+  const existingRaw = await readJsonCache<TagRecord[]>(rawPath, { strict: true });
   if (!existingRaw) {
     await mkdir(RAW_DIR, { recursive: true });
     await writeFile(rawPath, JSON.stringify(records, null, 2), "utf8");
