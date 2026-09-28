@@ -61,12 +61,27 @@ function densityPhrase(probability: number | null): string {
   return "moderate";
 }
 
+// Same 0.6/0.4 confident-either-way band src/pipeline/generate-bench.ts's
+// NOUL_HIGH uses to decide these dimensions' "positive case" for bench
+// ground truth -- a bare >= 0.5 split would call a genuinely uncertain
+// 0.55 a confident "yes" here while generate-bench.ts would not count it
+// as one, an unexplained inconsistency in how the same probability is
+// read in two places.
+function boolPhrase(probability: number | null): string {
+  if (probability == null) return "unknown";
+  if (probability >= 0.6) return "yes";
+  if (probability <= 0.4) return "no";
+  return "unclear";
+}
+
 function candidateDescription(record: TagRecord): string {
   const d = record.dimensions;
   return (
     `${record.title ?? record.name} (${record.registry}, ${record.compositionLevel}). ` +
     `category: ${d.category.label ?? "unknown"}. motion: ${d.motion.label ?? "unknown"}. ` +
-    `visual density: ${densityPhrase(d.visual_density.probability)}. interaction: ${d.interaction_model.label ?? "unknown"}.`
+    `visual density: ${densityPhrase(d.visual_density.probability)}. interaction: ${d.interaction_model.label ?? "unknown"}. ` +
+    `domain: ${d.domain.label ?? "unknown"}. needs external data: ${boolPhrase(d.needs_external_data.probability)}. ` +
+    `purely decorative: ${boolPhrase(d.decorative_only.probability)}.`
   );
 }
 
