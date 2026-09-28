@@ -11,18 +11,9 @@ import { REGISTRIES, type RegistryConfig } from "../runtime/registries.js";
 import { applyFilter, type FilterDropped } from "./filter.js";
 import { enrichThinComponents, type EnrichCandidate } from "./enrich.js";
 import { readJsonCache, writeJsonCache } from "../runtime/lib/cache.js";
+import { baseText } from "./lib/base-text.js";
 
 const CACHE_DIR = ".cache";
-
-// Falls back to `name` when both title and description are empty or
-// missing, so a component never ends up with zero taggable text (found on
-// cnippet: 69 items, mostly bare registry:ui primitives, with no title or
-// description at all). Applies to every registry, not just cnippet, in
-// case a future registry has the same gap.
-function baseText(title: string | null, description: string | null, name: string): string {
-  const text = [title, description].filter(Boolean).join(". ");
-  return text || name;
-}
 
 async function fetchIndex(registry: RegistryConfig): Promise<RawRegistryItem[]> {
   const cachePath = join(CACHE_DIR, "index", `${registry.name}.json`);
