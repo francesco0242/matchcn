@@ -61,12 +61,17 @@ function densityPhrase(probability: number | null): string {
   return "moderate";
 }
 
-// probability >= 0.5 reads as "yes" -- same side of the line
-// isTie()/decorative_only's own tagging instructions treat as the
-// dimension's positive case, not a separately tuned threshold.
+// Same 0.6/0.4 confident-either-way band src/pipeline/generate-bench.ts's
+// NOUL_HIGH uses to decide these dimensions' "positive case" for bench
+// ground truth -- a bare >= 0.5 split would call a genuinely uncertain
+// 0.55 a confident "yes" here while generate-bench.ts would not count it
+// as one, an unexplained inconsistency in how the same probability is
+// read in two places.
 function boolPhrase(probability: number | null): string {
   if (probability == null) return "unknown";
-  return probability >= 0.5 ? "yes" : "no";
+  if (probability >= 0.6) return "yes";
+  if (probability <= 0.4) return "no";
+  return "unclear";
 }
 
 function candidateDescription(record: TagRecord): string {

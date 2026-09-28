@@ -48,13 +48,14 @@ function looksClearlyEnglish(text: string): boolean {
   if (!/^[\x00-\x7F]*$/.test(text)) return false; // any non-ASCII char rules this out
   const words = text.toLowerCase().match(/[a-z']+/g) ?? [];
   // A single hit isn't enough: several diacritic-free European languages
-  // (German "in"/"an", Dutch "in", Spanish "a"/"en") spell one of these
-  // short function words identically to English. One coincidental overlap
-  // shouldn't veto franc outright for e.g. "ein Formular in der
-  // Seitenleiste"; a real English sentence of any useful length almost
-  // always has two or more of these words, so requiring 2+ distinct hits
-  // keeps the veto's benefit for genuine English while closing the
-  // single-word false-positive case.
+  // (German "in"/"an", Dutch "in"/"is", Spanish "a"/"en") spell one of
+  // these short function words identically to English, so one
+  // coincidental overlap shouldn't veto franc outright. Requiring 2+
+  // distinct hits only narrows this, it does not close it -- a sentence
+  // combining two such words (German "an ... in", Dutch "is ... in") can
+  // still slip through, and there is no clean count/threshold fix for
+  // that with a shared-word list this short. Known, accepted residual
+  // risk of this heuristic, not something worth over-tuning further.
   const distinctHits = new Set(words.filter((w) => ENGLISH_STOPWORDS.has(w)));
   return distinctHits.size >= 2;
 }
