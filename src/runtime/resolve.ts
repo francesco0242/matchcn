@@ -74,7 +74,10 @@ function boolPhrase(probability: number | null): string {
   return "unclear";
 }
 
-function candidateDescription(record: TagRecord): string {
+// Exported for pick.ts: the same one-line summary Resolve judges from is
+// returned to the caller on every candidate, so an agent resolving the
+// shortlist itself (resolve: "caller") sees exactly what Resolve would.
+export function candidateDescription(record: TagRecord): string {
   const d = record.dimensions;
   return (
     `${record.title ?? record.name} (${record.registry}, ${record.compositionLevel}). ` +

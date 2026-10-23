@@ -81,7 +81,7 @@ Add it to your MCP client's config:
 
 Works with Claude Desktop (`claude_desktop_config.json`), Claude Code
 (`.mcp.json`), Cursor, and any other MCP-compatible client. This exposes
-one tool: `pick_component(brief, registry?, maxResults?)`.
+one tool: `pick_component(brief, registry?, maxResults?, hints?, resolve?)`.
 
 More of a copy-paste person? Give your coding agent this prompt and let
 it set itself up:
@@ -134,7 +134,33 @@ have to browse registries or guess at names.
 {
   brief: string;         // plain-language description, required
   registry?: string;     // restrict to one registry, optional
-  maxResults?: number;   // max candidates for shortlist/no_match, default 3
+  maxResults?: number;   // max candidates for shortlist/no_match, default 3 (8 with resolve: "caller")
+  hints?: {              // your own read of the brief, optional; any hint skips server-side parsing
+    category?: string;           // same labels components are tagged with
+    motion?: string;
+    interaction_model?: string;
+    domain?: string;
+    visual_density?: "sparse" | "dense";
+    needs_external_data?: boolean;
+    decorative_only?: boolean;
+  };
+  resolve?: "server" | "caller"; // who breaks ties between close candidates, default "server"
+}
+```
+
+**Fastest path (local mode):** write the brief in English, pass `hints`,
+and set `resolve: "caller"`. matchcn then makes no model calls at all:
+ranking is local and deterministic (about 80 ms warm on the full
+catalog), and on a tie you get the ranked shortlist back, each candidate
+with a one-line `summary` of its tagged properties, and pick yourself.
+Omit a hint you are unsure about rather than guessing; omitted fields are
+simply not ranked on. Without `hints` and `resolve`, behavior is unchanged.
+
+```json
+{
+  "brief": "a login form with email and password fields",
+  "hints": { "category": "form-input", "interaction_model": "form-input", "domain": "auth" },
+  "resolve": "caller"
 }
 ```
 
@@ -154,7 +180,14 @@ have to browse registries or guess at names.
   closest candidates are still listed for context but explicitly marked
   as rejected, not returned as an answer. Do not install one of these
   just because it was the closest; the catalog does not have what was
-  asked for.
+  asked for. With `resolve: "caller"` this outcome is never returned,
+  since only the server-side Resolve step reads candidates against the
+  brief: a tie comes back as a `shortlist` and judging whether any
+  candidate genuinely fits is up to you.
+
+Every result also reports `briefParsedBy` (`hints` or `classifier`) and
+`resolvedBy` (`server` or `caller`), and every candidate carries a
+`summary` line.
 
 Call this before hand-rolling a component or guessing a registry name.
 It is deterministic: the same brief against the same catalog version

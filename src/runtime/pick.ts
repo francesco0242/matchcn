@@ -14,7 +14,7 @@ import { fileURLToPath } from "node:url";
 import { readJsonCache } from "./lib/cache.js";
 import { REGISTRIES } from "./registries.js";
 import { DIMENSIONS } from "./dimensions.js";
-import { parseBrief } from "./brief.js";
+import { parseBrief, briefFromHints, hasHints, type BriefHints } from "./brief.js";
 import { translateBriefToEnglish } from "./translate.js";
 import { rankCandidates, choiceWeight, noulWeight } from "./match.js";
 import {
@@ -23,6 +23,7 @@ import {
   candidateKey,
   RESOLVE_CONFIDENCE_FLOOR,
   RESOLVE_CANDIDATE_WINDOW,
+  candidateDescription,
   type RankedCandidate,
 } from "./resolve.js";
 import type { TagRecord, ChoiceAnswer, NoulAnswer } from "./types.js";
@@ -62,6 +63,10 @@ export interface ComponentOutput {
   name: string;
   registry: string;
   title: string | null;
+  // The same one-line summary Resolve judges candidates from (category,
+  // motion, density, interaction, domain, ...), so a caller resolving the
+  // shortlist itself is not choosing from slugs alone.
+  summary: string;
   installCommand: string;
   sourceUrl: string;
   confidence: number;
@@ -100,12 +105,27 @@ export interface PickResult {
   // unavailable (network/quota failure) -- in the last case matching
   // still ran on the original text, exactly as if this did not exist.
   translatedFrom?: string;
+  // Who turned the brief into a dimension vector: the caller's own hints
+  // (no classifier.dev call) or parseBrief (one classifier.dev call).
+  briefParsedBy: "hints" | "classifier";
+  // Who is expected to pick among a shortlist: matchcn's own Resolve call,
+  // or the calling agent (resolve: "caller", no classifier.dev call).
+  resolvedBy: "server" | "caller";
 }
+
+// "server": matchcn breaks ties with one classifier.dev Resolve call (the
+// original behavior, still the default). "caller": matchcn never calls
+// Resolve; a tie comes back as a ranked shortlist with summaries for the
+// calling agent to choose from, which knows the project and is a stronger
+// model than the one Resolve would use (docs/ROADMAP.md, thesis 1).
+export type ResolveMode = "server" | "caller";
 
 export interface PickOptions {
   brief: string;
   registry?: string;
   maxResults?: number;
+  hints?: BriefHints;
+  resolve?: ResolveMode;
 }
 
 function installUrl(record: TagRecord): string {
@@ -164,6 +184,7 @@ function toComponentOutput(record: TagRecord, confidence: number, brief: Dimensi
     name: record.name,
     registry: record.registry,
     title: record.title,
+    summary: candidateDescription(record),
     installCommand: `npx shadcn@latest add ${installUrl(record)}`,
     sourceUrl: record.sourceUrl,
     confidence: Math.round(confidence * 100) / 100,
@@ -214,7 +235,7 @@ function computeDifferentiators(records: TagRecord[]): Differentiator[] {
   return out;
 }
 
-async function loadCandidates(registryFilter?: string): Promise<TagRecord[]> {
+export async function loadCandidates(registryFilter?: string): Promise<TagRecord[]> {
   const targets = registryFilter ? REGISTRIES.filter((r) => r.name === registryFilter) : REGISTRIES;
   const all: TagRecord[] = [];
   for (const r of targets) {
@@ -225,8 +246,6 @@ async function loadCandidates(registryFilter?: string): Promise<TagRecord[]> {
 }
 
 export async function pickComponent(opts: PickOptions): Promise<PickResult> {
-  const maxResults = opts.maxResults ?? 3;
-
   // classifier.dev rejects an empty-string item with HTTP 400 (the same
   // class of error already handled on the tagging side, see
   // docs/DECISIONS.md #14). Reject here with a clear, handled result
@@ -238,6 +257,8 @@ export async function pickComponent(opts: PickOptions): Promise<PickResult> {
       message: "Brief cannot be empty. Describe the UI component you're looking for.",
       resolveUsed: false,
       decisionsSpent: 0,
+      briefParsedBy: hasHints(opts.hints) ? "hints" : "classifier",
+      resolvedBy: opts.resolve ?? "server",
     };
   }
 
@@ -251,6 +272,8 @@ export async function pickComponent(opts: PickOptions): Promise<PickResult> {
         : "No tagged components available.",
       resolveUsed: false,
       decisionsSpent: 0,
+      briefParsedBy: hasHints(opts.hints) ? "hints" : "classifier",
+      resolvedBy: opts.resolve ?? "server",
     };
   }
 
@@ -258,10 +281,42 @@ export async function pickComponent(opts: PickOptions): Promise<PickResult> {
   const briefText = translation.text;
   const translatedFrom = translation.translated ? translation.detectedLanguage : undefined;
 
-  const parsed = await parseBrief(briefText);
-  let decisionsSpent = parsed.decisionsSpent;
+  // Caller-supplied hints replace parseBrief entirely, not merge with it:
+  // the point is a query path with no classifier.dev round trip at all.
+  // Dimensions the caller left out are simply not ranked on (null answers
+  // weigh 0 in match.ts); the TF-IDF text signal still applies.
+  const fromHints = hasHints(opts.hints);
+  const parsed = fromHints ? { dimensions: briefFromHints(opts.hints!), decisionsSpent: 0 } : await parseBrief(briefText);
 
-  const ranked: RankedCandidate[] = rankCandidates(parsed.dimensions, candidates, briefText);
+  return pickFromParsedBrief(briefText, parsed.dimensions, parsed.decisionsSpent, candidates, {
+    maxResults: opts.maxResults,
+    translatedFrom,
+    briefParsedBy: fromHints ? "hints" : "classifier",
+    resolve: opts.resolve,
+  });
+}
+
+// Split out of pickComponent so a caller that has already translated and
+// parsed a brief (e.g. src/pipeline/bench.ts, which also needs the parsed
+// dimensions for match-only ranking) can run Match/Resolve without paying
+// for a second classifier.dev round trip on the same text.
+export async function pickFromParsedBrief(
+  briefText: string,
+  dimensions: DimensionVector,
+  decisionsSpentSoFar: number,
+  candidates: TagRecord[],
+  opts: { maxResults?: number; translatedFrom?: string; briefParsedBy?: "hints" | "classifier"; resolve?: ResolveMode },
+): Promise<PickResult> {
+  const resolvedBy = opts.resolve ?? "server";
+  // A caller resolving the tie itself gets the whole window Resolve would
+  // have judged by default, not just the top 3 a human-facing shortlist
+  // shows: it is standing in for Resolve, so it should see what Resolve sees.
+  const maxResults = opts.maxResults ?? (resolvedBy === "caller" ? RESOLVE_CANDIDATE_WINDOW : 3);
+  const translatedFrom = opts.translatedFrom;
+  const briefParsedBy = opts.briefParsedBy ?? "classifier";
+  let decisionsSpent = decisionsSpentSoFar;
+
+  const ranked: RankedCandidate[] = rankCandidates(dimensions, candidates, briefText);
   // 8, not 5: matches resolveAmbiguous's own RESOLVE_CANDIDATE_WINDOW, so
   // a real candidate ranked 6th-8th (a known real occurrence once the
   // tagged dimensions alone can't separate near-identical variants, see
@@ -273,7 +328,7 @@ export async function pickComponent(opts: PickOptions): Promise<PickResult> {
   let resolvedLabel: string | null = null;
   let resolvedConfidence: number | null = null;
 
-  if (!shouldSkipResolve(top)) {
+  if (resolvedBy === "server" && !shouldSkipResolve(top)) {
     resolveUsed = true;
     const resolved = await resolveAmbiguous(briefText, top);
     decisionsSpent += resolved.decisionsSpent;
@@ -288,10 +343,12 @@ export async function pickComponent(opts: PickOptions): Promise<PickResult> {
       outcome: "no_match",
       message:
         "No component in the catalog is a good fit for this brief. Closest candidates are listed below for reference, but none was judged a real match.",
-      candidates: top.slice(0, maxResults).map((r) => toComponentOutput(r.record, 1 - r.distance, parsed.dimensions)),
+      candidates: top.slice(0, maxResults).map((r) => toComponentOutput(r.record, 1 - r.distance, dimensions)),
       resolveUsed,
       decisionsSpent,
       translatedFrom,
+      briefParsedBy,
+      resolvedBy,
     };
   }
 
@@ -308,14 +365,21 @@ export async function pickComponent(opts: PickOptions): Promise<PickResult> {
 
   // Decisive: either Match alone was clear enough to skip Resolve, or
   // Resolve broke the tie with real confidence.
-  if (bestConfidence >= RESOLVE_CONFIDENCE_FLOOR) {
+  // In caller mode Resolve never ran, so "decisive" has to mean the same
+  // thing that lets server mode skip Resolve (confident AND clearly ahead
+  // of the runner-up), not merely a top score above the floor: two
+  // candidates tied at 0.9 are a shortlist, not a confident pick.
+  const decisive = resolvedBy === "caller" ? shouldSkipResolve(top) : bestConfidence >= RESOLVE_CONFIDENCE_FLOOR;
+  if (decisive) {
     return {
       outcome: "confident",
       message: `Selected "${top[0].record.name}" from ${top[0].record.registry}.`,
-      chosen: toComponentOutput(top[0].record, bestConfidence, parsed.dimensions),
+      chosen: toComponentOutput(top[0].record, bestConfidence, dimensions),
       resolveUsed,
       decisionsSpent,
       translatedFrom,
+      briefParsedBy,
+      resolvedBy,
     };
   }
 
@@ -326,18 +390,27 @@ export async function pickComponent(opts: PickOptions): Promise<PickResult> {
   const shortlist = top.slice(0, maxResults);
   const differentiators = computeDifferentiators(shortlist.map((r) => r.record));
   const differentiatorNames = differentiators.map((d) => d.dimension);
+  // In caller mode this branch also covers what would have been no_match:
+  // without Resolve nothing here has read the candidates against the
+  // brief, so matchcn cannot claim "none fit" -- that judgment is handed
+  // to the caller explicitly instead of being silently skipped.
   const message =
-    differentiatorNames.length > 0
+    resolvedBy === "caller"
+      ? `${shortlist.length} candidates ranked by Match, no clear winner. Resolve is left to you: pick the one whose summary fits the brief, or treat it as no match if none genuinely does.` +
+        (differentiatorNames.length > 0 ? ` They differ on: ${differentiatorNames.join(", ")}.` : "")
+      : differentiatorNames.length > 0
       ? `${shortlist.length} strong candidates, no single winner. They differ on: ${differentiatorNames.join(", ")}.`
       : `${shortlist.length} strong candidates, no single winner, and they do not differ on any tagged dimension. Choice between them is not visible to this schema.`;
 
   return {
     outcome: "shortlist",
     message,
-    candidates: shortlist.map((r) => toComponentOutput(r.record, 1 - r.distance, parsed.dimensions)),
+    candidates: shortlist.map((r) => toComponentOutput(r.record, 1 - r.distance, dimensions)),
     differentiators,
     resolveUsed,
     decisionsSpent,
     translatedFrom,
+    briefParsedBy,
+    resolvedBy,
   };
 }
